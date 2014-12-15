@@ -122,7 +122,7 @@ int _tmain(int argc, TCHAR* argv[])
 }
 ```
 
-如果运行这个程序，可以看到如下的输出，可以看到CRTP可以实现和虚函数一样的功能，但是内存大小会有很大优势，关于对象内存可以参见我之前的博客[怎么看C++对象的内存结构 和 怎么解密C++的name Mangling](http://fresky.github.io/blog/2012/12/23/blogpost/)：
+如果运行这个程序，可以看到如下的输出，可以看到CRTP可以实现和虚函数一样的功能，但是内存大小会有很大优势，关于对象内存可以参见我之前的博客[怎么看C++对象的内存结构 和 怎么解密C++的name Mangling](/2012/12/23/blogpost/)：
 
 ```
 hi, i'm child A!

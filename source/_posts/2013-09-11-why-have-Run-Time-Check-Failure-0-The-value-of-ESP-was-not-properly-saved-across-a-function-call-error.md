@@ -63,6 +63,6 @@ int main() {
 
 <p>&#160;</p>
 
-也可以参考[怎么看C++对象的内存结构 和 怎么解密C++的name mangling](http://fresky.github.io/blog/2012/12/23/how-to-dump-cpp-objects-memory-layout-and-crack-name-mangling/)来看看C++对象的内存结构。
+也可以参考[怎么看C++对象的内存结构 和 怎么解密C++的name mangling](/2012/12/23/how-to-dump-cpp-objects-memory-layout-and-crack-name-mangling/)来看看C++对象的内存结构。
 
 <p>对于ESP的错误，可以参考stackoverflow上的这个问题：<a href="http://stackoverflow.com/questions/8626160/run-time-check-failure-0-the-value-of-esp-was-not-properly-saved-across-a-fun">c++ - Run-Time Check Failure #0 - The value of ESP was not properly saved across a function call - Stack Overflow</a></p>

@@ -5,7 +5,7 @@ date: 2013-07-04
 comments: true
 tags: CSharp
 ---
-<p>今天把我之前发的一个小工具<a href="http://fresky.github.io/blog/2012/09/10/freeverything-simple-disk-cleanup-tool-based-on-everything/">FreeEverything（基于everything的一个简易磁盘清理工具）</a>升级到了.net framework 4.5，并且去掉了对mvvmlight的依赖。结果在测试运行的时候发现如果用visual studio调试运行，就会触发一个break，显示如下的错误信息。</p>
+<p>今天把我之前发的一个小工具<a href="/2012/09/10/freeverything-simple-disk-cleanup-tool-based-on-everything/">FreeEverything（基于everything的一个简易磁盘清理工具）</a>升级到了.net framework 4.5，并且去掉了对mvvmlight的依赖。结果在测试运行的时候发现如果用visual studio调试运行，就会触发一个break，显示如下的错误信息。</p>
 
 ```
 A call to PInvoke function 'SampleMethod' has unbalanced the stack. 

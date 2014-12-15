@@ -7,11 +7,11 @@ tags: CSharp
 ---
 <p>C#中有5个timer，它们的主要区别如下：</p>
 <ol>
-<li>System.Threading.Timer&nbsp; 在线程池启动一个后台任务。我前段时间写过一个关于timer的垃圾回收的需要注意一下，参见<a href="http://fresky.github.io/blog/2013/06/20/where-is-my-timer-csharp-gc/">谁动了我的timer？</a>。</li>
+<li>System.Threading.Timer&nbsp; 在线程池启动一个后台任务。我前段时间写过一个关于timer的垃圾回收的需要注意一下，参见<a href="/2013/06/20/where-is-my-timer-csharp-gc/">谁动了我的timer？</a>。</li>
 <li>System.Windows.Forms.Timer&nbsp; 告诉windows把一个计时器和调用它的线程(UI线程)关联起来，通过往UI线程的消息队列里放一个WM_TIMER的消息来实现，所以它的callback一定是在UI线程调用的，不存在多线程调用的问题。</li>
 <li>System.Windows.Threading.DispatcherTimer 用在WPF和Silverlight中，对应于System.Windows.Forms.Timer。</li>
 <li>Windows.UI.Xaml.Dispatchertimer 用在windows store app中，对应于System.Windows.Forms.Timer。</li>
-<li>System.Timers.Timer 包装了一下System.Threading.Timer，使它有了和System.Windows.Forms.Timer类似的接口，而且也能在visual studio的toolbox designer里找到。它也是在线程池中执行，但是如果你是在visual studio的designer中使用它，visual studio会自动把它所在的control设为这个timer的SynchronizingObject，这样就会保证callback会在UI线程调用了。Jeffrey Richter不建议使用它，建议直接用System.Threading.Timer。这个timer也有个坑，参见<a href="http://fresky.github.io/blog/2011/06/23/dot-net-2-timer-elapsed-event-will-catch-all-exception-for-you/">.NET 2.0的Timer elapsed event 会自动catch住所有的exception</a>。</li>
+<li>System.Timers.Timer 包装了一下System.Threading.Timer，使它有了和System.Windows.Forms.Timer类似的接口，而且也能在visual studio的toolbox designer里找到。它也是在线程池中执行，但是如果你是在visual studio的designer中使用它，visual studio会自动把它所在的control设为这个timer的SynchronizingObject，这样就会保证callback会在UI线程调用了。Jeffrey Richter不建议使用它，建议直接用System.Threading.Timer。这个timer也有个坑，参见<a href="/2011/06/23/dot-net-2-timer-elapsed-event-will-catch-all-exception-for-you/">.NET 2.0的Timer elapsed event 会自动catch住所有的exception</a>。</li>
 </ol>
 <p><a href="http://msdn.microsoft.com/en-us/magazine/cc164015.aspx">Comparing the Timer Classes in the .NET Framework Class Library</a>也比较了3中timer（System.Threading.Timer ，System.Windows.Forms.Timer和System.Timers.Timer），并且画了个如下的表格。</p>
 <table style="width: 686px;" border="0" cellspacing="0" cellpadding="0"><colgroup><col style="mso-width-source: userset; mso-width-alt: 9216; width: 189pt;" width="252" /> <col style="mso-width-source: userset; mso-width-alt: 6290; width: 129pt;" width="172" /> <col style="mso-width-source: userset; mso-width-alt: 4717; width: 97pt;" width="129" /> <col style="mso-width-source: userset; mso-width-alt: 4864; width: 100pt;" width="133" /> </colgroup>

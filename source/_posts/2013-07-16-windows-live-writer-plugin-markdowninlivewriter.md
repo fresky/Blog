@@ -24,5 +24,5 @@ tags: CSharp
 <p><a href="http://images.cnitblog.com/blog/163228/201307/16195559-3bb304db41184f86a4d3480955a190e1.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="http://images.cnitblog.com/blog/163228/201307/16195601-f2374f822814416fbd5698a31401e702.png" alt="image" width="733" height="514" border="0" /></a></p>
 <h3>下一步工作</h3>
 <ol>
-<li>更好的支持代码高亮，把我的另一个Windows Live Writer的代码语法高亮的插件[CodeInLiveWriter](http://fresky.github.io/blog/2013/06/09/codeinlivewriter-code-syntax-highlight-plugin-for-windows-live-writer/)集成进来。</li>
+<li>更好的支持代码高亮，把我的另一个Windows Live Writer的代码语法高亮的插件[CodeInLiveWriter](/2013/06/09/codeinlivewriter-code-syntax-highlight-plugin-for-windows-live-writer/)集成进来。</li>
 </ol>

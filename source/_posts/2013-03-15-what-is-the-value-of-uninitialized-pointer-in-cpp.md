@@ -47,7 +47,7 @@ int main() {
 
 <p>&#160;</p>
 
-<p>可以复习复习这个，<a href="http://fresky.github.io/blog/2012/07/06/what-is-oxcdcdcdcd/">oxcdcdcdcd是什么？</a></p>
+<p>可以复习复习这个，<a href="/2012/07/06/what-is-oxcdcdcdcd/">oxcdcdcdcd是什么？</a></p>
 
 <p>&#160;</p>
 

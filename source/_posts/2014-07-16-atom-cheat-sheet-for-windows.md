@@ -8,7 +8,7 @@ keywords: windows,Atom,shortcut,cheat sheet
 description: 本文总结了Windows平台Atom编辑器的常用快捷键小抄cheat sheet。
 ---
 
-Github推出了一个类似于[Sublime](http://www.sublimetext.com/)的编辑器[Atom](https://atom.io/)，现在可以直接从官网下载Windows平台的zip包，也可以用[Chocolatey](http://chocolatey.org/packages/atom)来安装。我在之前的博客[Windows的应用管理工具 PortableApps，Chocolatey和Ninite](http://fresky.github.io/blog/2013/06/28/windows-application-management-tools/)中介绍过。
+Github推出了一个类似于[Sublime](http://www.sublimetext.com/)的编辑器[Atom](https://atom.io/)，现在可以直接从官网下载Windows平台的zip包，也可以用[Chocolatey](http://chocolatey.org/packages/atom)来安装。我在之前的博客[Windows的应用管理工具 PortableApps，Chocolatey和Ninite](/2013/06/28/windows-application-management-tools/)中介绍过。
 
 我总结了一些常用到的Atom的快捷键，列在这里，供大家参考。可以从[这里](https://raw.github.com/fresky/fresky.github.io/source/images/Atom_Cheat_Sheet.pdf)下载pdf版本。
 

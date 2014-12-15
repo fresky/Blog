@@ -8,7 +8,7 @@ keywords: CLRMD, debugger, csharp, symbol server
 description: 使用CLRMD时通过Symbol Server找Dac的位置来初始化ClrRuntime
 ---
 
-在我昨天的博客[使用CLRMD编写一个自己的C#调试器](http://fresky.github.io/blog/2014/02/17/use-clrmd-to-create-your-own-csharp-debugger/)介绍了一下如果使用CLRMD的API，其中第二个例子是打开一个CLR的dump，来遍历所有线程，把call stack打印出来，类似在每个线程上运行`!clrstack`命令。
+在我昨天的博客[使用CLRMD编写一个自己的C#调试器](/2014/02/17/use-clrmd-to-create-your-own-csharp-debugger/)介绍了一下如果使用CLRMD的API，其中第二个例子是打开一个CLR的dump，来遍历所有线程，把call stack打印出来，类似在每个线程上运行`!clrstack`命令。
 
 昨天的那个小例子有一个潜在的问题，就是如果dump是别的机器生成的，自己机器上没有装匹配的clr时，函数`TryGetDacLocation`会返回`null`。这样就不能正确的初始化`ClrRuntime`了。
 

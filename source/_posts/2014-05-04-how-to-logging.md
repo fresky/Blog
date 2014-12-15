@@ -8,7 +8,7 @@ keywords:
 description: 
 ---
 
-在我之前的博客[如何减少不能重现的Bug](http://fresky.github.io/blog/2014/04/30/how-to-minimize-the-unreproducible-bugs/)提到要遵守好的日志规范，今天就在介绍一下另外一篇文章[Optimal Logging](http://googletesting.blogspot.com/2013/06/optimal-logging.html)。要点如下：
+在我之前的博客[如何减少不能重现的Bug](/2014/04/30/how-to-minimize-the-unreproducible-bugs/)提到要遵守好的日志规范，今天就在介绍一下另外一篇文章[Optimal Logging](http://googletesting.blogspot.com/2013/06/optimal-logging.html)。要点如下：
 
 ### 日志中需要记录的：
 ---

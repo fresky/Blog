@@ -8,7 +8,7 @@ keywords: csscript,notepad++,installation,update
 description: 如何通过添加注册表键值（HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\notepad++.exe），解决因为找不到Notepad++的安装路径（cannot find notepad++ installation）而导致的不能更新CS-Script的问题。
 ---
 
-我之前的博客[用CS-Script把Notepad++变身支持智能提示和运行代码的C#集成开发环境](http://fresky.github.io/blog/2014/03/31/make-your-notepadd-plus-plus-as-csharp-ide-with-intellisense-and-code-execution/)介绍过CS-Script这个超级好用的Notepad++插件，但是我在使用过程中发现了一个小问题。如果使用的Notepad++是Potable绿色版的，在更新CS-Script，或者安装msi时会报出如下的一个错误对话框。
+我之前的博客[用CS-Script把Notepad++变身支持智能提示和运行代码的C#集成开发环境](/2014/03/31/make-your-notepadd-plus-plus-as-csharp-ide-with-intellisense-and-code-execution/)介绍过CS-Script这个超级好用的Notepad++插件，但是我在使用过程中发现了一个小问题。如果使用的Notepad++是Potable绿色版的，在更新CS-Script，或者安装msi时会报出如下的一个错误对话框。
 >*cannot find notepad++ installation*
 >*不能找到notepad++的安装路径*
 

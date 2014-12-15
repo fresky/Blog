@@ -8,7 +8,7 @@ keywords: octopress, metaweblog, csharp, password
 description: 把用octopress最新发布的博文同步到提供metaweblog API的博客（例如博客园）上，在csharp的console application中读取密码。
 ---
 
-最近逐渐开始用octopress在github pages上写博客，之前每次发完博客都用我自己写的那个windows live writer的[markdown插件](http://fresky.github.io/blog/2013/07/16/windows-live-writer-plugin-markdowninlivewriter/)发布到博客园上，但是觉得很麻烦，今天就动手写了个小程序SyncPost自动把最近的一篇博文同步到博客园上，使用metaweblog API。
+最近逐渐开始用octopress在github pages上写博客，之前每次发完博客都用我自己写的那个windows live writer的[markdown插件](/2013/07/16/windows-live-writer-plugin-markdowninlivewriter/)发布到博客园上，但是觉得很麻烦，今天就动手写了个小程序SyncPost自动把最近的一篇博文同步到博客园上，使用metaweblog API。
 
 程序很简单，使用前请先配置`SyncPost.exe.config`，就把主博客域名，本地的`octopress`的`_posts`目录，需要同步到的博客metaweblog地址，用户名和密码。如果关心信息安全，可以不写密码，这样程序在运行时会要求输入密码。
 

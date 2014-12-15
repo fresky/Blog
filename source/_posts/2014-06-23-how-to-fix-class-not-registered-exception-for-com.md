@@ -39,7 +39,7 @@ Unloaded modules:
 ???????? ????????   mydll.dll
 ```
 
-如果dll没有正确的被加载，也是会抛出这个Class not registered的异常的。如何进一步验证呢，这个就又要求助于我在上篇文章[消失的进程——谁是凶手?](http://fresky.github.io/blog/2014/06/20/using-gflags-to-catch-dump-for-the-disappeared-process/)中提到的gflags了，这次需要使用的功能是[Show loader snaps](http://msdn.microsoft.com/en-us/library/windows/hardware/ff556886%28v=vs.85%29.aspx)，如下图所示：
+如果dll没有正确的被加载，也是会抛出这个Class not registered的异常的。如何进一步验证呢，这个就又要求助于我在上篇文章[消失的进程——谁是凶手?](/2014/06/20/using-gflags-to-catch-dump-for-the-disappeared-process/)中提到的gflags了，这次需要使用的功能是[Show loader snaps](http://msdn.microsoft.com/en-us/library/windows/hardware/ff556886%28v=vs.85%29.aspx)，如下图所示：
 
 {% limg gflags_loader_snaps.png %}
 

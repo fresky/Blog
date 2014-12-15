@@ -52,6 +52,6 @@ tags: [Github, Ruby]
   end
 ```
 
-这样gist就能正确的插入了，但是显示还有些问题，代码字体太大，和行数不能匹配，这个下次有机会在看看吧。显示效果可以参看[C++程序在debug模式下遇到Run-Time Check Failure #0 - the Value of ESP Was Not Properly Saved Across a Function Call问题](http://fresky.github.io/blog/2013/09/11/why-have-Run-Time-Check-Failure-0-The-value-of-ESP-was-not-properly-saved-across-a-function-call-error/)。
+这样gist就能正确的插入了，但是显示还有些问题，代码字体太大，和行数不能匹配，这个下次有机会在看看吧。显示效果可以参看[C++程序在debug模式下遇到Run-Time Check Failure #0 - the Value of ESP Was Not Properly Saved Across a Function Call问题](/2013/09/11/why-have-Run-Time-Check-Failure-0-The-value-of-ESP-was-not-properly-saved-across-a-function-call-error/)。
 
 完整代码参加[gist](https://gist.github.com/fresky/6702098)。

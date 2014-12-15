@@ -9,7 +9,7 @@ description: 使用Task.ContinueWith和TPL的Dataflow来解决工作流（管道
 ---
 [TPL Dataflow Library](http://msdn.microsoft.com/en-us/library/hh228603%28v=vs.110%29.aspx)是微软提供的一个关于并发的类库。它主要想解决的就是工作流的问题。比如我们的目标任务需要有一系列的模块来一次完成，前一个模块的输出是后一个模块的输入，这样就构成了一个管道，利用TPL Dataflow Library可以很方便的实现这个功能。
 
-我在之前的博客[使用Linux的命令行工具做简单的文本分析](http://fresky.github.io/blog/2013/06/18/how-to-analyze-text-file-with-linux-command-line-tools/)中介绍过如何用Linux的命令行工具找出一个文章中的词频分布，下面我们用TPL Dataflow和普通的Task和ContinueWith来分别实现，看看其中的区别。
+我在之前的博客[使用Linux的命令行工具做简单的文本分析](/2013/06/18/how-to-analyze-text-file-with-linux-command-line-tools/)中介绍过如何用Linux的命令行工具找出一个文章中的词频分布，下面我们用TPL Dataflow和普通的Task和ContinueWith来分别实现，看看其中的区别。
 
 问题描述
 ---
