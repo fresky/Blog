@@ -1,19 +1,19 @@
 title: 查找无用代码Dead Code的一些心得
 date: 2015-01-09 16:55:02
-categories: 
+categories:
 tags: Refactoring
 description: 把这些没用的代码删除对提高代码质量，降低维护成本都有很大的好处。本文就简单总结一下我认为有效的可以找到无用代码的一些心得：1. 使用工具帮助查找无用代码。2. 通过测试覆盖率Code Coverage寻找潜在的无用代码。3. 查找重复的代码。4. 阅读代码，理解代码。
 ---
 一个系统开发久了难免会有一些没用的代码Dead Code。把这些没用的代码删除对提高代码质量，降低维护成本都有很大的好处。本文就简单总结一下我认为有效的可以找到无用代码的一些心得。
 
 ## 使用工具帮助查找无用代码
-###Resharper——收费，只适用于C#
+###Resharper——收费，只适用于C#。
 
 [Resharper](http://www.jetbrains.com/resharper/)是一个C#开发必备神器了。它能检查出很多代码问题，包含一些无用代码，参见下图。
 
 {% limg resharperdeadcode.png %}
 
-###Visual Studio的Code Analysis (FXCop)——集成在Visual Studio中，只适用于C#
+###Visual Studio的Code Analysis (FXCop)——集成在Visual Studio中，只适用于C#。
 
 [Code Analysis for Managed Code Warnings](http://msdn.microsoft.com/en-us/library/ee1hzekz.aspx)可以针对C#做很多检查，其中和Dead Code相关的检查有如下几个：
 
@@ -35,7 +35,7 @@ description: 把这些没用的代码删除对提高代码质量，降低维护�
 
 ## 查找重复的代码
 我认为重复代码也是一种无用代码，而且可能比无用代码危害还大。查找重复代码相对来说比查找无用代码容易一些，也有很多的工具可以使用，比如：
-### Visual Studio —— 只适用于C#
+### Visual Studio —— 只适用于C#。
 我之前的博客[VS2012很cool的新功能：检查重复代码](/2012/08/21/find-cloned-code-in-csharp-with-visual-studio-2012/)介绍过，参加下图。
 
 {% limg vscodeclone.png %}
