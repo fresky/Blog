@@ -39,6 +39,21 @@ private void button1_Click(object sender, EventArgs e)
 ####这是Coverity警告是对的吗？
 我觉得这个Coeverity警告是一个False Positive，因为Form调用完Show()之后用户关掉时会调用Dispose，具体可以参见[MSDN](http://msdn.microsoft.com/en-us/library/system.windows.forms.control.show%28v=vs.110%29.aspx)的示例代码。
 
+```c#
+private void menuItemHelpAbout_Click(object sender, EventArgs e)
+{
+   // Create and display a modless about dialog box.
+   AboutDialog about = new AboutDialog();
+   about.Show();
+
+   // Draw a blue square on the form. 
+   /* NOTE: This is not a persistent object, it will no longer be
+      * visible after the next call to OnPaint. To make it persistent, 
+      * override the OnPaint method and draw the square there */
+   Graphics g = about.CreateGraphics();
+   g.FillRectangle(Brushes.Blue, 10, 10, 50, 50);
+}
+```
 ###再来看看`Form.ShowDialog`有没有什么不同
 假如我们用的是模态对话框，那么代码是下面这样的：
 ```c#
