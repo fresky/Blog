@@ -7,7 +7,7 @@ description: 本文解析了Form.Show()和Form.ShowDialog()的区别，简单的
 
 在我的博文[来试试这个来自静态代码分析工具PVS Studio提供C++的小测验吧](/2014/12/22/cpp-quiz-from-pvs-studio/)提到过静态检查工具可以帮助我们找到很多的编程问题，但是在修改这些小问题时也要小心，弄清楚问题的来龙去脉，不能随便凭感觉改，否则会引入新的问题，最近就遇到这样的一个例子。
 
-###问题描述——`Form.Show`没有`Dispose`的警告
+###问题描述：Form.Show没有Dispose的警告
 先看示例代码吧，很简单，就是在点击一个按钮时弹出一个`Form`。Coverity报错，说这个`Form2`创建之后在出作用域之前没有`Dispose`。
 
 ```c#
@@ -36,7 +36,8 @@ private void button1_Click(object sender, EventArgs e)
 
 原因很清晰了，打开了一个`Form`，但是紧接着就把它`Dispose`掉了，当然就关掉了。呵呵，想起了我曾经写过的博客[谁动了我的timer？C#的垃圾回收和调试](/2013/06/20/where-is-my-timer-csharp-gc/)，是不是有点异曲同工：）
 
-####这是Coverity警告是对的吗？
+####这个Coverity的警告是对的吗？
+
 我觉得这个Coeverity警告是一个False Positive，因为Form调用完Show()之后用户关掉时会调用Dispose，具体可以参见[MSDN](http://msdn.microsoft.com/en-us/library/system.windows.forms.control.show%28v=vs.110%29.aspx)的示例代码。
 
 ```c#
@@ -54,7 +55,9 @@ private void menuItemHelpAbout_Click(object sender, EventArgs e)
    g.FillRectangle(Brushes.Blue, 10, 10, 50, 50);
 }
 ```
-###再来看看`Form.ShowDialog`有没有什么不同
+
+###再来看看Form.ShowDialog有没有什么不同
+
 假如我们用的是模态对话框，那么代码是下面这样的：
 ```c#
 private void button1_Click(object sender, EventArgs e)
@@ -100,6 +103,7 @@ private void button1_Click(object sender, EventArgs e)
 ```
 
 ###试试GC能帮什么忙吧
+
 虽然`ShowDialog()`不能`Dispose`，但是因为这个Form是个局部变量，出了作用域应该就可以被回收了吧，我们试试看强制调用`GC.Collect()`会怎样。于是我加了个按钮，就是去强制垃圾回收，一切符合预期，这个`Form`确实被`Dispose`掉了。
 
 那回过头来再试试`Show()`，假如我这样写：
