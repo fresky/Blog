@@ -1,4 +1,4 @@
-title: 为什么Form.Timer的event handler在Form被Dispose之后还是被掉到了？
+title: 为什么Form.Timer的event handler在Form被Dispose之后还是被调到了？
 date: 2015-01-14 19:26:23
 categories:
 tags: CSharp
