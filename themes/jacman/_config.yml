@@ -101,6 +101,9 @@ totop: true           ## if you want to scroll to top in every post set the valu
 
 
 #### Custom Search
+Swiftype:
+  enable: true
+
 google_cse:
   enable: false
   cx:   ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
