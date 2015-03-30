@@ -36,7 +36,7 @@ namespace Demo
             MyClass mc = new MyClass();
             mc.a();
         }
-	}
+    }
 }
 ```
 
@@ -217,8 +217,8 @@ namespace Demo
 小结一下本文用到的Windbg命令。
 
 ```
-sxe ld:clr  				     			// 当加载clr时break
-!bpmd Demo.exe Demo.Program.Main			// 在Main函数上加断点
-!dumpmt -md									// 看类的函数具体信息，有没有被JIT
-bp clr!UnsafeJitFunction					// 在JIT函数入口加断点
+sxe ld:clr                        // 当加载clr时break
+!bpmd Demo.exe Demo.Program.Main  // 在Main函数上加断点
+!dumpmt -md                       // 看类的函数具体信息，有没有被JIT
+bp clr!UnsafeJitFunction          // 在JIT函数入口加断点
 ```
