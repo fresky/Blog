@@ -7,19 +7,19 @@ tags: Other
 ---
 <p>今天心血来潮把几个自己常用的工具定制到了系统的右键菜单。包括notepad++，7zip，还有复制文件全路径和文件夹路径。下面简单介绍一下步骤。</p>  
 
-###1. Windows系统右键菜单对应的注册表位置
+#1. Windows系统右键菜单对应的注册表位置
 
 Windows系统的右键菜单对应着如下的注册表位置。
-#####1）所有文件的右键菜单：
+##1）所有文件的右键菜单：
 
 <p><a href="http://images.cnitblog.com/blog/163228/201306/28180933-152759b897fe4977b209b13f33bb1069.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnitblog.com/blog/163228/201306/28180934-a0f7aa9dd8db455589982b7c9b288f30.png" width="244" height="212" /></a></p> 
 
-#####2）所有目录的右键菜单：
+##2）所有目录的右键菜单：
 
 <p><a href="http://images.cnitblog.com/blog/163228/201306/28180935-09f19fa288304de48ca38d8ed3d28959.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnitblog.com/blog/163228/201306/28180935-c0df8dc65c8d403f9f42e82fbed45099.png" width="308" height="116" /></a></p>  
 
-###2.添加自己定制的右键菜单
-#####1）如下的代码存为.reg文件，双击就能把注册表键值导入到注册表中。
+#2.添加自己定制的右键菜单
+##1）如下的代码存为.reg文件，双击就能把注册表键值导入到注册表中。
 
 
 ```
@@ -91,7 +91,7 @@ Windows Registry Editor Version 5.00
 
 
 
-#####2）如下的代码是删除上面添加这些注册表键值。</p>
+##2）如下的代码是删除上面添加这些注册表键值。</p>
 
 ```
 Windows Registry Editor Version 5.00
@@ -113,7 +113,7 @@ Windows Registry Editor Version 5.00
 
 
 
-#####3）简单说明
+##3）简单说明
 
 <p>其实就是把当前的文件或者文件夹作为参数（%1）传给你需要的应用。各个应用的命令行参数可以自己去查帮助。比如我的7zip使用的是压缩命令，命令行参数就是</p>
 
@@ -166,7 +166,7 @@ echo %~dp1 | clip
 |%~z1|将 %1 扩充到文件的大小|
 
 
-### 3. 效果
+# 3. 效果
 
 
 
