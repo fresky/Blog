@@ -58,7 +58,7 @@ class Program
 
 那么`private`到底是什么意思呢？
 
-**`private`表示这个方法不能被这个类之外通过查名字的方式看到，也就是说，`private`只是作为名字查找(name resolution)的输入，而不是一个成员能否被调用的限制**
+**`private`表示这个方法不能被这个类之外通过查名字的方式看到，也就是说，`private`只是作为名字查找(name resolution)的输入，而不是一个成员能否被调用的限制。**
 
 
 
