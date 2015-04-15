@@ -1,7 +1,7 @@
 title: 如何调试msbuild？
 date: 2015-04-15 23:34:28
 categories:
-tags: CSharp
+tags: Debug
 description: 本文介绍了如何调试msbuild，以及如何让msbuild编译solution文件sln。
 ---
 有没有想过调试`msbuild`呢？可以参考[Debugging MSBuild script with Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2010/07/06/debugging-msbuild-script-with-visual-studio.aspx)，[part2](http://blogs.msdn.com/b/visualstudio/archive/2010/07/09/debugging-msbuild-script-with-visual-studio-2.aspx)，[part3](http://blogs.msdn.com/b/visualstudio/archive/2010/07/09/debugging-msbuild-script-with-visual-studio-3.aspx)。
