@@ -33,7 +33,8 @@ tags: [Tool, Resource]
 
 ### Git ###
 - [Bonobog Git Server for Windows](http://bonobogitserver.com/)  
-- [GitLab](https://www.gitlab.com/)，[在windows安装GitLab](/2013/07/16/how-to-install-gitlab-in-windows-github-open-source-alternative/)
+- [GitLab](https://www.gitlab.com/)，[在windows安装GitLab](/2013/07/16/how-to-install-gitlab-in-windows-github-open-source-alternative/)  
+- [Gogs - Go Git Service](https://github.com/gogits/gogs)  
 
 ##学习##
 - 优化学习过程的闪卡工具：[Mnemosyne](http://mnemosyne-proj.org/)
