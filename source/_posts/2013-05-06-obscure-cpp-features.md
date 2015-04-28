@@ -5,7 +5,14 @@ date: 2013-05-06
 comments: true
 tags: CPP
 ---
-<p><a href="http://madebyevan.com/obscure-cpp-features/">Obscure C++ Features - Made by Evan</a>列举了几个C++的晦涩特性，挺有意思的，下面简单列几个：</p>  <h3>[]是啥意思</h3>  <p><code>ptr[3]只是 <code>*(ptr + 3) 的简写，所以也就是 <code>*(3 + ptr)，所以它和 <code>3[ptr] 是一样的。</code></code></code></code></p>  <h3><code><code><code><code>运算符重载</code></code></code></code></h3>  <p><code><code><code><code>运算符重载可以做很多奇怪的事情，比如可以通过运算符重载实现python style的print。如下：</code></code></code></code></p>  
+[Obscure C++ Features - Made by Evan](http://madebyevan.com/obscure-cpp-features/)列举了几个C++的晦涩特性，挺有意思的，下面简单列几个：
+
+#[]是啥意思
+
+`ptr[3]`只是`(ptr + 3)`的简写，所以也就是`*(3 + ptr)`，所以它和`3[ptr]`是一样的。
+
+#运算符重载
+运算符重载可以做很多奇怪的事情，比如可以通过运算符重载实现python style的`print`。如下：
 
 ```cpp
 namespace __hidden__ {
@@ -37,13 +44,9 @@ int main() {
 }
 ```
 
-<h3><code><code><code><code>函数的try</code></code></code></code></h3>
+#函数的try
 
-<p>可以在函数名称后面加上try，对应整个函数体。例如下面的代码。</p>
-
-<p><code><code><code><code></code></code></code></code></p>
-
-
+可以在函数名称后面加上`try`，对应整个函数体。例如下面的代码。
 
 ```cpp
 int f() { throw 0; }
