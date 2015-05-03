@@ -74,6 +74,7 @@ tags: [Tool, Resource]
 - [Explain Shell](http://explainshell.com/)
 
 ##在线学习##
+- [Awesome list of C++ resources](https://cpp.zeef.com/faraz.fallahi)  
 - [edx](https://www.edx.org/)
 - [Udacity](https://www.udacity.com/)
 - [Coursera](https://www.coursera.org/)
