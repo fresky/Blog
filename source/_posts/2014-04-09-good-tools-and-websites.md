@@ -75,6 +75,7 @@ tags: [Tool, Resource]
 
 ##在线学习##
 - [Awesome list of C++ resources](https://cpp.zeef.com/faraz.fallahi)  
+- [exercism](http://exercism.io)  
 - [edx](https://www.edx.org/)
 - [Udacity](https://www.udacity.com/)
 - [Coursera](https://www.coursera.org/)
