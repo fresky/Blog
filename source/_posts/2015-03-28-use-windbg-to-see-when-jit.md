@@ -156,7 +156,7 @@ ChildEBP RetAddr  Caller, Callee
 
 
 另外，提高系统启动性能通常的做法有
-1. [Ngen.exe (Native Image Generator)](https://msdn.microsoft.com/en-us/library/6t9t5wcf%28v=vs.110%29.aspx)，参见我的博文[使用MPGO和NGEN来优化C#桌面程序的启动性能](/2012/12/18/using-mpgo-and-ngen-to-optimize-csharp-app-starting-performance/)。
+1. [Ngen.exe (Native Image Generator)](https://msdn.microsoft.com/en-us/library/6t9t5wcf.aspx)，参见我的博文[使用MPGO和NGEN来优化C#桌面程序的启动性能](/2012/12/18/using-mpgo-and-ngen-to-optimize-csharp-app-starting-performance/)。
 
 2. 强制JIT，下面是一段示例代码来通过[RuntimeHelpers.PrepareMethod](http://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.runtimehelpers.preparemethod(v=vs.110).aspx)API强制JIT。
 
