@@ -1,7 +1,7 @@
-title: use procdump to detect hung window
+title: 使用ProcDump在程序没有响应时自动收集dump
 date: 2015-06-03 17:39:05
 categories:
-tags:
+tags: Debug
 description:
 ---
 我在[如何生成Dump文件](/2015/03/16/how-to-capture-dump-file/)中提到过可以使用[ProcDump](https://technet.microsoft.com/en-us/sysinternals/dd996900.aspx)根据CPU使用情况，异常情况，程序是否没有反应，性能计数等来收集dump。
