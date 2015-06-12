@@ -25,7 +25,7 @@ warning CS1685: The predefined type 'System.Func' is defined in multiple assembl
 
 这个原因是因为Moq35的版本中自带了一个`System.Func`的定义，如下图所示。但是这个在.NET4以上的版本中已经定义过了。
 
-{% limg moq35.jpg %}
+{% limg moq35.png %}
 
 我们忽略这个警告，在运行测试时如果用的是Moq35，那么没有问题，可以通过。但是如果运行时使用的是Moq40，就会遇到这样的错误。这是因为在Moq40的dll里并没有包含`System.Func`的定义。
 
