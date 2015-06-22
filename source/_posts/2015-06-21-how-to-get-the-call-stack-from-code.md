@@ -8,7 +8,7 @@ description: 本文介绍如何在C++和C#代码中得到当前的栈回溯信�
 
 假设我们不用gflags的这个设置，自己在代码中得到栈回溯信息，怎么做呢？
 
-# C\#
+# C&#35;
 
 C#实现这个功能很简单，直接使用[System.Diagnostics.StackTrace](https://msdn.microsoft.com/en-us/library/system.diagnostics.stacktrace%28v=vs.110%29.aspx)就行了，唯一要注意的是在创建`StackTrace`时传`true`作为参数。示例代码如下：
 
