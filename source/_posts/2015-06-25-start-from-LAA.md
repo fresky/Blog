@@ -76,6 +76,7 @@ PAE只适用于32位Windows。
 ##给C++程序设置LAA（LARGE ADDRESS AWARE）
 在程序的链接选项中制定**Enalbe Large Addresses**，如下图所示。
 {% limg LAA4CPP.png %}
+
 ##给C#程序设置LAA（LARGE ADDRESS AWARE）
 用`editbin`命令。
 ```
