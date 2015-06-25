@@ -153,7 +153,7 @@ FILE HEADER VALUES
 当然我们也可以用代码来打开应用程序检查。下面是C#的示例代码。
 
 ```c#
-static bool IsLargeAware(string file)
+static bool isLargeAware(string file)
 {
 	const int DOS_MZ_HEADER = 0x5A4D;
 	const int PE_HEADER_OFFSET = 0x3C;
@@ -163,19 +163,21 @@ static bool IsLargeAware(string file)
 
 	using (var fileStream = File.OpenRead(file))
 	{
-		var binaryReader = new BinaryReader(fileStream);
-		if (binaryReader.ReadInt16() != DOS_MZ_HEADER)
-			return false;
-		
-		binaryReader.BaseStream.Position = PE_HEADER_OFFSET;
-		var peLocation = binaryReader.ReadInt32(); 
+		using (var binaryReader = new BinaryReader(fileStream))
+		{
+			if (binaryReader.ReadInt16() != DOS_MZ_HEADER)
+				return false;
 
-		binaryReader.BaseStream.Position = peLocation;
-		if (binaryReader.ReadInt32() != NT_HEADER) 
-			return false;
+			binaryReader.BaseStream.Position = PE_HEADER_OFFSET;
+			var peLocation = binaryReader.ReadInt32();
 
-		binaryReader.BaseStream.Position += CHARACTERISTICS_OFFSET;
-		return (binaryReader.ReadInt16() & IMAGE_FILE_LARGE_ADDRESS_AWARE) == IMAGE_FILE_LARGE_ADDRESS_AWARE;
+			binaryReader.BaseStream.Position = peLocation;
+			if (binaryReader.ReadInt32() != NT_HEADER)
+				return false;
+
+			binaryReader.BaseStream.Position += CHARACTERISTICS_OFFSET;
+			return (binaryReader.ReadInt16() & IMAGE_FILE_LARGE_ADDRESS_AWARE) != 0;
+		}
 	}
 }
 ```
