@@ -45,7 +45,7 @@ foreach (DictionaryEntry envVar in Environment.GetEnvironmentVariables())
 }
 ```
 #`ManagementClass`
-[`ManagementClass`](https://msdn.microsoft.com/en-us/library/system.management.managementclass%28v=vs.110%29.aspx)可以告诉我们关于逻辑磁盘和CPU的更详细的信息。示例代码如下：
+[`ManagementClass`](https://msdn.microsoft.com/en-us/library/system.management.managementclass%28v=vs.110%29.aspx)可以告诉我们关于逻辑磁盘和CPU的更详细的信息，需要添加reference到`System.Management`。示例代码如下：
 
 ```
 private static void Main(string[] args)
