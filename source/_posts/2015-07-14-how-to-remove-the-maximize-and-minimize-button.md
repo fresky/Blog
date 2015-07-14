@@ -42,12 +42,14 @@ LONG_PTR WINAPI SetWindowLongPtr(
   _In_ LONG_PTR dwNewLong
 );
 ```
-第一个参数是窗口句柄。第二个参数是offset，当它的值是`GWL_STYLE`（-16）时，可以设置窗口风格。第三个参数是要设置的值，比如针对`GWL_STYLE`的可能取值参见[Window Styles](https://msdn.microsoft.com/en-us/library/windows/desktop/ms632600%28v=vs.85%29.aspx)。里面就有最大化（`WS_MAXIMIZEBOX=0x00010000L`和最小化按钮`WS_MINIMIZEBOX=0x00020000L`。所以我们可以通过设置这两个值去掉最大化和最小化按钮。
+第一个参数是窗口句柄。第二个参数是offset，当它的值是`GWL_STYLE`（-16）时，可以设置窗口风格。第三个参数是要设置的值，比如针对`GWL_STYLE`的可能取值参见[Window Styles](https://msdn.microsoft.com/en-us/library/windows/desktop/ms632600%28v=vs.85%29.aspx)。里面就有最大化（`WS_MAXIMIZEBOX=0x00010000L`）和最小化按钮（`WS_MINIMIZEBOX=0x00020000L`）。所以我们可以通过设置这两个值去掉最大化和最小化按钮。
 
 在调用[SetWindowLongPtr](https://msdn.microsoft.com/en-us/library/windows/desktop/ms644898%28v=vs.85%29.aspx)之前要调用[GetWindowLongPtr](https://msdn.microsoft.com/en-us/library/windows/desktop/ms633585%28v=vs.85%29.aspx)来获取当前Window的信息，确保我们只是把最大化和最小化按钮去了。
 
 在调用[SetWindowLongPtr](https://msdn.microsoft.com/en-us/library/windows/desktop/ms644898%28v=vs.85%29.aspx)之前要调用[SetWindowPos](https://msdn.microsoft.com/en-us/library/windows/desktop/ms633545%28v=vs.85%29.aspx)以确保我们的设置生效了。
-[SetWindowLongPtr](https://msdn.microsoft.com/en-us/library/windows/desktop/ms644898%28v=vs.85%29.aspx)和[GetWindowLongPtr](https://msdn.microsoft.com/en-us/library/windows/desktop/ms633585%28v=vs.85%29.aspx)都是**针对64位程序**的。尽管MSDN上写的是这两个对32位也有效，但是其实如果直接`DllImport`这两个API使用时会报`EntryPointNotFoundException`。所以我们要根据当前应用程序是32位还是64位使用不同的`DllImport`API。
+[SetWindowLongPtr](https://msdn.microsoft.com/en-us/library/windows/desktop/ms644898%28v=vs.85%29.aspx)和[GetWindowLongPtr](https://msdn.microsoft.com/en-us/library/windows/desktop/ms633585%28v=vs.85%29.aspx)都是**针对64位程序**的。
+
+尽管MSDN上写的是这两个对32位也有效，但是其实如果直接`DllImport`这两个API使用时会报`EntryPointNotFoundException`。所以我们要根据当前应用程序是32位还是64位使用不同的`DllImport`API。**32位**下需要用[GetWindowLong](https://msdn.microsoft.com/en-us/library/windows/desktop/ms633584%28v=vs.85%29.aspx)和[SetWindowLong](https://msdn.microsoft.com/en-us/library/windows/desktop/ms633591%28v=vs.85%29.aspx)。
 
 下面的代码对WinForm和WPF都有效：
 ```c#
