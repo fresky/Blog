@@ -36,9 +36,9 @@ Console.WriteLine(d);
 
 就是说关于2位数字的年份转换，需要参考`Calendar.TwoDigitYearMax`，它是两位数字年份转换的最大值。那这个默认是2029是怎么来的呢？在[Calendar.TwoDigitYearMax](https://msdn.microsoft.com/en-us/library/system.globalization.calendar.twodigityearmax%28v=vs.110%29.aspx)有如下的描述：
 
-> 	The initial value of this property is derived from the settings in the regional and language options portion of Control Panel. However, that information can change during the life of the AppDomain. The Calendar class does not detect changes in the system settings automatically. If the calendar is not supported in the regional and language options, the initial value of this property is the default value defined by the Calendar class.
+> The initial value of this property is derived from the settings in the regional and language options portion of Control Panel. However, that information can change during the life of the AppDomain. The Calendar class does not detect changes in the system settings automatically. If the calendar is not supported in the regional and language options, the initial value of this property is the default value defined by the Calendar class.
 
 打开我的控制面板，发现了如下的设置。
 
-{% limg 2digityear %}
+{% limg 2digityear.png %}
 
