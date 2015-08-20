@@ -4,7 +4,7 @@ categories:
 tags: CSharp
 description:
 ---
-之前的博客[C++如何拿到一个窗口的标题](http://fresky.github.io/2015/08/19/how-to-get-the-window-title/)介绍了如何用Windows的GetWindowText函数来获取窗口的标题，Windows是如何实现这个方法的，同时介绍了在使用GetWindowText时可能遇到的一些问题。下面我们来看看在C#中是怎么拿窗口标题的。
+之前的博客[C++如何拿到一个窗口的标题](/2015/08/19/how-to-get-the-window-title/)介绍了如何用Windows的GetWindowText函数来获取窗口的标题，Windows是如何实现这个方法的，同时介绍了在使用GetWindowText时可能遇到的一些问题。下面我们来看看在C#中是怎么拿窗口标题的。
 
 C#的[Process.MainWindowTitle](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.mainwindowtitle%28v=vs.110%29.aspx)可以获取进程主窗口的标题，如果进程没有UI，那么返回空字符串。如果进程刚启动，可以调用`WaitForInputIdle`来等待进程初始化完成。下面的程序代码可以遍历所有进程，打印主窗口标题。
 
