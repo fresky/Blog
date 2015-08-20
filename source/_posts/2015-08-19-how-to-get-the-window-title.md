@@ -129,8 +129,6 @@ bp user32!NtUserMessageCall
 
 就是说在一个循环中调用`GetWindow`有可能会进入一个死循环。或者`GetWindow`有可能会返回一个已经被析构掉的一个窗口。
 
-进入死循环当然是我们不希望看到的。那么返回一个已经被析构掉的窗口呢？如果我们给一个已经被析构掉的窗口发`WM_GETTEXT`消息会怎么样呢？当然是没有响应，我们调用`GetWindowText`的程序就会被刮起了！！！
-
 # 如何绕过这些坑
 
 1. 遍历窗口要使用[EnumWindows](https://msdn.microsoft.com/en-gb/library/windows/desktop/ms633497.aspx)或者[EnumChildWindows](https://msdn.microsoft.com/en-gb/library/windows/desktop/ms633494.aspx)。  
