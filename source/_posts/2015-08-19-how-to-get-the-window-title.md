@@ -1,4 +1,4 @@
-title: C++或者C#中如何拿到一个窗口的标题
+title: C++如何拿到一个窗口的标题
 date: 2015-08-19 18:38:17
 categories:
 tags: [CPP, Debug]
