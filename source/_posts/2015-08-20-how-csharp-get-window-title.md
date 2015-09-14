@@ -132,6 +132,6 @@ internal class MainWindowFinder {
 1. 根据窗口有没有GW_OWNER并且可见来判断是不是主窗口。  
 1. 根据主窗口句柄使用`GetWindowText`方法得到窗口的标题。
 
-跟我在博文中[C++如何拿到一个窗口的标题](http://fresky.github.io/2015/08/19/how-to-get-the-window-title/)推荐的C++的使用方式一样。
+跟我在博文中[C++如何拿到一个窗口的标题](/2015/08/19/how-to-get-the-window-title/)推荐的C++的使用方式一样。
 
 如果在C#中想得到非主窗口的标题，可以用p/invoke来直接调用`EnumWindows`和`GetWindowText`。
