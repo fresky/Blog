@@ -31,7 +31,21 @@ function root_for(path){
 						<li><a href="<%- root_for(theme.menu[i]) %>"><%= i %></a></li>
 					<% } %>
 					<li>
- 					<% if	(theme.google_cse.enable){ %>
+ 					<% if	(theme.Swiftype.enable){ %>
+					<form class="search" >
+						<input type="search" id="st-search-input" placeholder="<%= __('search') %>" />
+					</form>
+					<script type="text/javascript">
+					var Swiftype = window.Swiftype || {};
+						(function() {
+							Swiftype.key = 'kh-hxC3krCFFsasryDzy';
+							var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+							script.src = "//s.swiftypecdn.com/embed.js";
+							var entry = document.getElementsByTagName('script')[0];
+							entry.parentNode.insertBefore(script, entry);
+						}());
+					</script>
+					<% } else if	(theme.google_cse.enable){ %>
 					<form class="search" action="<%- config.root %>search/index.html" method="get" accept-charset="utf-8">
 						<label>Search</label>
 						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="<%= __('search') %>" />
