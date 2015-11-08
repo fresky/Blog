@@ -13,7 +13,7 @@ Github推出了一个类似于[Sublime](http://www.sublimetext.com/)的编辑器
 我总结了一些常用到的Atom的快捷键，列在这里，供大家参考。可以从[这里](https://raw.github.com/fresky/fresky.github.io/source/images/Atom_Cheat_Sheet.pdf)下载pdf版本。
 
 ------------------------------------
-#General
+# General
 Command  |     Description
 ------------- |-------------
 Ctrl + Shift + p|    Toggle command palette
@@ -21,7 +21,7 @@ Ctrl + ,|    Setting
 
 ------------------------------------
 
-#View
+# View
 Command  | Description
 ------------- | -------------
 Ctrl + \|    Toggle tree view and side bar
@@ -31,7 +31,7 @@ Ctrl + Shift + m|    Toggle markdown preview
 
 ------------------------------------
 
-#Navigation
+# Navigation
 Command  | Description
 ------------- | -------------
 Ctrl + f|    Find in file
@@ -48,7 +48,7 @@ Ctrl + Alt + Shift + ]|    Unfold all
 
 ------------------------------------
 
-#File
+# File
 Command  |     Description
 ------------- |     -------------
 Ctrl + t (Ctrl + p)|    Open file in current project
@@ -58,7 +58,7 @@ Ctrl + k, Ctrl + left/right/up/down|    Focus pane left/right/up/down
 
 ------------------------------------
 
-#Edit
+# Edit
 Command  |     Description
 ------------- |     -------------
 Ctrl + Space|    Show available auto-completions

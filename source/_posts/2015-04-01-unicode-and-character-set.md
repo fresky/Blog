@@ -6,35 +6,35 @@ description:
 ---
 今天又读了一遍Joel Spolsky的[The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)](http://www.joelonsoftware.com/articles/Unicode.html)，记一下笔记吧。
 
-#ASCII字符集
+# ASCII字符集
 ASCII字符集由95个可打印字符（0×20-0x7E）和33个控制字符（0×00-0×19，0x7F）组成。
 
-#OEM字符集
+# OEM字符集
 一个字节是8位，如果用一个字节来表示ASCII字符集，那么多余的128个数字可以用来表示别的字符，所以128-255被称为OEM字符集，各种乱用，导致两台机器之间可能不能交流文档。
 
 另外亚洲语言有上千个字符，根本不可能放进一个字节。通常通过双字节DBCS（Double Byte Character Set）来解决，有的字符用一个字节表示，有的用两个字节表示。
 
-#ANSI标准
+# ANSI标准
 为了标准化，有了ANSI标准，128以上怎么使用取决于代码页（Code Page），从[Code Page](http://en.wikipedia.org/wiki/Code_page)可以查到各种语言的code page，比如中文就是936。
 
-#Unicode
+# Unicode
 
 Unicode可以表示人类使用的所有字符，每个字符都由一个字符码（code point）来表示，在windows上可以用charmap这个小工具来看。
 
-#编码
+# 编码
 
-##UCS-2/UTF-16
+## UCS-2/UTF-16
 如果我们用2个字节来表示Unicode，那么叫做UCS-2或者UTF-16（其实它是变长的，也可以是4个字节）。
 
 为了区分大小端，引入了Unicode Byte Order Mark (BOM)，在Unicode字符串的开头加上FEFF。参见[Byte order mark](http://en.wikipedia.org/wiki/Byte_order_mark)
 
-##UTF-8
+## UTF-8
 因为英语文本中会引入很多00，所以就发明了UTF-8，0-127都还是用一个字节表示，所以英文在UTF-8和ASSCII，包括ANSI，OEM字符集的编码下看起来是一样的，而且还和以0作为字符串结尾兼容。
 
-##UTF-7
+## UTF-7
 UTF-7和UTF-8类似，但是保证最高位永远是0。
 
-##UCS-4
+## UCS-4
 UCS-4用4个字节表示，好处是任何字符的编码长度都是一样的。
 
 

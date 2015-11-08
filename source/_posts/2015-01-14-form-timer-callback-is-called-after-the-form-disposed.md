@@ -7,7 +7,7 @@ description: Form的Timer在Form Dispose时一定要Dispose，而且不能假设
 
 之前在我的博客[谁动了我的timer？C#的垃圾回收和调试](/2013/06/20/where-is-my-timer-csharp-gc/)中举了一个使用`Threading.Timer`局部变量导致可能被垃圾回收，从而它对应的event handler不能被调用的问题。今天再分享一个Form已经被Dispose了，但是它的`Form.Timer`的event handler还是被调到的问题。C#中各种`Timer`的区别，可以参见博客[C#中5种timer的比较](/2013/07/09/compare-of-5-timers-in-csharp/)。
 
-#首先应该在Form被Dispose时也Dispose它的Timer
+# 首先应该在Form被Dispose时也Dispose它的Timer
 如果是通过Designer拽进来的，那么它在创建时会写成：
 ```csharp
 this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -19,7 +19,7 @@ this.timer1 = new System.Windows.Forms.Timer();
 ```
 那在Form关闭Dispose时，Timer并不会被自动的Dispose，这样就会导致Timer的event handler还能被调到。
 
-#其次，就算Despose了，也不能保证它的event handler不会被调到
+# 其次，就算Despose了，也不能保证它的event handler不会被调到
 
 在我遇到的这个问题里，可以看到Form已经被Dispose了，这个可以通过windbg的`!do`命令来看Form的成员变量`state`，我的dump里`!do`的部分结果如下：
 

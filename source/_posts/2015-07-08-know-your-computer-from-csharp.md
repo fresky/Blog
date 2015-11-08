@@ -5,7 +5,7 @@ tags: CSharp
 description: 本文介绍了如何用C#通过Environment和ManagementClass来查看操作系统，环境变量，CPU情况，硬盘情况等。
 ---
 C#中有几个API可以很方便的查看电脑硬件和系统信息。
-#`Environment`
+# `Environment`
 下面的示例程序展示了从中[`Environment`](https://msdn.microsoft.com/en-us/library/System.Environment%28v=vs.110%29.aspx)我们能拿到哪些东西。比如  
 1. `OSVersion`告诉我们操作系统的版本号。  
 1. `GetLogicalDrives`可以告诉我们现在都有哪些盘符了。  
@@ -44,7 +44,7 @@ foreach (DictionaryEntry envVar in Environment.GetEnvironmentVariables())
    Console.WriteLine("{0} : {1}", envVar.Key, envVar.Value);
 }
 ```
-#`ManagementClass`
+# `ManagementClass`
 [`ManagementClass`](https://msdn.microsoft.com/en-us/library/system.management.managementclass%28v=vs.110%29.aspx)可以告诉我们关于逻辑磁盘和CPU的更详细的信息，需要添加reference到`System.Management`。示例代码如下：
 
 ```

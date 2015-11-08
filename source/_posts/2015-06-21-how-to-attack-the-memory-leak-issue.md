@@ -6,7 +6,7 @@ description: 内存泄漏（memory leak）是软件中经常遇到的一类问�
 ---
 内存泄漏（memory leak）是软件中经常遇到的一类问题，这类问题又是比较难以检测的，通常我们在程序遇到`Out Of Memory`的异常时才会注意到。拿到`Out Of Memory`的dump文件后，如何分析dump文件找到内存泄漏的线索又是一个难点。这篇文章分享了一些在Windows平台如何调试，检测C++和C#的内存泄漏的一些经验。
 
-#一、内存泄漏的Dump分析
+# 一、内存泄漏的Dump分析
 通常拿到`Out Of Memory`的dump之后，用windbg打开，抛出异常的call stack一般是在分配内存时，这个call stack其实意义不大，我们需要知道的是内存为什么被用完了。
 
 一般第一个要运行的命令是`!address -summary`，它会给出一个内存情况的总结，如下所示。
@@ -62,7 +62,7 @@ PEB                                         7efde000              1000 (   4.000
 
 最后一个部分是最大连续内存，比如上图中我们可以看到现在最大的连续可用内存只有500k了。
 
-##非托管（C++）内存泄漏分析
+## 非托管（C++）内存泄漏分析
 如果`!address -summary`的输出中发现`Heap`被用掉了很多，那很有可能有C++的内存泄漏，我们需要检查堆（heap）来找到可疑的对象。
 
 1.通过`!heap -s`来看堆的使用情况，会把堆按照大小列出来，如下所示：
@@ -98,7 +98,7 @@ group-by: TOTSIZE max-display: 20
 6.用命令`!heap -srch vtableaddress`来找到所有的对象。  
 7.用命令`dt modulename!classname objectaddress`来看对象的内容是什么，接着就能分析出为什么这些对象有这么多。  
 
-##托管（C#）内存泄漏分析
+## 托管（C#）内存泄漏分析
 如果`!address -summary`的输出中发现`<unkown>`被用掉了很多，那很有可能有C#的内存泄漏，调试相对简单。
 
 1.运行`loadby sos mscorwks`（.net4之前）或者`loadby sos clr`（.net4及以后）来加载SOS扩展。  
@@ -115,32 +115,32 @@ Statistics:
 4.运行`!do <address>`来看这个对象的内容是什么。  
 5.运行`!gcroot <address>`来看这些对象是被谁引用的，这样多半就能找到发生内存泄漏的原因了。  
 
-##GDI句柄超过限制
+## GDI句柄超过限制
 还有一种发生`Out Of Memory`异常的情况是GDI句柄超过限制了，可以看到dump中crash的call stack中是有关句柄操作的。默认情况下Windows的每个进程的GDI句柄额度是10000，可以通过注册表`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Windows\GDIProcessHandleQuota`来修改这个值。
 
 这种情况相对比较好处理，windows上的[GDI对象](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724291%28v=vs.85%29.aspx)就这些：Bitmap，Brush，DC，Enhanced metafile，Enhanced-metafile DC，Font，Memory DC，Metafile，Metafile DC，Palette，Pen and extended pen，Region。
 
-#二、内存泄漏的实时调试
+# 二、内存泄漏的实时调试
 如果可以非常容易重现的话，可以实时调试内存泄漏，这样就会容易很多了。
 
-##非托管内存泄漏检测
-###使用VLD来检测内存泄漏。
+## 非托管内存泄漏检测
+### 使用VLD来检测内存泄漏。
 [VLD](https://vld.codeplex.com/)是一个VC++的开源内存泄漏检测工具，非常易于使用。在调试器中运行程序，会在结束时生成一个内存泄漏的报告，包含内存分配的call stack。
-###打开“Create user mode stack trace database”，分析dump
+### 打开“Create user mode stack trace database”，分析dump
 可以用gflags打开“Create user mode stack trace database”，如下所示，这样就会记录下来每个对象创建的call stack，可以就可以很容易的查到泄漏对象是怎么创建出来的了。
 {% limg gflags_stack.png %}
 
-####使用Windbg的`!heap -l`命令。
+#### 使用Windbg的`!heap -l`命令。
 1. 收集dump，用Windbg打开，然后运行命令`.logopen d:\leak.txt`打开log。  
 1. 运行`!heap -l`命令，会把所有泄漏的对象列出来，附带创建的call stack。可以很容易的写个程序来分析这个输出，合并重复的对象，计算总大小。  
 
-####使用Windbg的`!heap -p -a <address>`命令
+#### 使用Windbg的`!heap -p -a <address>`命令
 按照上面提到的非托管（C++）内存泄漏分析方法来分析dump，最后找到可以的对象时可以直接运行`!heap -p -a <address>`命令来看到这个地址的对象的创建call stack。
 
-####使用UMDH
+#### 使用UMDH
 [UMDH](https://msdn.microsoft.com/en-us/library/ff558947%28v=vs.85%29.aspx)是Windows Debugging Tools里的，和Windbg在同一个目录里，可以用UMDH收集多个内存的log，然后比较，找出泄漏的对象。
 
-##托管（C#）内存泄漏检测
+## 托管（C#）内存泄漏检测
 
 Visual Studio 2013加入了[调试托管内存](https://msdn.microsoft.com/en-us/library/dn342825.aspx)的功能，在打开dump文件后可以选择"Debug Managed Memory"，可以看到托管对象的大小，数目，root等信息。
 
@@ -152,5 +152,5 @@ Visual Studio 2013加入了[调试托管内存](https://msdn.microsoft.com/en-us
 
 ![Compare Managed Memory](https://i-msdn.sec.s-msft.com/dynimg/IC720152.png)
 
-##GDI句柄监测
+## GDI句柄监测
 [GDIView](http://www.nirsoft.net/utils/gdi_handles.html)是一个免费的小工具，可以监测GDI使用情况。

@@ -10,7 +10,7 @@ description: 本文介绍了如果用windbg的搜索内存的命令s [-[[Flags]T
 
 如果是C++的异常，就没有这么直接了，那怎么能找到C++的Inner Exception呢？
 
-#Windows的CONTEXT定义
+# Windows的CONTEXT定义
 有一个小技巧可以很方便的找到异常。这个技巧基于操作系统的一个特性。当Windows操作系统抛出异常时，它会把抛出异常的[上下文（CONTEXT）](https://msdn.microsoft.com/en-us/library/windows/desktop/ms679284%28v=vs.85%29.aspx)放进栈里面。所以只要我们能够找到这个CONTEXT，我们就能找到异常的调用栈（call stack）了。
 
 这个CONTEXT的定义可以在`winnt.h`中找到，我们也可以直接在Windbg中看看。
@@ -68,7 +68,7 @@ ntdll!_CONTEXT
 #define CONTEXT_XSTATE          (CONTEXT_i386 | 0x00000040L)
 ```
 
-#在栈上搜索`0x1003f`来找CONTEXT
+# 在栈上搜索`0x1003f`来找CONTEXT
 Windbg有一个`s`的命令用来搜索内存，它的格式为`s [-[[Flags]Type]] Range Pattern`。通过CONTEXT的定义我们知道了Pattern就是`CONTEXT_ALL`（也就是`0x1003f`），那怎么给出当前栈的Range呢。
 
 Windbg中可以用`!teb`来看线程环境块（Thread Environment Block），输出如下。里面包含栈的开始StackBase和结束地址StackLimit。
@@ -110,7 +110,7 @@ s -d poi(@$teb+0x8)  poi(@$teb+0x4) 0x1003f
 kbn
 ```
 
-#在栈上搜索`@gs @fs @es @ds`寄存器来找CONTEXT
+# 在栈上搜索`@gs @fs @es @ds`寄存器来找CONTEXT
 但是有时候`ContextFlags`不是`CONTEXT_ALL`（也就是`0x1003f`）。我就遇到过是`CONTEXT_XSTATE`（也就是`0x1007f`）的情况，所以假如你用上面的搜索命令没有找到任何输出，试试下面这个。
 ```
 s -d poi(@$teb+0x8)  poi(@$teb+0x4) 0x1007f
@@ -129,7 +129,7 @@ s -d poi(@$teb+0x8)  poi(@$teb+0x4) 0x1007f
 s -d poi(@$teb+0x8) poi(@$teb+0x4) @gs @fs @es @ds
 ```
 
-#用`.foreach`让这个过程自动化
+# 用`.foreach`让这个过程自动化
 
 也可以结合`.foreach`命令，自动对每一个搜索到的CONTEXT地址运行`.cxr`和`kbn`的命令，如下所示：
 

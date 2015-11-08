@@ -6,12 +6,12 @@ comments: true
 tags: [Github]
 ---
 
-#安装Git环境
+# 安装Git环境
 
 1. 下载[msysgit(git for windows)](https://code.google.com/p/msysgit/downloads/list)，并安装。
 2. 可以选择安装[TortoiseGit](http://code.google.com/p/tortoisegit/)，这个在windows的资源管理器里装了很多git的右键菜单，对git命令行不熟悉的同学用起来很方便。
 
-#安装Ruby环境
+# 安装Ruby环境
 
 
 1. 从[RubyInstaller](http://www.rubyinstaller.org/downloads/)下载RubyInstaller，直接安装。
@@ -35,7 +35,7 @@ gem sources -r https://rubygems.org/
 ``` 
 然后可以`gem sources -l`看看结果。
 
-#安装Octorpress
+# 安装Octorpress
 
  1 . 首先把Octopress的代码拿到本地。
 ```
@@ -72,7 +72,7 @@ author: Dawei XU
 simple_search: http://google.com/search  
 description:
 ```
-#写博客
+# 写博客
 
 博客必须存放在`source/_posts`目录下，并且满足[Jekyll](http://jekyllrb.com/)的命名规范：`YYYY-MM-DD-post-title.markdown`。
     
@@ -94,7 +94,7 @@ tags: [ruby,octopress]
 
 4 . 编辑完之后可以运行`rake preview`来预览自己的博客（本地机器4000端口）。
 
-#发布到Github Pages上
+# 发布到Github Pages上
 
 1 . 在Github上创建一个新的repository，名字叫做`your-username.github.io`。名字一定要符合这个规范。  
 
@@ -109,7 +109,7 @@ Github pages需要有2个分支，一个是`main`，一个是`source`。`main`�
   
 4 . 调用`git push origin source`来把你的博文的markdown也放到github上。
 
-#在另一台机器上发布博文
+# 在另一台机器上发布博文
 
 Octopress的repository有2个分支，一个是`source`，相当于源代码，包含我们写的博文等文件，这些文件会被处理然后用来生成blog。另一个是`main`,包含博客本身。  
 `main`分支存储在`_deploy`的目录下，这个目录以下划线开头，所以在`git push origin source`时会被忽略掉。当运行`rake deploy`时，会提交`master`。
@@ -138,7 +138,7 @@ $ rake setup_github_pages
 
 如果在多台机器上用，需要每次发布前都pull，发布完都push两个分支。
 
-#参考
+# 参考
 1. [Tutorial: Create a Blog With Octopress and Host It in Github Pages](http://miguelcamba.com/blog/2013/04/22/tutorial-create-a-blog-with-octopress-and-host-it-in-github-pages/)  
 1. [Clone Your Octopress to Blog From Two Places](http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/)  
 1. [Windows下搭建Octopress博客](http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html)

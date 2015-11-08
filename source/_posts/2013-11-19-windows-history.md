@@ -11,37 +11,37 @@ tags: [Other, Resource]
 {% limg windowslogos.png %}
 
 
-###1985, Windows 1.0
+### 1985, Windows 1.0
 {% limg windows1.0.png %}
 
-###1987, Windows 2.0
+### 1987, Windows 2.0
 {% limg windows2.0.png %}
 
 
-###1990, Windows 3.0
+### 1990, Windows 3.0
 {% limg Windows3.0.png %}
 
 
-###1995, Windows 95
+### 1995, Windows 95
 {% limg Windows95.png %}
 
 
-###1998, Windows 98
+### 1998, Windows 98
 {% limg Win98.png %}
 
 
-###2000, Windows ME
+### 2000, Windows ME
 {% limg windowsme.gif %}
 
 
-###2001, Windows XP
+### 2001, Windows XP
 {% limg windowsxp.png %}
 
-###2007, Windows Vista
+### 2007, Windows Vista
 {% limg windowsvista.png %}
 
-###2009, Windows 7
+### 2009, Windows 7
 {% limg windows7.jpg %}
 
-###2012, Windows 8
+### 2012, Windows 8
 {% limg windows8.jpg %}

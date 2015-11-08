@@ -7,11 +7,11 @@ tags: CPP
 ---
 [Obscure C++ Features - Made by Evan](http://madebyevan.com/obscure-cpp-features/)列举了几个C++的晦涩特性，挺有意思的，下面简单列几个：
 
-#[]是啥意思
+# []是啥意思
 
 `ptr[3]`只是`(ptr + 3)`的简写，所以也就是`*(3 + ptr)`，所以它和`3[ptr]`是一样的。
 
-#运算符重载
+# 运算符重载
 运算符重载可以做很多奇怪的事情，比如可以通过运算符重载实现python style的`print`。如下：
 
 ```cpp
@@ -44,7 +44,7 @@ int main() {
 }
 ```
 
-#函数的try
+# 函数的try
 
 可以在函数名称后面加上`try`，对应整个函数体。例如下面的代码。
 

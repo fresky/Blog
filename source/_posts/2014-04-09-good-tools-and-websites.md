@@ -7,9 +7,9 @@ tags: [Tool, Resource]
 ---
 打算用这篇博客记录一下平时遇到的好的工具和网站，会随时更新。
 
-#工具#
+# 工具#
 
-##编程##
+## 编程##
 
 ### C# ###
 - 根据C#源代码创建网站静态页面[SourceBrowser](https://github.com/KirillOsenkov/SourceBrowser)  
@@ -37,31 +37,31 @@ tags: [Tool, Resource]
 - [GitLab](https://www.gitlab.com/)，[在windows安装GitLab](/2013/07/16/how-to-install-gitlab-in-windows-github-open-source-alternative/)  
 - [Gogs - Go Git Service](https://github.com/gogits/gogs)  
 
-##学习##
+## 学习##
 - 优化学习过程的闪卡工具：[Mnemosyne](http://mnemosyne-proj.org/)
 
-##书籍##
+## 书籍##
 - [GitBook](http://www.gitbook.io/)，从git/github和markdown生成书籍（支持静态网页、pdf、电子书等格式）的命令行工具（也是一个Node.js库）。
 
-##其它##
+## 其它##
 - 直接把截图复制到硬盘：[Screenshot2Disk](http://screenshot2disk.codeplex.com/)  
 - 资源管理器增强软件，使用后走一下它的那个tutorial，就知道有多强大了。：[Listary](http://www.listary.com/)  
 - 多台电脑共享鼠标键盘：[Synergy](http://synergy-foss.org/)
 - 直接在图片中选取文字[Naptha](http://projectnaptha.com/)  
 
-#网站#
+# 网站#
 
-##工具##
+## 工具##
 
-###在线IDE###
+### 在线IDE###
 [RegExr](http://www.regexr.com/)  
 [IDEOne](http://ideone.com/)  
 [pythonfiddle](pythonfiddle.com)  
 
-###在线编译器###
+### 在线编译器###
 [compileonline](http://compileonline.com/)  
 
-###在线C++编译器###
+### 在线C++编译器###
 
 - [LiveWorkspace](http://liveworkspace.org/) (Clang 3.2, GCC 4.6.3 4.7.2)
 - [gcc.godbolt.org](http://gcc.godbolt.org/) (Clang 3.0, GCC 4.5.3 4.8.0 prerelease, Intel ICC 13.0.1)
@@ -70,11 +70,11 @@ tags: [Tool, Resource]
 - [ideone.com](http://ideone.com/) (GCC 4.3.4 and 4.5.1)
 - [Comeau Test Drive](http://comeaucomputing.com/tryitout/) (EDG 4.3.3)  
 
-###帮助文档###
+### 帮助文档###
 
 - [Explain Shell](http://explainshell.com/)
 
-##在线学习##
+## 在线学习##
 - [Awesome list of C++ resources](https://cpp.zeef.com/faraz.fallahi)  
 - [exercism](http://exercism.io)  
 - [edx](https://www.edx.org/)
@@ -96,7 +96,7 @@ tags: [Tool, Resource]
 - [C++ FAQ](http://isocpp.org/faq)  
 - [CPP Quiz](http://cppquiz.org/)  
 
-##书籍##
+## 书籍##
 - [free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)  
 - [The-Art-Of-Programming-By-July](https://github.com/julycoding/The-Art-Of-Programming-by-July),[程序员编程艺术](http://blog.csdn.net/v_JULY_v/article/details/6460494)  
 - [C/Go/Python学习笔记](https://github.com/qyuhen/book)  
@@ -114,7 +114,7 @@ tags: [Tool, Resource]
 - [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)  
 - [Full Stack Python](http://www.fullstackpython.com/)  
 
-##找工作相关##
+## 找工作相关##
 - [Careercup](http://www.careercup.com/)  
 - [Glassdoor](http://www.glassdoor.com)  
 - [GeekInterview](http://www.geekinterview.com/)  

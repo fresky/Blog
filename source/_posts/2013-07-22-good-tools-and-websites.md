@@ -7,9 +7,9 @@ tags: [Tool, Resource]
 ---
 打算用这篇博客记录一下平时遇到的好的工具和网站，会随时更新。
 
-#工具#
+# 工具#
 
-##编程##
+## 编程##
 
 ### C# ###
 托管代码帮助文件生成：[Sandcastle Help File Builder](http://shfb.codeplex.com/)
@@ -30,20 +30,20 @@ Google的开源html5 解析器：[google/gumbo-parser](https://github.com/google
 [YSlow](http://developer.yahoo.com/yslow/)：网站性能优化工具。
 
 
-##学习##
+## 学习##
 优化学习过程的闪卡工具：[Mnemosyne](http://mnemosyne-proj.org/)
 
-##其它##
+## 其它##
 直接把截图复制到硬盘：[Screenshot2Disk](http://screenshot2disk.codeplex.com/)
 
 资源管理器增强软件，使用后走一下它的那个tutorial，就知道有多强大了。：[Listary](http://www.listary.com/)
 
 多台电脑共享鼠标键盘：[Synergy](http://synergy-foss.org/)
 
-#网站#
+# 网站#
 
-##工具##
-###在线C++编译器###
+## 工具##
+### 在线C++编译器###
 
 - [LiveWorkspace](http://liveworkspace.org/) (Clang 3.2, GCC 4.6.3 4.7.2)
 - [gcc.godbolt.org](http://gcc.godbolt.org/) (Clang 3.0, GCC 4.5.3 4.8.0 prerelease, Intel ICC 13.0.1)
@@ -52,7 +52,7 @@ Google的开源html5 解析器：[google/gumbo-parser](https://github.com/google
 - [ideone.com](http://ideone.com/) (GCC 4.3.4 and 4.5.1)
 - [Comeau Test Drive](http://comeaucomputing.com/tryitout/) (EDG 4.3.3)
 
-##在线学习##
+## 在线学习##
 [Regex Crossword](http://regexcrossword.com/)
 (学习正则表达式的游戏网站，用正则表达式玩Crossword)
 
@@ -70,7 +70,7 @@ Google的开源html5 解析器：[google/gumbo-parser](https://github.com/google
 
 [Github上的免费电子书](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md?utm_campaign=Manong_Weekly_Issue_5&utm_medium=EDM&utm_source=Manong_Weekly#net-c--vb--nemerle--visual-studio)
 
-##找工作相关##
+## 找工作相关##
 [Careercup](http://www.careercup.com/)  
 [Glassdoor](http://www.glassdoor.com)  
 [GeekInterview](http://www.geekinterview.com/)  

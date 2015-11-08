@@ -6,7 +6,7 @@ description: 本文介绍了如何通过SetWindowLongPtr和GetWindowLongPtr、Se
 ---
 有时候我们希望对我们的WinForm或者WPF控件做一些定制，比如去掉最大化和最小化按钮，怎么做呢？
 
-#WinForm
+# WinForm
 WinForm去掉最大化和最小化按钮：
 ```csharp
 MaximizeBox = false;
@@ -20,7 +20,7 @@ WinForm的最大化和最小化按钮和能否改变窗口大小是两个属性�
 FormBorderStyle = FormBorderStyle.FixedSingle;
 ```
 
-#WPF
+# WPF
 WPF没有API可以直接去掉最大化和最小化按钮的，但是我们可以通过`ResizeMode`来曲线救国，如果设置窗口不能改变大小，那么最大化和最小化按钮也就没有了，如下所示：
 ```csharp
 ResizeMode = System.Windows.ResizeMode.NoResize;
@@ -33,7 +33,7 @@ WindowStyle = WindowStyle.None;
 
 这两种方式都不是很好，会有一些副作用，那还有别的办法吗？
 
-#用Windows的API：SetWindowLongPtr
+# 用Windows的API：SetWindowLongPtr
 [SetWindowLongPtr](https://msdn.microsoft.com/en-us/library/windows/desktop/ms644898%28v=vs.85%29.aspx)是Windows的一个API，作用是改变窗口的属性。函数签名如下：
 ```c++
 LONG_PTR WINAPI SetWindowLongPtr(
