@@ -7,7 +7,7 @@ tags: CSharp
 ---
 <p><a href="http://stackoverflow.com/questions/12842712/why-does-the-c-sharp-compiler-not-fault-code-where-a-static-method-calls-an-inst?newsletter=1&amp;nlcode=55866|c739">stackoverflow</a>上有人问为什么下面的代码可以编译成功，但是运行时报错：</p>  
 
-```c#
+```csharp
 public sealed class Example
 {
     int count;

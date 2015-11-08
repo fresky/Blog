@@ -7,7 +7,7 @@ tags: CSharp
 ---
 <p>先来看如下的一段代码：</p>  
 
-```c#
+```csharp
 using System;
 using System.Threading;
 public static class Program
@@ -42,7 +42,7 @@ public static class Program
 
 <p>我们简单的修改一下TimerCallback函数，强制调用一下GC，如下所示：</p>
 
-```c#
+```csharp
     private static void TimerCallback(Object o)
     {
         // Display the date/time when this method got called.
@@ -83,7 +83,7 @@ public static class Program
 <p>那如果要实现我们的初衷，就需要在Console.ReadLine之后还能保持一个对timer的引用，所以我们写了如下的代码：</p>
 
 
-```c#
+```csharp
     public static void Main()
     {
         // Create a Timer object that knows to call our TimerCallback
@@ -102,7 +102,7 @@ public static class Program
 
 <p>所以正确的做法是：</p>
 
-```c#
+```csharp
     public static void Main()
     {
         // Create a Timer object that knows to call our TimerCallback
@@ -121,7 +121,7 @@ public static class Program
 
 <p>这样就可以了。当然，我们也可以直接用using语句：</p>
 
-```c#
+```csharp
     public static void Main()
     {
         // Create a Timer object that knows to call our TimerCallback

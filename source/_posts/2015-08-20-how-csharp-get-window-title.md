@@ -8,7 +8,7 @@ description:
 
 C#的[Process.MainWindowTitle](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.mainwindowtitle%28v=vs.110%29.aspx)可以获取进程主窗口的标题，如果进程没有UI，那么返回空字符串。如果进程刚启动，可以调用`WaitForInputIdle`来等待进程初始化完成。下面的程序代码可以遍历所有进程，打印主窗口标题。
 
-```c#
+```csharp
 static void Main(string[] args)
 {
 	foreach (var p in Process.GetProcesses())
@@ -20,7 +20,7 @@ static void Main(string[] args)
 
 C#是怎么实现的呢？可以看看C#的源代码（`Process.cs`）：
 
-```c#
+```csharp
 public class Process : Component {
 	public string MainWindowTitle {
 		[ResourceExposure(ResourceScope.None)]
@@ -46,7 +46,7 @@ public class Process : Component {
 
 我们看到也是调用了windows的`GetWindowText`方法，那么这个`MainWindowHandle`是怎么来的呢？接着翻代码（`Process.cs`）：
 
-```c#
+```csharp
 public class Process : Component {
 	public IntPtr MainWindowHandle {
 		[ResourceExposure(ResourceScope.Machine)]
@@ -73,7 +73,7 @@ public class Process : Component {
 
 是通过`ProcessManager.GetMainWindowHandle`函数根据`processId`找到的，那再看看`ProcessManager.GetMainWindowHandle`的实现（`ProcessManager.cs`）：
 
-```c#
+```csharp
 internal static class ProcessManager {
 	public static IntPtr GetMainWindowHandle(int processId) {
 		MainWindowFinder finder = new MainWindowFinder();

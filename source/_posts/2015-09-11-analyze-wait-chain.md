@@ -10,7 +10,7 @@ description:
 
 下面是一个简单的示例，假设我们有如下程序：
 
-```c#
+```csharp
 static void Main(string[] args)
 {
 	Console.ReadLine();

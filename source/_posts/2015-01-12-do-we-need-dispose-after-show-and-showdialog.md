@@ -10,7 +10,7 @@ description: 本文解析了Form.Show()和Form.ShowDialog()的区别，简单的
 #问题描述：Form.Show没有Dispose的警告
 先看示例代码吧，很简单，就是在点击一个按钮时弹出一个`Form`。Coverity报错，说这个`Form2`创建之后在出作用域之前没有`Dispose`。
 
-```c#
+```csharp
 private void button1_Click(object sender, EventArgs e)
 {
 	Form2 f = new Form2();
@@ -22,7 +22,7 @@ private void button1_Click(object sender, EventArgs e)
 
 既然没有`Dispose`，那么标准Fix当然是使用`Using`。于是第一个修改就诞生了，如下所示：
 
-```c#
+```csharp
 private void button1_Click(object sender, EventArgs e)
 {
 	using (Form2 f = new Form2())
@@ -40,7 +40,7 @@ private void button1_Click(object sender, EventArgs e)
 
 我觉得这个Coeverity警告是一个False Positive，因为Form调用完Show()之后用户关掉时会调用Dispose，具体可以参见[MSDN](http://msdn.microsoft.com/en-us/library/system.windows.forms.control.show%28v=vs.110%29.aspx)的示例代码。
 
-```c#
+```csharp
 private void menuItemHelpAbout_Click(object sender, EventArgs e)
 {
    // Create and display a modless about dialog box.
@@ -59,7 +59,7 @@ private void menuItemHelpAbout_Click(object sender, EventArgs e)
 #再来看看Form.ShowDialog有没有什么不同
 
 假如我们用的是模态对话框，那么代码是下面这样的：
-```c#
+```csharp
 private void button1_Click(object sender, EventArgs e)
 {
 	Form2 f = new Form2();
@@ -72,7 +72,7 @@ private void button1_Click(object sender, EventArgs e)
 > When a form is displayed as a modal dialog box, clicking the Close button (the button with an X at the upper-right corner of the form) causes the form to be hidden and the DialogResult property to be set to DialogResult.Cancel. **Unlike non-modal forms**, the Close method is not called by the .NET Framework when the user clicks the close form button of a dialog box or sets the value of the DialogResult property. Instead the form is hidden and can be shown again without creating a new instance of the dialog box. Because a form displayed as a dialog box is hidden instead of closed, you **must call the Dispose method** of the form when the form is no longer needed by your application.
 
 MSDN上的示例代码如下：
-```c#
+```csharp
 public void ShowMyDialogBox()
 {
    Form2 testDialog = new Form2();
@@ -92,7 +92,7 @@ public void ShowMyDialogBox()
 ```
 
 所以如果用`ShowDialog`，就需要这样写了：
-```c#
+```csharp
 private void button1_Click(object sender, EventArgs e)
 {
 	using (Form2 f = new Form2())
@@ -107,7 +107,7 @@ private void button1_Click(object sender, EventArgs e)
 虽然`ShowDialog()`不能`Dispose`，但是因为这个Form是个局部变量，出了作用域应该就可以被回收了吧，我们试试看强制调用`GC.Collect()`会怎样。于是我加了个按钮，就是去强制垃圾回收，一切符合预期，这个`Form`确实被`Dispose`掉了。
 
 那回过头来再试试`Show()`，假如我这样写：
-```c#
+```csharp
 private void button1_Click(object sender, EventArgs e)
 {
 	Form2 f = new Form2();
@@ -145,7 +145,7 @@ Found 2 unique roots (run '!GCRoot -all' to see all roots).
 
 那问题又来了，为啥`ShowDialog`可以被垃圾回收呢？翻开C#的源代码，找到`ShowDialog`方法，可以看到最后如下的代码：
 
-```c#
+```csharp
 finally {
 	//...
 	if (IsHandleCreated) {
@@ -158,7 +158,7 @@ finally {
 
 这个会调到`Control`的`OnHandleDestroyed`，然后会注销事件。
 
-```c#
+```csharp
 protected virtual void OnHandleDestroyed(EventArgs e) {
 	//...
 	if (!RecreatingHandle) {

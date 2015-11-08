@@ -6,7 +6,7 @@ description:
 ---
 在C#中我们能调用一个类的私有方法吗？当然我们要排除掉用反射的方式：）直觉应该是不能。那我们来看一段代码吧。下面的代码修改自Eric Lippert的[Interface implementation in C# and VB](http://blog.coverity.com/2013/10/09/interface-implementation/)。
 
-```c#
+```csharp
 public interface MyInterface
 {
 	void Foo();
@@ -32,7 +32,7 @@ class Program
 
 只要我们用接口，就能访问`MyClass`的似有函数`Foo`了。这个稍微有点反直观，那么我们来看一个温和点的例子。
 
-```c#
+```csharp
 class MyClass2
 {
 	public static Action GetPrivateFoo()

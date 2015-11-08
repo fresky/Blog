@@ -16,7 +16,7 @@ description: 使用CLRMD时通过Symbol Server找Dac的位置来初始化ClrRunt
 
 先看输出吧，和在windbg里面用sos扩展敲`!pe`的效果很类似，不过自动把inner exception也打印出来了。
 
-```
+```bash
 ThreadID: 11EC
 Managed ThreadID: 1
 Exception Address: 244A086C
@@ -47,7 +47,7 @@ Press any key to continue . . .
 ```
 
 加载dump的代码：
-```c#
+```csharp
 private static void LoadDump(string file)
 {
 	using (DataTarget dataTarget = DataTarget.LoadCrashDump(file))
@@ -81,7 +81,7 @@ private static void LoadDump(string file)
 ```
 
 打印exception的代码：
-```c#
+```csharp
 private static void PrintException(ClrException ex)
 {
 	Console.WriteLine("Exception Type: {0}", ex.Type.Name);
@@ -113,7 +113,7 @@ private static void PrintException(ClrException ex)
 注意这里有两个try，是因为我发现如果打开的mini dump，在拿Messages和HResult时会出exception。
 
 通过symbol路径寻找Dac的代码如下：（主要是上面提到的那篇文章的代码）
-```c#
+```csharp
 public class DacLocator : IDisposable
 {
 	const int sfImage = 0;

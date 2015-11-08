@@ -11,33 +11,54 @@ menu:
 ## ---
 
 #### Widgets
-widgets:
+widgets: 
 - rss
 - total_posts
 - recent_posts
-- category
+## - category
+## - tagcloud
 - tag
 - stackoverflow
-- weibo
+- github-card
+## - links
+## - weibo
 - douban
-## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo
 
 
-#### RSS
+  ## provide eight widgets:github-card,category,tag,rss,archive,tagcloud,links,weibo
+
+
+
+#### RSS 
 rss: /atom.xml ## RSS address.
 
 #### Image
 imglogo:
   enable: true             ## display image logo true/false.
   src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
-favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.
+favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
 apple_icon: img/jacman.jpg ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
 author_img: img/author.jpg ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
+banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
+### Theme Color 
+theme_color:
+    theme: '#2ca6cb'    ##the defaut theme color is blue
 
-#### index post is expanding or not
+# 代码高亮主题
+# available: default | night
+highlight_theme: night
+
+#### index post is expanding or not 
 index:
   expand: false           ## default is unexpanding,so you can only see the short description of each post.
-  excerpt_link: Read More
+  excerpt_link: Read More  
+
+close_aside: false  #close sidebar in post page if true
+mathjax: false      #enable mathjax if true
+
+### Creative Commons License Support, see http://creativecommons.org/ 
+### you can choose: by , by-nc , by-nc-nd , by-nc-sa , by-nd , by-sa , zero
+creative_commons: none
 
 #### Author information
 author:
@@ -54,7 +75,7 @@ author:
   facebook:   ## e.g. imjark for https://facebook.com/imjark
   linkedin: daweix  ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
   google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
-  stackoverflow:  ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
+  stackoverflow: 304115 ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
 ## if you set them, the corresponding  share button will show on the footer
 
 #### Toc
@@ -66,6 +87,7 @@ toc:
 
 #### Links
 links:
+  # 码农圈: https://coderq.com,一个面向程序员交流分享的新一代社区
   # Jark's Blog: http://wuchong.me
   # Hexo: http://hexo.io
 
@@ -88,8 +110,8 @@ google_analytics:
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
-  enable: false
-  sitecode:  ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+  enable: true
+  sitecode: c461a6c03d4676862a12df80e9304bfd ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
 cnzz_tongji:
   enable: true
   siteid: 1000250782   ## e.g. 1253575964 your cnzz tongji site id
@@ -103,23 +125,20 @@ totop: true           ## if you want to scroll to top in every post set the valu
 #### Custom Search
 Swiftype:
   enable: true
-
-google_cse:
+google_cse: 
   enable: false
   cx:   ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
-## https://www.google.com/cse/
+## https://www.google.com/cse/ 
 ## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
 ## set the 'front-matter' as
-## layout: search
+## layout: search 
 ## title: search
 ## ---
 baidu_search:     ## http://zn.baidu.com/
   enable: false
-  id: 9675266170032942257   ## e.g. "783281470518440642"  for your baidu search id
+  id:   ## e.g. "783281470518440642"  for your baidu search id
   site: http://zhannei.baidu.com/cse/search  ## your can change to your site instead of the default site
-
-# Github repositories
-github_user: fresky
-github_repo_count: 5
-github_show_profile_link: true
-github_skip_forks: true
+  
+tinysou_search:     ## http://tinysou.com/
+  enable: false
+  id:  ## e.g. "4ac092ad8d749fdc6293" for your tiny search id

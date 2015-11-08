@@ -24,7 +24,7 @@ description: 使用Task.ContinueWith和TPL的Dataflow来解决工作流（管道
 ---
 
  1 . 从文件中读取字符串
-```c#
+```csharp
 private static string readFileText(string fileName)
 {
 	Console.WriteLine("Reading '{0}'...", fileName);
@@ -32,7 +32,7 @@ private static string readFileText(string fileName)
 }
 ```
  2 . 创建文字列表
-```c#
+```csharp
 private static string[] createWordList(string text)
 {
 	Console.WriteLine("Creating word list...");
@@ -53,7 +53,7 @@ private static string[] createWordList(string text)
 }
 ```
  3 . 过滤文字列表统计词频
-```c#
+```csharp
 private static Dictionary<string, int> fileterWordList(string[] words)
 {
 	Console.WriteLine("Group and ordering word list...");
@@ -64,7 +64,7 @@ private static Dictionary<string, int> fileterWordList(string[] words)
 }
 ```
  4 . 打印出现频率最高的5个词
-```c#
+```csharp
 private static void printWordFrequency(Dictionary<string, int> dic)
 {
 	Console.WriteLine("Top 5:");
@@ -83,7 +83,7 @@ private static void printWordFrequency(Dictionary<string, int> dic)
 单线程没啥好说的，直接连起来调用就行了，不多废话。
 
 如果要多线程，可以直接用Task。使用`ContinueWith`。
-```c#
+```csharp
 private static void getWordFrequencyWithTask()
 {
 	List<Task> allFinalTasks = new List<Task>();
@@ -110,7 +110,7 @@ private static void getWordFrequencyWithTask()
 1. `Complete()`：告诉第一个模块已经没有新的输入了。  
 
 代码如下：
-```c#
+```csharp
 private static void getWordFrequencyWithTPLDataflow()
 {
 	// 1st, Read the files to strings

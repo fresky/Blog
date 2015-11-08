@@ -9,7 +9,7 @@ tags: [CSharp, Regex]
 <p>提问者用了如下的代码来做测试：</p>
 
 
-```c#
+```csharp
 static void Main(string[] args)
         {
             var rand = new Random(1234);
@@ -86,6 +86,6 @@ Regular expression [0123456789] took 00:00:00.1388997 result: 5077/10000  64.87 
 <h3>&nbsp;</h3>
 <p>如果在生成Regex的时候传入一个参数<code>RegexOptions.ECMAScript</code>，如下所示，那么\d就和[0-9]的效率一样了。可以从<a href="http://msdn.microsoft.com/en-us/library/yd1hzczs.aspx">这里</a>找到更多的Regex的选项。</p>
 
-```c#
+```csharp
 var rex = new Regex(regex, RegexOptions.ECMAScript);
 ```

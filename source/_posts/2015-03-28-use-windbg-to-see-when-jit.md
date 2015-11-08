@@ -8,7 +8,7 @@ C#的程序一个可能遇到的性能问题就是启动时间可能会太长，
 
 假设有如下一个简单的程序，编译成Demo.exe。
 
-```c#
+```csharp
 namespace Demo
 {
     class MyClass

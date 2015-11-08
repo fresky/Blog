@@ -18,7 +18,7 @@ description: 把用octopress最新发布的博文同步到提供metaweblog API�
 
 ---
 读密码，在控制台提示用户输入密码，然后用*遮盖，同时支持退格键，代码如下：
-```c#
+```csharp
         private static string getPassword()
         {
             string password = System.Configuration.ConfigurationManager.AppSettings["Password"];
@@ -53,7 +53,7 @@ description: 把用octopress最新发布的博文同步到提供metaweblog API�
 ---
 从markdown中提取博文标题，根据文件名生成博文地址。
 
-```c#
+```csharp
         private static void getLastestBlog(out string title, out string body)
         {
             title = "";
@@ -94,7 +94,7 @@ description: 把用octopress最新发布的博文同步到提供metaweblog API�
 ---
 发布。
 
-```c#
+```csharp
         private static void postLastestBlog(string password, string title, string body)
         {
             string username = System.Configuration.ConfigurationManager.AppSettings["UserName"];

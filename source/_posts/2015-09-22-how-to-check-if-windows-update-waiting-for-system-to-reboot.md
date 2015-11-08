@@ -28,7 +28,7 @@ int _tmain(int argc, _TCHAR* argv[])
 }
 ```
 
-```c#
+```csharp
 Type t = Type.GetTypeFromProgID("Microsoft.Update.SystemInfo");
 object s = Activator.CreateInstance(t);
 var needReboot = t.InvokeMember("RebootRequired", BindingFlags.GetProperty, null, s, null);

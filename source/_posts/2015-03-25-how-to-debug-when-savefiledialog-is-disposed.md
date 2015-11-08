@@ -9,7 +9,7 @@ description: 本文介绍了如何通过加函数断点的方式调试什么时�
 
 还是写段程序来检查一下吧，看看什么时候`SaveFileDialog`会被`Dispose`。写一个WinForm，然后加2个按钮，它们对应的响应事件如下：
 
-```c#
+```csharp
 private void button1_Click(object sender, EventArgs e)
 {
 	SaveFileDialog s = new SaveFileDialog();

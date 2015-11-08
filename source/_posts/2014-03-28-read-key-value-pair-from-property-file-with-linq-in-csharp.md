@@ -16,7 +16,7 @@ Email = dawei.xu@gmail.com
 
 在C#中可以用Linq很方便的实现这个功能。先看代码：
 
-```c#
+```csharp
 File.ReadAllLines(fileName)
 .Select(line => line.Split(new[] {'='}, 2, StringSplitOptions.RemoveEmptyEntries))
 .Where(split => split.Length == 2)
@@ -42,7 +42,7 @@ Email = dawei.xu@gmail.com
 
 解决办法就是用[Enumerable.GroupBy](http://msdn.microsoft.com/en-us/library/system.linq.enumerable.groupby%28v=vs.110%29.aspx)把重复的Key合并在一起，然后可以根据需要使用第一次出现的或者最后一次出现的，下面的例子是采用最后一次出现的。同时因为用了`GroupBy`，最后的`ToDictionary`需要做一些相应的修改。
 
-```c#
+```csharp
 File.ReadAllLines(fileName)
 .Select(line => line.Split(new[] {'='}, 2, StringSplitOptions.RemoveEmptyEntries))
 .Where(split => split.Length == 2)

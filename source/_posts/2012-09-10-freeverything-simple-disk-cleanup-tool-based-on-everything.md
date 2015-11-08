@@ -17,7 +17,7 @@ tags: [CSharp, Tool]
 <p>2. 使用XmlSerializer存储filter配置文件。</p>
 <p>3. 检查everything是否启动。</p>
 
-```c#
+```csharp
 		public static void StartEverything()
         {
             Regex regex = new Regex(@"Everything([-.0-9])");
@@ -45,7 +45,7 @@ tags: [CSharp, Tool]
 <p>4. 调用Everything SDK. Everything SDK上面就有C#的示例project，非常简单。</p>
 <p>5. 删除文件。需要处理readonly的问题。</p>
 
-```c#
+```csharp
 		private static void deletePath(string path)
         {
             FileSystemInfo fsi;
@@ -83,7 +83,7 @@ tags: [CSharp, Tool]
 
 <p>6. 计算文件大小。</p>
 
-```c#
+```csharp
 		public void CalculateSize()
         {
             if(Directory.Exists(Path))

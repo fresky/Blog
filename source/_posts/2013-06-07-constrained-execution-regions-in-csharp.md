@@ -10,7 +10,7 @@ tags: [CSharp, Debug]
 <p>考虑如下的代码示例：</p>
 
 
-```c#
+```csharp
 sealed class Type1
     {
         static Type1()

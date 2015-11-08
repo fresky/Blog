@@ -7,7 +7,7 @@ tags: CSharp
 ---
 这篇<a href="http://blogs.msdn.com/b/ericlippert/archive/2009/08/06/not-everything-derives-from-object.aspx">Not everything derives from object - Fabulous Adventures In Coding - Site Home - MSDN Blogs</a>文章讲了为什么在C#里面
 
-```c#
+```csharp
             var enumerable = from bool b in new int[] {1, 2} select b;
             foreach (var element in enumerable)
             {

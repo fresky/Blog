@@ -7,7 +7,7 @@ tags: CSharp
 ---
 <p>假设有如下代码：</p>  
 
-```c#
+```csharp
 		static IEnumerable<int> getInt()
         {
             for (int i = 0; i < 3; i++)

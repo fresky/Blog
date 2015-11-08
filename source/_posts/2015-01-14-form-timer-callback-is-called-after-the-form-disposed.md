@@ -9,12 +9,12 @@ description: Form的Timer在Form Dispose时一定要Dispose，而且不能假设
 
 #首先应该在Form被Dispose时也Dispose它的Timer
 如果是通过Designer拽进来的，那么它在创建时会写成：
-```c#
+```csharp
 this.timer1 = new System.Windows.Forms.Timer(this.components);
 ```
 
 这样Form在Dispose时会Dispose这个Timer，没有问题。但是如果是我们自己手写的，写成了
-```c#
+```csharp
 this.timer1 = new System.Windows.Forms.Timer();
 ```
 那在Form关闭Dispose时，Timer并不会被自动的Dispose，这样就会导致Timer的event handler还能被调到。
@@ -31,7 +31,7 @@ this.timer1 = new System.Windows.Forms.Timer();
 ```
 
 翻开C#的源代码可以看到state的定义如下：
-```c#
+```csharp
 internal const int STATE_CREATED                = 0x00000001;
 internal const int STATE_VISIBLE                = 0x00000002;
 internal const int STATE_ENABLED                = 0x00000004;
@@ -91,7 +91,7 @@ Fields:
 
 其中的`timerWindow`是null，从C#的Timer源代码中可以看到这表明这个Timer也被Dispose了。
 
-```c#
+```csharp
 protected override void Dispose(bool disposing) {
 	if (disposing) {                
 		if (timerWindow != null) {

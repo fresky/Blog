@@ -11,7 +11,7 @@ description: 使用VerbalExpressions可以在多种语言，包括C++和C#中用
 
 下面是一个C#的示例代码，很容易用吧：）
 
-```c#
+```csharp
 var verbEx = new VerbalExpressions()
 			.StartOfLine()
 			.Then("http")

@@ -114,7 +114,7 @@ round_error: 0.5
 
 再来看看C#中的浮点数特殊值是怎么定义的：
 
-```c#
+```csharp
 Console.WriteLine("Epsilon:" + float.Epsilon);
 Console.WriteLine("MaxValue:" + float.MaxValue);
 Console.WriteLine("MinValue:" + float.MinValue);

@@ -21,7 +21,7 @@ description: 本文介绍了如果判断C#的Finalizer线程有没有被阻塞�
 
 下面再附一小段代码，它可以查看当前进程的Handle数目。
 
-```c#
+```csharp
 using System;
 using System.Runtime.InteropServices;
 

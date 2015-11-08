@@ -9,7 +9,7 @@ description: C#的null合并运算符的优先级比加号还要低，注意在�
 
 假设有如下的代码：
 
-```c#
+```csharp
 int? a = null;
 int? b = null;
 Console.WriteLine(a ?? 1 + b ?? 2);

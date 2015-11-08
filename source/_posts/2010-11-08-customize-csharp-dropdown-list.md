@@ -15,7 +15,7 @@ tags: CSharp
 
 实现的方法是需要把combobox的DrawoMode设置成OwnerDrawVariable，然后处理DrawItem事件，详见<a href="http://msdn.microsoft.com/en-us/library/system.windows.forms.combobox.drawitem.aspx">ComboBox.DrawItem Event (System.Windows.Forms)</a>代码如下：</p>
 
-```c#
+```csharp
 private void cb_Risk_DrawItem(object sender, DrawItemEventArgs e)
 {
     if (e.Index < 0) return;

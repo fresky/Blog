@@ -153,7 +153,7 @@ FILE HEADER VALUES
 ##用代码
 当然我们也可以用代码来打开应用程序检查。下面是C#的示例代码。
 
-```c#
+```csharp
 static bool isLargeAware(string file)
 {
 	const int DOS_MZ_HEADER = 0x5A4D;

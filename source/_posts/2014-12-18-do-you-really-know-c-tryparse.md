@@ -10,7 +10,7 @@ description: 本文从解决一个C#Double.TryParse的bug谈起，介绍了TryPa
 
 翻翻MSDN找到了有两个重载的，一个是`Double.TryParse(String, Double)`，一个是`Double.TryParse(String, NumberStyles, IFormatProvider, Double)`。`Double.TryParse(String, Double)`中使用的NumberStyles是`NumberStyles.Float`和` NumberStyles.AllowThousands`。其中` NumberStyles.AllowThousands`就是表明支持用逗号作为千位数的分隔符。所以如果真的是需要处理浮点数，应该用如下的格式：
 
-```c#
+```csharp
 double d;
 bool b = double.TryParse(s, NumberStyles.Number, CultureInfo.InvariantCulture, out d);
 ```

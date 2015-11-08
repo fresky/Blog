@@ -7,7 +7,7 @@ tags: CSharp
 ---
 <p>&#160;</p>  <p>如下，分别计算时间和内存。</p>  
 
-```c#
+```csharp
         public static double TimeWatcher(Action action)
         {
             System.Diagnostics.Stopwatch watch = new System.Diagnostics.Stopwatch();

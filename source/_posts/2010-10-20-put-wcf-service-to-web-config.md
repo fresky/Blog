@@ -13,7 +13,7 @@ tags: CSharp
 
 Silverlight文件初始化WCF Service是不用默认的构造函数，用这种方式：
 
-```c#
+```csharp
 BasicHttpBinding binding = new BasicHttpBinding(BasicHttpSecurityMode.None);
 binding.MaxReceivedMessageSize = int.MaxValue;
 binding.MaxBufferSize = int.MaxValue;

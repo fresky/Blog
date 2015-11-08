@@ -15,7 +15,7 @@ csc /r:GridV1=grid.dll /r:GridV2=grid20.dll mygrid.cs
 <p>在mygrid.cs中就能用extern alias了。</p>
 
 
-```c#
+```csharp
 extern alias GridV1;
 extern alias GridV2;
 GridV1::Grid.SmallGrid …

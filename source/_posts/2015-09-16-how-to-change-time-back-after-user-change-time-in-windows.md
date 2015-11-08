@@ -10,7 +10,7 @@ description:
 
 下面是示例代码：
 
-```c#
+```csharp
 public class Program
 {
 	private static Stopwatch s_Stopwatch;

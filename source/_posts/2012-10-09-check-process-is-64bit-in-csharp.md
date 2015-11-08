@@ -8,7 +8,7 @@ tags: CSharp
 
 下面的代码能判断一个process是32bit还是64bit.
 
-```c#
+```csharp
 static class ProcessDetector
     {
         public static bool IsWin64(Process process)

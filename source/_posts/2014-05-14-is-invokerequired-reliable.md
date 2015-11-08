@@ -29,7 +29,7 @@ StackTrace (generated):
 
 这就清楚了，如果Handle还没有创建好，那么即使在后台工作线程，`Invokerequired`也返回False。用如下的一个小程序来测试一下，代码很简单，就是在一个Form的构造函数里创建一个Timer，然后在这个Timer的Callback里面打印`Invokerequired`和`IsHandleCreated`的值。请注意这里一定要用`System.Threading.Timer`，因为Form里的那个Timer是运行在UI线程里的，不能用，具体参见我的博客[C#中5种timer的比较](/2013/07/09/compare-of-5-timers-in-csharp/)。另外关于这个`System.Threading.Timer`有一个坑，参见博客[谁动了我的timer？C#的垃圾回收和调试](/2013/06/20/where-is-my-timer-csharp-gc/)。关于`System.Timers.Timer`，也有一个坑，参见我的博客[.NET 2.0的Timer elapsed event 会自动catch住所有的exception](/2011/06/23/dot-net-2-timer-elapsed-event-will-catch-all-exception-for-you/)。
 
-```c#
+```csharp
 
 using Timer = System.Threading.Timer;
 
@@ -64,7 +64,7 @@ Thread ID: 5
 
 所以正确的写法是：
 
-```c#
+```csharp
 if(control.IsDisposed || !control.IsHandleCreated)
 {
     // UI is not ready, do something special here!!!

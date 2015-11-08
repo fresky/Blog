@@ -15,7 +15,7 @@ Eric Lippert在他的[C# Performance Benchmark Mistakes, part1](http://tech.pro/
 6. 在性能测试时要对第一次运行区别对待，因为第一次运行会牵扯到JIT即时编译。如果要测试启动性能，那么只需要测试第一次运行时。  
 7. 在和软件最终运行环境一样的软硬件条件下做性能测试。这点和第3、4点其实说的是一个道理，测试环境要和软件真正的工作环境一致。  
 8. 考虑垃圾回收带来的影响，一个可能的做法是在每次测试之前和之后用下面的代码强制调用一下GC。  
-```c#
+```csharp
 System.GC.Collect();
 System.GC.WaitForPendingFinalizers();
 System.GC.Collect();

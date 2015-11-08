@@ -14,7 +14,7 @@ description: 使用CLRMD编写一个自己的C#调试器
 
 第一个是attach到一个进程上，然后把这个进程内的所有字符串打印出来，这样如果一个程序没有对密码加密，就能很容易的被看到的。
 
-```c#
+```csharp
 using (DataTarget dataTarget = DataTarget.AttachToProcess(pid, 5000))
 {
 	Console.WriteLine();
@@ -34,7 +34,7 @@ using (DataTarget dataTarget = DataTarget.AttachToProcess(pid, 5000))
 ```
 
 第二个是打开一个dump，遍历所有线程，把call stack打印出来。
-```c#
+```csharp
 using (DataTarget dataTarget = DataTarget.LoadCrashDump(file))
 {
 	string dacLocation = dataTarget.ClrVersions[0].TryGetDacLocation();

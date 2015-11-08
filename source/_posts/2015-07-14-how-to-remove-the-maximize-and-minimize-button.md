@@ -8,7 +8,7 @@ description: 本文介绍了如何通过SetWindowLongPtr和GetWindowLongPtr、Se
 
 #WinForm
 WinForm去掉最大化和最小化按钮：
-```c#
+```csharp
 MaximizeBox = false;
 MinimizeBox = false;
 ```
@@ -16,18 +16,18 @@ MinimizeBox = false;
 WinForm的最大化和最小化按钮和能否改变窗口大小是两个属性，所以上面的代码只是把最小化和最大化按钮去掉了，但是窗口还能改变大小。
 
 下面的代码是不允许改变WinForm的窗口大小，但是最大化和最小化按钮还是能点的。
-```c#
+```csharp
 FormBorderStyle = FormBorderStyle.FixedSingle;
 ```
 
 #WPF
 WPF没有API可以直接去掉最大化和最小化按钮的，但是我们可以通过`ResizeMode`来曲线救国，如果设置窗口不能改变大小，那么最大化和最小化按钮也就没有了，如下所示：
-```c#
+```csharp
 ResizeMode = System.Windows.ResizeMode.NoResize;
 ```
 
 另外还有一个办法是通过设置`WindowStyle`来实现，但是这个会把关闭的按钮也弄没，如下所示：
-```c#
+```csharp
 WindowStyle = WindowStyle.None;
 ```
 
@@ -52,7 +52,7 @@ LONG_PTR WINAPI SetWindowLongPtr(
 尽管MSDN上写的是这两个对32位也有效，但是其实如果直接`DllImport`这两个API使用时会报`EntryPointNotFoundException`。所以我们要根据当前应用程序是32位还是64位使用不同的`DllImport`API。**32位**下需要用[GetWindowLong](https://msdn.microsoft.com/en-us/library/windows/desktop/ms633584%28v=vs.85%29.aspx)和[SetWindowLong](https://msdn.microsoft.com/en-us/library/windows/desktop/ms633591%28v=vs.85%29.aspx)。
 
 下面的代码对WinForm和WPF都有效：
-```c#
+```csharp
 private const int GWL_STYLE = -16;
 private const int WS_MAXIMIZEBOX = 0x10000;
 private const int WS_MINIMIZEBOX = 0x20000;

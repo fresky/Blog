@@ -5,14 +5,14 @@ tags: [CSharp, Tool]
 description: Moq4为了实现返回值基于参数的功能支持超过4个参数的方法，导致Moq做了2个dll，分别是基于.NET3.5和.NET4。就是我们下载Moq时看到的Moq35和Moq40两个文件夹。这两个dll在大部分情况下可以混用，但是如果测试方法中包含要Mock超过4个参数的方法，并且需要根据参数值来决定返回值时，混用Moq35和Moq40会导致测试失败。
 ---
 [Moq](https://github.com/Moq/moq4)是应用最广泛的一个C#的Mock框架。它有一个功能是在Mock一个方法时能根据这个方法的输入参数来设置返回值。如下所示：
-```c#
+```csharp
 mock.Setup(x => x.DoSomething(It.IsAny<string>())).Returns((string s) => s.ToLower());
 ```
 
 但是在Moq的版本4之前只支持最多4个参数，在版本4中开始支持最多16个参数。它的实现是通过`System.Func`来实现的，但是因为.NET4之前没有`System.Func`，所以Moq4的.NET35版本和.NET40版本会有所差异。
 
 假设我们需要Mock多于4个参数的方法返回值时，比如如下代码：
-```c#
+```csharp
 mock.Setup(
 x =>
 x.DoSomething(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()).Returns((string p1, string p2, string p3, string p4, string p5) => p1+p2+p3+p4+p5);

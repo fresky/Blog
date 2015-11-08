@@ -9,7 +9,7 @@ description: 如果不想写Wix的XML文件并且熟悉C#，那么现在有了�
 
 使用方法非常简单，在C#的项目中添加nuget的Wixsharp依赖，会在你的项目中添加一个setup.cs包含示例代码，语法非常简洁明了。如下的示例代码在msi中加了2个文件，并且添加了一个customaction。
 
-```c#
+```csharp
 static public void Main(string[] args)
 {
 	Project project =

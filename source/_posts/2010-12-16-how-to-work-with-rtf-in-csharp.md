@@ -7,7 +7,7 @@ tags: CSharp
 ---
 前段时间做过一些用C#操作.rtf文档的工作，当时就是直接根据RTF的规范用修改文本文件的方式修改.rtf文件。比如要插入一段文字，并且用红色表示，就自己弄一个colortable的定义，然后直接把下面的内容插入到.rtf文件中， {\b\cf1Bold Red!} \b表示黑体，\cf1表示用colortable定义中的第一种颜色。（假设我们的这个rtf文件中定义的第一种颜色是红色）。但是这种办法很不直观，而且有限制，需要编码时知道colortable是怎么定义的。<br /><br />今天重新用System.Windows.Forms.RichTextBox来实现。下面的代码实现了在原来的rtf文件的最开始插入一行红色黑体的“Alert”，然后在rtf的commens：后面加上“new comment”，最后在末尾加一句“Bye!”。<br />
 
-```c#
+```csharp
 private static void RtfTest(string inpath, string outpath)
 {
    // load rtf file

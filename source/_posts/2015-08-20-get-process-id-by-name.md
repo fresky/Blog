@@ -10,7 +10,7 @@ description: 本文通过查看C#的GetProcessesByName的源代码来看如何�
 
 老办法，翻翻C#的源代码（`Process.cs`）：
 
-```c#
+```csharp
 public static Process[] GetProcessesByName(string processName) {
 	return GetProcessesByName(processName, ".");
 }
@@ -57,7 +57,7 @@ public static Process[] GetProcesses(string machineName) {
 
 先拿到所有的进程，然后比较进程名字。`Process.cs`调用了`ProcessManager.cs`来拿所有的进程，接着看源代码（`ProcessManager.cs`）：
 
-```c#
+```csharp
 public static ProcessInfo[] GetProcessInfos(string machineName) {
 	bool isRemoteMachine = IsRemoteMachine(machineName);
 	if (IsNt) {

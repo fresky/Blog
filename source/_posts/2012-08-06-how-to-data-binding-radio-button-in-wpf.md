@@ -7,20 +7,20 @@ tags: CSharp
 ---
 WPF中的radiobox通过data binding绑定到一个bool属性后，如下所示，尽管UI可以正确的显示，但是data binding的属性不能正确的更新。比如user点了No之后属性UserChoice还是True。
 
-```c#
+```csharp
 <RadioButton Content="Yes" IsChecked="{Binding UserChoice}"/>
 <RadioButton Content="No" />
 ```
 
 需要用如下的方式：
-```c#
+```csharp
 <RadioButton Content="Yes" IsChecked="{Binding UserChoice}"/>
 <RadioButton Content="No" IsChecked="{Binding UserChoice, Converter={StaticResource radioConverter}}"/>
 ```
 
 `radioConverter`如下：
 
-```c#
+```csharp
 public class RadioButtonConverter : IValueConverter
 {
 	public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)

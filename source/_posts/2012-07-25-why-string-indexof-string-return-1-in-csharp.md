@@ -7,7 +7,7 @@ tags: CSharp
 ---
 下面的代码第一次indexof返回0，第二次indexof返回1。
 
-```c#
+```csharp
 const string softHyphenPlusHyphen = "\xAD\x2D";
 Console.WriteLine("softHyphenPlusHyphen.IndexOf(softHyphenPlusHyphen,
 StringComparison.Ordinal): " +

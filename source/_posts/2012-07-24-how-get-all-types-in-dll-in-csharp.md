@@ -7,7 +7,7 @@ tags: CSharp
 ---
 这篇<a href="http://haacked.com/archive/2012/07/23/get-all-types-in-an-assembly.aspx?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+haacked+%28you%27ve+been+HAACKED%29">Get All Types in an Assembly</a>文章讲了怎么取到assembly中所有的types。<br />代码如下：<br />
 
-```c#
+```csharp
 public static IEnumerable<Type> GetLoadableTypes(this Assembly assembly)
 {
     if (assembly == null) throw new ArgumentNullException("assembly");

@@ -13,7 +13,7 @@ tags: CSharp
 > changing a Text value that is read-only. The value of the Text property is preserved in the view state between postbacks unless modified by server-side code.
 
 一个简单的解决办法是，在code behand中设置read only 属性，示例代码如下：
-```c#
+```csharp
 textboxReadonly.Attributes.Add("readonly", "readonly");
 ```
 这样的话就可以了。

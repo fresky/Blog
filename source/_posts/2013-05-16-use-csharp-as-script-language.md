@@ -7,7 +7,7 @@ tags: CSharp
 ---
 <p><a href="http://scottksmith.com/blog/2013/05/08/getting-started-with-scriptcs/">Getting started with ScriptCS</a>介绍<a href="http://scriptcs.net/">ScriptCS</a>，它能让你把把C#当作脚本语言来用。</p>  <p>这样你就能用脚本语言来写C#，比如把如下内容写在一个Sample.csx文件里。</p>  
 
-```c#
+```csharp
 var x = 2;
 var y = 3;
 var z = x * y;

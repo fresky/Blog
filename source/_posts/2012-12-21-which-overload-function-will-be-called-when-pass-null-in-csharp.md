@@ -7,7 +7,7 @@ tags: CSharp
 ---
 <p><a href="http://stackoverflow.com/questions/13877501/why-do-i-get-an-exception-when-passing-null-constant-but-not-when-passing-a-n?newsletter=1&amp;nlcode=55866%7cc739">Stack Overflow</a>上有个有趣的问题，如果向下面这么写，没问题。</p>
 
-```c#
+```csharp
 Console.WriteLine( String.Format( "{0}", (object)null) );
 ```
 <p><br /><code></code></p>

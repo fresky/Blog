@@ -16,7 +16,7 @@ parameters of the PInvoke signature match the target unmanaged signature.
 
 <p>但是在之前的3.5上就没有问题，报错的地方在下面的语句。</p>
 
-```c#
+```csharp
 EverythingWraper.Everything_Query();
 ```
 
@@ -25,14 +25,14 @@ EverythingWraper.Everything_Query();
 <p>&nbsp;</p>
 <p>但是为什么会出这个错误呢？我的dllimport是从<a href="http://support.voidtools.com/everything/Main_Page"> Everything SDK Wiki</a>上的示例代码考过来的，如下所示：</p>
 
-```c#
+```csharp
         [DllImport(@"ThirdParty\Everything.dll" )]
         public static extern bool Everything_Query();
 ```
 
 <p>于是我就又打开了Everything的SDK，看了看源代码，发现其实Everything_Query()是有一个参数的，因为参数不匹配，所以visual studio就报了这个错。修改成如下就没问题了。</p>
 
-```c#
+```csharp
         [DllImport(@"ThirdParty\Everything.dll" )]
         public static extern bool Everything_Query(bool bWait);
 ```

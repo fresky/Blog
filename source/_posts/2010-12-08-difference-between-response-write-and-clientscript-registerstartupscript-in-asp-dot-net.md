@@ -7,7 +7,7 @@ tags: CSharp
 ---
 最近在用ASP .NET的code behind 调用javascript中发现Response.Write不能拿到form的值，而ClientScript.RegisterStartupScript可以。例如下面的代码<br />
 
-```c#
+```csharp
 StringBuilder sb = new StringBuilder();
 sb.Append("<script language=javascript>");
 sb.Append("alert(document.forms.length);");
@@ -20,7 +20,7 @@ ClientScript.RegisterStartupScript(this.GetType(), "test", sb.ToString());
 
 另外，Response.Write不能调用aspx里面定义的javascript函数，ClientScript.RegisterStartupScrip可以，示例如下。<br />.cs代码<br />
 
-```c#
+```csharp
 StringBuilder sb = new StringBuilder();
 sb.Append("<script language=javascript>");
 sb.Append("TestAlert();");
@@ -31,7 +31,7 @@ ClientScript.RegisterStartupScript(this.GetType(), "test", sb.ToString());
 
 .aspx代码<br />
 
-```c#
+```csharp
 <script type="text/javascript">
 function TestAlert() {
 	alert('just a test');

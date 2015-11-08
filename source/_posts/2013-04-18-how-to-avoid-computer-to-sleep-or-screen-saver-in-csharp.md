@@ -12,7 +12,7 @@ tags: CSharp
 <p>通过这个API应用程序可以通知系统它正在运行,从而阻止计算机进入屏保.</p>
 <p>实例代码如下:</p>
 
-```c#
+```csharp
 using System;
 using System.Runtime.InteropServices;
 

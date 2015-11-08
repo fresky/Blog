@@ -7,7 +7,7 @@ tags: CSharp
 ---
 <p><a href="http://vasters.com/clemensv/2012/09/06/Are+You+Catching+Falling+Knives.aspx">Clemens Vasters - Are you catching falling knives?</a>里给了一个判断C#的exception是不是fatal的代码，可以参考参考。</p>  
 
-```c#
+```csharp
 public static bool IsFatal(this Exception exception)
 {
     while (exception != null)

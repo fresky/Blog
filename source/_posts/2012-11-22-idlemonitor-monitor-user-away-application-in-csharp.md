@@ -7,7 +7,7 @@ tags: CSharp
 ---
 <p>写了一个C#的小程序，用来监测用户是否离开应用程序，就像MSN，QQ的离开功能一样。代码在<a href="https://github.com/fresky/IdleMonitor">github</a>上。简单接介绍一下：</p>  <p><strong>1. IdleMonitor abstract class</strong></p>  
 
-```c#
+```csharp
 	public abstract class IdleMonitor
     {
         // ...

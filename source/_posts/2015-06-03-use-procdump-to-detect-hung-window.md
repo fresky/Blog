@@ -12,7 +12,7 @@ description:
 
 先来一个简单的程序，一个Form，第一个按钮是进入无限循环。
 
-```c#
+```csharp
 private void button1_Click(object sender, EventArgs e)
 {
 	int count = 0;
@@ -26,7 +26,7 @@ private void button1_Click(object sender, EventArgs e)
 
 第二个按钮是触发一个死锁。
 
-```c#
+```csharp
 private void button2_Click(object sender, EventArgs e)
 {
 	Thread t1 = new Thread(() =>

@@ -8,7 +8,7 @@ description: 本文介绍了C#编译器是怎么检查代码是否可达的，C#
 
 文章开始于一个问题，为什么下面的代码在编译时只有`Condition()`不可达的警告，但那时没有`Alternative()`不可达的警告。
 
-```c#
+```csharp
 if (true || Condition())
   Consequence();
 else
@@ -29,7 +29,7 @@ else
 
 另外，C#编译器会放松对第一次不可达检查时找出的不可达代码的检查，比如下面的代码不会报错。
 
-```c#
+```csharp
 static void Main(string[] args)
 {
 	int a;
@@ -51,7 +51,7 @@ private static int m(int i)
 但是如果改成下面这个样子，就会报错了，**Use of unassigned local variable 'a'**。
 
 
-```c#
+```csharp
 static void Main(string[] args)
 {
 	bool condition = true;

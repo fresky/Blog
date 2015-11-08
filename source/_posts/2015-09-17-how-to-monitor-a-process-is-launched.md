@@ -6,7 +6,7 @@ description:
 ---
 如果我们想在某个进程被执行时做一些事情，该怎么做呢？最简单粗暴的办法是来个死循环，不停地检查这个进程存不存在。代码如下所示：
 
-```c#
+```csharp
 private static void monitorProcessRuning(string name)
 {
 	while (true)
@@ -33,7 +33,7 @@ SELECT * FROM __InstanceCreationEvent WITHIN PollingInterval WHERE TargetInstanc
 
 下面来写我们的C#程序吧，需要用到[ManagementEventWatcher](https://msdn.microsoft.com/en-us/library/system.management.managementeventwatcher.aspx)。
 
-```c#
+```csharp
 private static void monitorProcessRuning(string name)
 {
 	WqlEventQuery processQuery = new WqlEventQuery("__InstanceCreationEvent", new TimeSpan(0, 0, 1),
@@ -62,7 +62,7 @@ static void Main(string[] args)
 
 首先通过Process Explorer看出启动的进程是`rundll32.exe`，命令行为`"C:\WINDOWS\system32\rundll32.exe" Shell32.dll,Control_RunDLL "C:\WINDOWS\system32\timedate.cpl",`。我们可以用下面的代码来监测这个进程启动，我们甚至可以通过监测到它启动就杀掉这个进程来阻止用户修改系统时间。
 
-```c#
+```csharp
 private static void monitorUserChangeTime(bool kill)
 {
 	var target = "rundll32.exe";

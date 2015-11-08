@@ -9,7 +9,7 @@ description: 本文介绍了在C#中如何用Enumerable.Select和Enumerable.Zip�
 
 最直观的做法：
 
-```c#
+```csharp
 List<int> a = new List<int>(){1,2,3};
 List<int> b = new List<int>(){4,5,6};
 List<int> c = new List<int>();
@@ -21,7 +21,7 @@ for (int i = 0; i < a.Count; i++)
 ```
 
 如果到了.NET 3.5的Linq，那么我们可以用[Enumerable.Select](https://msdn.microsoft.com/en-us/library/vstudio/system.linq.enumerable.select%28v=vs.110%29.aspx)。
-```c#
+```csharp
 List<int> a = new List<int>(){1,2,3};
 List<int> b = new List<int>(){4,5,6};
 
@@ -30,7 +30,7 @@ var c = a.Select((x, i) => b[i] * x);
 
 如果到了.NET 4，我们可以用[Enumerable.Zip](https://msdn.microsoft.com/en-us/library/vstudio/dd267698%28v=vs.110%29.aspx)
 
-```c#
+```csharp
 List<int> a = new List<int>(){1,2,3};
 List<int> b = new List<int>(){4,5,6};
 

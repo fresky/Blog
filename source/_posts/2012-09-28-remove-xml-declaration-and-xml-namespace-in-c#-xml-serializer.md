@@ -7,7 +7,7 @@ tags: CSharp
 ---
 下面的代码可以在C# XMLSerialize 时去掉xml声明和xml namespace。
 
-```c#
+```csharp
 	private static void OutputXml(string xmlFilePath, ObjectToSerialize  objectToSerialize )
 	{
 		XmlSerializer xmlSerializer = new XmlSerializer(typeof(ObjectToSerialize ));

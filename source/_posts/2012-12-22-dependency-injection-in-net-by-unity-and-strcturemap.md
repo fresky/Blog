@@ -14,7 +14,7 @@ tags: CSharp
 这个程序使用MVP来实现的，我们有4个接口如下，分别对应V，P，M和Logger：
 
 
-```c#
+```csharp
     public interface IView
     {
         void DisplayResult(string result);

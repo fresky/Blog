@@ -7,7 +7,7 @@ description: C#根据Calendar.TwoDigitYearMax来做2位数字年份的转换，�
 
 C#的[DateTime.Parse](https://msdn.microsoft.com/en-us/library/system.datetime.parse%28v=vs.110%29.aspx)可以把一个字符串转换成DateTime。但是如果年份只有2位数字，它会怎么转换呢？来看看下面的代码：
 
-```c#
+```csharp
 DateTime d = DateTime.Parse("01/13/30");
 Console.WriteLine(d);
 ```
@@ -18,7 +18,7 @@ Console.WriteLine(d);
 ```
 
 如果换成这样：
-```c#
+```csharp
 DateTime d = DateTime.Parse("01/13/29");
 Console.WriteLine(d);
 ```

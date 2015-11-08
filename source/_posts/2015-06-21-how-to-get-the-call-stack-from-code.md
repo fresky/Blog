@@ -12,7 +12,7 @@ description: 本文介绍如何在C++和C#代码中得到当前的栈回溯信�
 
 C#实现这个功能很简单，直接使用[System.Diagnostics.StackTrace](https://msdn.microsoft.com/en-us/library/system.diagnostics.stacktrace%28v=vs.110%29.aspx)就行了，唯一要注意的是在创建`StackTrace`时传`true`作为参数。示例代码如下：
 
-```c#
+```csharp
 var stackTrace = new StackTrace(true); // true means capturing source information
 Console.WriteLine(stackTrace);
 ```

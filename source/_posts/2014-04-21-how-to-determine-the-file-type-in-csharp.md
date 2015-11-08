@@ -9,7 +9,7 @@ description: 本文介绍如何在C#中通过检查文件中有没有\0来判断
 ---
 
 今天需要从一个文本文件中读取信息，就想到如果用户选择的不是一个文本文件，遍历这个文件就是做无用功，于是就想能不能有一种方式可以判断文件是不是文本文件。在网上找到了一个方法，通过判断文件中有没有`\0`，如果有的话就一定不是文本文件。代码如下：
-```c#
+```csharp
 public static bool IsTextFile(string path)
 {
     // only check 32 char here, can increase to achieve higher accuracy
@@ -41,7 +41,7 @@ public static bool IsTextFile(string path)
 
 针对一个更普遍的问题，如何根据文件内容来确定文件的格式，在网上找了另一个方法。读取文件的前两个字节，然后根据这个字节的值来做判断。代码如下：
 
-```c#
+```csharp
 public static FileExtension CheckFileType(string path)
 {
 	string header = string.Empty;

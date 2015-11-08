@@ -38,7 +38,7 @@ tags: CSharp
 <p>&nbsp;</p>
 <p>主要的代码如下：（就是用这个插件把代码插进来的：））
 
-```c#
+```csharp
         private string getHtmlStyleCode(string language, string code, bool showline, string style)
         {
             try
