@@ -47,8 +47,9 @@ tags: [Tool, Resource]
 - 直接把截图复制到硬盘：[Screenshot2Disk](http://screenshot2disk.codeplex.com/)  
 - 资源管理器增强软件，使用后走一下它的那个tutorial，就知道有多强大了。：[Listary](http://www.listary.com/)  
 - 多台电脑共享鼠标键盘：[Synergy](http://synergy-foss.org/)
-- 直接在图片中选取文字[Naptha](http://projectnaptha.com/)  
-- 同步文件夹[MetroBackUp](http://metrobackup.codeplex.com/)  
+- 直接在图片中选取文字：[Naptha](http://projectnaptha.com/)  
+- 同步文件夹：[MetroBackUp](http://metrobackup.codeplex.com/)  
+- 斧子演示（类似Prezi）：(http://www.axeslide.com/)
 
 # 网站#
 
