@@ -102,7 +102,7 @@ deploy:
   message:
   repo:
     github: https://github.com/fresky/fresky.github.io.git,master
-    gitcafe: https://gitcafe.com/fresky/fresky.git,gitcafe-pages
+    coding: https://git.coding.net/fresky/fresky.git,gitcafe-pages
 
 plugins:
   - hexo-local-image
