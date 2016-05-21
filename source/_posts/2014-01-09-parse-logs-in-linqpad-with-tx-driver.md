@@ -14,4 +14,4 @@ tags: [CSharp, Resource]
 4. IIS text logs in W3C format
 5. SQL Server Extended Events (XEvent)
 
-可以自己写代码通过NuGet加上Tx相关的reference，或者更方便的使用LINQPad(http://www.linqpad.net/)。在LINQPad中加上Tx的驱动，就可以使用了，具体参见[LINQPad driver for Tx](http://tx.codeplex.com/wikipage?title=LINQPad%20Driver&referringTitle=Documentation)，还可以下载一个Tx的Sample来学习。
+可以自己写代码通过NuGet加上Tx相关的reference，或者更方便的使用[LINQPad](http://www.linqpad.net/)。在LINQPad中加上Tx的驱动，就可以使用了，具体参见[LINQPad driver for Tx](http://tx.codeplex.com/wikipage?title=LINQPad%20Driver&referringTitle=Documentation)，还可以下载一个Tx的Sample来学习。
