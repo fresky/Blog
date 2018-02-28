@@ -1,7 +1,7 @@
 title: 如何影响和说服别人
 date: 2018-02-28 16:57:39
 categories:
-tags: People
+tags: SoftSkill
 description:
 ---
 
