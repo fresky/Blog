@@ -13,7 +13,7 @@ description:
 
 详见下面的代码，除了判断是不是SSD，也顺带用[`Management`](https://msdn.microsoft.com/en-us/library/system.management.managementclass(v=vs.110).aspx)获取机器的硬件信息，包括：机器名，MAC地址，序列号，Model，Manufacturer，本地用户等信息。
 
-```
+```csharp
 
 static void Main(string[] args)
 {
