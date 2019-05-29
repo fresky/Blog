@@ -27,3 +27,9 @@ dotnet tool install --global dotnet-warp
 ```
 dotnet-warp
 ```
+
+这个工具现在有个小bug，如果你的项目目录包含空格，它会报如下的一个错误：
+
+```
+MSBUILD : error MSB1008: Only one project can be specified.
+```
