@@ -102,4 +102,3 @@ deploy:
   message:
   repo:
     github: https://github.com/fresky/fresky.github.io.git,master
-    coding: https://e.coding.net/fresky/fresky.git,gitcafe-pages
