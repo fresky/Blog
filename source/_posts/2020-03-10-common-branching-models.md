@@ -11,7 +11,7 @@ description: 这篇文章介绍一下常用的代码分支模型，包括Git Flo
 
 **Git Flow**是在2010年的这篇文章[A successful Git branching model - GitFlow](https://nvie.com/posts/a-successful-git-branching-model/)中提出来了，之后被广泛采用，它的模型如下所示。
 
-{% limg gitglow.png %}
+{% limg gitflow.png %}
 
 **Git Flow**有如下要点：
 1. 主分支有两个：**master**是部署分支，所有已经发布的版本都在这里。**develop**是开发分支。
@@ -100,6 +100,7 @@ Git Flow的分支模型非常清晰，可以很容易的支持各种产品发布
 
 有很多关于cherry-pick的讨论，比如[Stop cherry-picking, start merging](https://devblogs.microsoft.com/oldnewthing/20180323-01/?p=98325)这里有一系列的讨论，有兴趣的可以看看。
 
+# 后记
 
 上面我简单介绍了一下这3种常见的分支模型，分别是**Git Flow**， **GitHub Flow**和**Trunk Based Development**。其实就像我之前说的，更重要是理解产品发布的策略，基于团队本身开发和测试的能力来选择一种分支策略。
 
