@@ -55,4 +55,4 @@ Do you like it - why or why not?
 > What do you do when someone in your team strongly disagrees with you?How do you ensure your opinion is heard?  
 如果团队中有人非常不同意你的观点，你会怎么做？你怎么保证你的观点会被别人听到？
 How do you ensure you hear others opinions?  
-你怎么保证你的听到别人的观点
+你怎么保证你能听到别人的观点
