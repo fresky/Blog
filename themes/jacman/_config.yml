@@ -18,11 +18,11 @@ widgets:
 ## - category
 ## - tagcloud
 - tag
-- stackoverflow
-- github-card
+## - stackoverflow
+## - github-card
 ## - links
 ## - weibo
-- douban
+## - douban
 
 
   ## provide eight widgets:github-card,category,tag,rss,archive,tagcloud,links,weibo
