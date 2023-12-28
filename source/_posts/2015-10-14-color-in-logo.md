@@ -1,7 +1,7 @@
 title: 商标中的颜色心理学
 date: 2015-10-14 08:47:50
 categories:
-tags: Other
+tags: SoftSkill
 description:
 ---
 [Dailyinfographic - Color Psychology In Logo Design](http://www.dailyinfographic.com/color-psychology-in-logo-design)列出了如下的商标颜色心理学。

@@ -3,7 +3,7 @@ layout: post
 title: "网站设计中常见的几个错误"
 date: 2013-06-14
 comments: true
-tags: Html
+tags: Programming
 ---
 <p>Scott Hanselman在他的博客<a href="http://www.hanselman.com/blog/StopDoingInternetWrong.aspx">Stop Doing Internet Wrong</a>上列举了几个网站设计中常见的错误。</p>  <ol>   <li>自动重定向到mobile页面。现在手机都这么先进，不如让用户选他是想看mobile页面还是正常页面。 </li>    <li>在浏览器中让用户打开app。 </li>    <li>巨大的广告。 </li>    <li>Label没有和checkbox关联，用户只能点那个小小的checkbox。其实如下的简单的html就能把label和checkbox关联起来。 （Scott在原文中有个typo，应该是小写的n）</li>    
 

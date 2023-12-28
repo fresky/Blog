@@ -1,7 +1,7 @@
 title: 让你的英文文章看起来高级的一些词汇
 date: 2018-03-03 16:59:43
 categories:
-tags: Writing
+tags: SoftSkill
 description:
 ---
 [20 Words and Phrases for Better Essays](http://www.dailyinfographic.com/20-words-phrases-for-better-essays)给出了一些让你的英文文章看起来高级的词汇。

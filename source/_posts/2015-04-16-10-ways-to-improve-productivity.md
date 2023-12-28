@@ -1,7 +1,7 @@
 title: 10个提高效率的小技巧
 date: 2015-04-16 13:11:05
 categories:
-tags: Other
+tags: Productivity
 description:
 ---
 [10 Days To Better Productivity](http://www.dailyinfographic.com/10-days-to-better-productivity-infographic)介绍了10个提高效率的小技巧。

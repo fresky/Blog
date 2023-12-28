@@ -3,7 +3,7 @@ layout: post
 title: "颜色在市场推广中的学问"
 date: 2013-05-07
 comments: true
-tags: Other
+tags: SoftSkill
 ---
 [Why Facebook is blue: The science of colors in marketing - The Buffer Blog](http://blog.bufferapp.com/the-science-of-colors-in-marketing-why-is-facebook-blue)介绍了颜色对用户的影响，写的非常棒。
 

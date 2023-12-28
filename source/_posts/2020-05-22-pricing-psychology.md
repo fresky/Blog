@@ -1,7 +1,7 @@
 title: 定价心理学
 date: 2020-05-22 13:41:34
 categories:
-tags: Other
+tags: SoftSkill
 description:
 ---
 

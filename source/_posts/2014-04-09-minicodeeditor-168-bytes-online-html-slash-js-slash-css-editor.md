@@ -3,7 +3,7 @@ layout: post
 title: "MiniCodeEditor：只有168字节的在线Html/CSS/JavaScript编辑器"
 date: 2014-04-09 13:45
 comments: true
-tags: Html
+tags: Programming
 keywords: html,css,javascript,online editor
 description: MiniCodeEditor：只有168字节的在线Html/CSS/JavaScript编辑器
 ---

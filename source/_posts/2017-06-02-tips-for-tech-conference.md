@@ -1,7 +1,7 @@
 title: 参加技术会议的一些小窍门
 date: 2017-06-02 09:38:41
 categories:
-tags: Other
+tags: SoftSkill
 description:
 ---
 

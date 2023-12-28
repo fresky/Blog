@@ -3,7 +3,7 @@ layout: post
 title: "15个影响项目进度的路障"
 date: 2013-07-07
 comments: true
-tags: Other
+tags: Process
 ---
 <p><a href="https://www.infoworld.com/d/application-development/15-workplace-barriers-better-code-220975">15 workplace barriers to better code | Application Development - InfoWorld</a>列出了15个影响项目进度的路障：</p>
 <ol>

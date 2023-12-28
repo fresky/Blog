@@ -1,7 +1,7 @@
 title: 编程语言的类型系统比较
 date: 2015-04-29 23:00:30
 categories:
-tags: Other
+tags: Programming
 description:
 ---
 [An Introduction To Programming Type Systems](http://www.smashingmagazine.com/2013/04/18/introduction-to-programming-type-systems/)比较了一下编程语言中的类型系统。

@@ -1,7 +1,7 @@
 title: 用6个字符写出任意的Javascript代码
 date: 2016-11-05 10:04:54
 categories:
-tags: Javascript
+tags: Programming
 description:
 ---
 [A Javascript journey with only six characters](http://jazcash.com/a-javascript-journey-with-only-six-characters/)展示了只用`(`，`)`，`+`，`[`，`]`和`!`这6个字符能做什么事情。[JSFuck](http://www.jsfuck.com/)是一个网站，把你输入的任何Javascript语句翻译成只用这6个字符表示的形式，比如`alert(1)`可以用如下的6个字符代码替代，是不是大开眼界:)。

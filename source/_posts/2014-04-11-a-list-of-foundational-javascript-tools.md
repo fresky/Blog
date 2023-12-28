@@ -3,7 +3,7 @@ layout: post
 title: "一个分门别列介绍JavaScript各种常用工具的脑图"
 date: 2014-04-11 10:36
 comments: true
-tags: Html
+tags: Programming
 keywords: javascript
 description: 一个分门别列介绍JavaScript各种常用工具的脑图。
 ---

@@ -1,7 +1,7 @@
 title: 根据经纬度计算地图的像素值
 date: 2016-08-12 17:14:24
 categories:
-tags: [Web, Javascript]
+tags: Programming
 description:
 ---
 如果我们想根据经纬度在一张地图的图片上画一个点，就需要知道如何根据经纬度算出对应图片的像素值。本文介绍一下怎么根据在线地图中常用的Web Mercator投射算法来从经纬度计算像素值。

@@ -1,7 +1,7 @@
 title: 用VerbalExpressions来帮助我们写正则表达式
 date: 2015-03-16 19:42:00
 categories:
-tags: [Regex, Tool]
+tags: [Programming, Tool]
 description: 使用VerbalExpressions可以在多种语言，包括C++和C#中用非常直观的方式来帮助我们写正则表达式。
 ---
 

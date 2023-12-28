@@ -1,7 +1,7 @@
 title: SmartbBear给出的11条代码审查最佳实践
 date: 2015-02-04 23:32:47
 categories:
-tags: Other
+tags: Process
 description: 代码审查（Code Review）的作用毋庸置疑，分享一个SmartBear通过在思科10个月的代码审查总结出来的一个代码审查的建议-11 Best Practices of Peer Code Review。
 ---
 

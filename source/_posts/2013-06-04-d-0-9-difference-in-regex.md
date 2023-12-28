@@ -3,7 +3,7 @@ layout: post
 title: "正则表达式中\\d和[0-9]有什么区别"
 date: 2013-06-04
 comments: true
-tags: [Programming, Regex]
+tags: Programming
 ---
 <p>今天看到Stackoverflow上一个有趣的<a href="http://stackoverflow.com/questions/16621738/d-is-less-efficient-than-0-9?newsletter=1&amp;nlcode=55866%7cc739">问题</a>，为什么正则表达式在中\d比[0-0]低效？</p>
 <p>提问者用了如下的代码来做测试：</p>

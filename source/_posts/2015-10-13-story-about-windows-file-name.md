@@ -1,7 +1,7 @@
 title: 关于Windows文件名和路径名的那些事
 date: 2015-10-13 22:42:02
 categories:
-tags: C++
+tags: Programming
 description: 本文介绍了Windows下关于文件名和路径名的一些规范，介绍了什么是8.3文件名，什么是长文件名和短文件名。并且介绍了如何绕过Windows关于路径260长度的限制。
 ---
 [Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365247%28v=vs.85%29.aspx)介绍了Windows的文件、路径。要点如下：

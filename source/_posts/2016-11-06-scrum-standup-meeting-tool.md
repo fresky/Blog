@@ -1,7 +1,7 @@
 title: 提高Scrum站会效率的一个小工具
 date: 2016-11-06 10:32:10
 categories:
-tags: Other
+tags: Tool
 description:
 ---
 

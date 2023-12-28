@@ -1,7 +1,7 @@
 title: 如何给自己的品牌选择颜色
 date: 2018-10-10 23:12:39
 categories:
-tags: Other
+tags: SoftSkill
 description:
 ---
 在我之前的一篇文章[颜色在市场推广中的学问](/2013/05/07/how-color-affect-marketing/)中链接的文章介绍了颜色和情绪之前的关系，给了一个很酷的图把很多品牌的图标根据颜色分了个类。可以看出各个品牌的颜色和这个品牌想给人们带来的印象之前的关系。

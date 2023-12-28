@@ -1,7 +1,7 @@
 title: 如何做一个好的软件架构师
 date: 2022-05-25 18:52:48
 categories:
-tags: Architect
+tags: [Design, SoftSkill]
 description:
 ---
 
