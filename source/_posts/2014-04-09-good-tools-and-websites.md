@@ -3,7 +3,7 @@ layout: post
 title: "值得记录的工具和网站"
 date: 2014-04-09
 comments: true
-tags: [Tool, Resource]
+tags: Tool
 ---
 打算用这篇博客记录一下平时遇到的好的工具和网站，会随时更新。
 
@@ -96,7 +96,7 @@ tags: [Tool, Resource]
 - [系统架构领域的一些学习材料](http://www.valleytalk.org/2014/03/18/%E6%9E%97%E4%BB%95%E9%BC%8E-%E3%80%82-%E3%80%8A%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E9%A2%86%E5%9F%9F%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AD%A6%E4%B9%A0%E6%9D%90%E6%96%99%E3%80%8B/)  
 - [Papers We Love](https://github.com/papers-we-love/papers-we-love)  
 - [C++ FAQ](http://isocpp.org/faq)  
-- [CPP Quiz](http://cppquiz.org/)  
+- [C++ Quiz](http://cppquiz.org/)  
 
 ## 书籍##
 - [free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)  

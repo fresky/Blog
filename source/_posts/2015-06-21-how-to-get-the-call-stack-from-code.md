@@ -1,7 +1,7 @@
 title: 怎么从代码中拿到栈回溯信息（call stack trace）
 date: 2015-06-21 21:59:37
 categories:
-tags: [CPP, CSharp, Debug]
+tags: [Programming, Debug]
 description: 本文介绍如何在C++和C#代码中得到当前的栈回溯信息（call stack trace）。C#使用了System.Diagnostics.StackTrace，C++使用了CaptureStackBackTrace和DbgHelp中的SymSetOptions，SymInitialize，SymCleanup，SymFromAddr，SymGetLineFromAddr64。
 ---
 在上一篇博客[调试内存泄漏问题的一些经验](/2015/06/21/how-to-attack-the-memory-leak-issue/)中提到过通过gflags设置“Create user mode stack trace database”可以存储生成对象的调用栈信息（call stack trace），这样以后可以很方便的看到每个泄漏的对象是怎么产生的。

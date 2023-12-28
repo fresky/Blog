@@ -1,7 +1,7 @@
 title: Windows下如何检测用户修改了系统时间并且把系统时间改回来
 date: 2015-09-16 20:04:36
 categories:
-tags: CSharp
+tags: Programming
 description:
 ---
 有些时候我们不希望用户在使用我们的软件时修改系统时间，那么怎么检测用户是否修改系统时间呢？Windows会在系统时间修改时发送[WM_TIMECHANGE](https://msdn.microsoft.com/en-us/library/windows/desktop/ms725498%28v=vs.85%29.aspx)消息，所以可以在C++的WindowProc函数中处理这个消息。如果是C#，可以直接用[SystemEvents.TimeChanged](https://msdn.microsoft.com/en-us/library/microsoft.win32.systemevents.timechanged.aspx)事件。这个事件有个[bug](https://connect.microsoft.com/VisualStudio/feedback/details/776003/systemevent-timechanged-is-fired-twice)，就是每次都会被触发两次。

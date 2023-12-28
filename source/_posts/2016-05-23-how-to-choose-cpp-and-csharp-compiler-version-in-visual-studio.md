@@ -1,7 +1,7 @@
 title: 如何在Visual Studio中选择C++和C#的编译器版本
 date: 2016-05-23 23:14:03
 categories:
-tags: [CSharp, CPP, Tool]
+tags: [Programming, Tool]
 description: 本文介绍了Visual Studio的编译引擎MSBuild，以及如何使用Toolset来为MSBuild指定C#和C++的编译器。
 ---
 # MSBuild简介

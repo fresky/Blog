@@ -3,7 +3,7 @@ layout: post
 title: "runnable:在线IDE+代码片段分享"
 date: 2014-01-09 22:00
 comments: true
-tags: Resource
+tags: Tool
 ---
 
 在我之前的博客[20个最好的在线IDE](/2012/11/17/blogpost/)中列举过很多在线IDE，可以很方便的在云端执行代码，这样在你手头没有编译器时想试个小程序会非常有用。

@@ -3,7 +3,7 @@ layout: post
 title: ".NET自动exploratory测试工具Pex"
 date: 2012-12-04
 comments: true
-tags: [CSharp, Testing]
+tags: [Programming, Testing]
 ---
 <p><a href="http://research.microsoft.com/en-us/projects/pex/">Pex</a>还是很好用的，安装之后可以在visual studio2008和2010中直接用，也能用命令行。</p>  <p>我写了下面这个很简单的小程序：</p>  
 

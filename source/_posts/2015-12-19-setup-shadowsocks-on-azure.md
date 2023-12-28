@@ -1,7 +1,7 @@
 title: 在Azure上搭架Shadowsocks代理服务器
 date: 2015-12-19 18:00:59
 categories:
-tags: Resource
+tags: Tool
 description:
 ---
 简单总结一下如何在云服务的虚拟机中搭建Shadowsocks代理服务器。

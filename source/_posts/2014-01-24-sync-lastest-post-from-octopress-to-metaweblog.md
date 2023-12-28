@@ -3,7 +3,7 @@ layout: post
 title: "把用octopress最新发布的博文同步到提供metaweblog API的博客（例如博客园）上"
 date: 2014-01-24 08:43
 comments: true
-tags: [CSharp, Github]
+tags: [Programming, Tool]
 keywords: octopress, metaweblog, csharp, password
 description: 把用octopress最新发布的博文同步到提供metaweblog API的博客（例如博客园）上，在csharp的console application中读取密码。
 ---

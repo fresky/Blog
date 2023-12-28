@@ -3,7 +3,7 @@ layout: post
 title: "Visual Studio的2个有趣的插件：声音控制和放屁：）"
 date: 2013-06-17
 comments: true
-tags: [Tool, CSharp]
+tags: [Tool, Programming]
 ---
 <p><a href="http://madskristensen.net/post/Talk-to-hear-touch-and-see-your-code.aspx">.NET Slave | Talk to, hear, touch and see your code</a>介绍了2个有趣的Visual Studio的插件，你可以通过它们和你的代码对话。</p>
 <p>声音控制（Voice Commands）：</p>

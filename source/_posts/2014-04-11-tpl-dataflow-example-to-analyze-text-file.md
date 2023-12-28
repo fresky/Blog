@@ -3,7 +3,7 @@ layout: post
 title: "一个使用C#的TPL Dataflow Library的例子：分析文本文件中词频"
 date: 2014-04-11 16:21
 comments: true
-tags: [CSharp]
+tags: [Programming]
 keywords: csharp, tpl, dataflow, text,文本处理，工作流，多线程
 description: 使用Task.ContinueWith和TPL的Dataflow来解决工作流（管道）问题。在本文的例子中是分析文本文件中词频。
 ---

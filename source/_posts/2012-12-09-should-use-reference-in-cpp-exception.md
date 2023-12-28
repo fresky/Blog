@@ -3,7 +3,7 @@ layout: post
 title: "C++应该用引用来捕捉异常"
 date: 2012-12-09
 comments: true
-tags: CPP
+tags: Programming
 ---
 <p>在C++中catch异常时的参数应该用引用，主要原因还是对象，引用，指针的构造析构原理。下面用代码实例解释一下原因。</p>  <p>先来看我们定义了两个异常，SubException继承BaseException，有一个虚函数打印信息。</p>  
 

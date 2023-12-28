@@ -1,7 +1,7 @@
 title: C#如何转换2位数字表示的年
 date: 2015-08-12 19:15:09
 categories:
-tags: CSharp
+tags: Programming
 description: C#根据Calendar.TwoDigitYearMax来做2位数字年份的转换，默认值是2029，所以30就是1930，29就是2029。
 ---
 

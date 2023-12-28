@@ -3,7 +3,7 @@ layout: post
 title: "用CS-Script把Notepad++变身支持智能提示和运行代码的C#集成开发环境"
 date: 2014-03-31 12:17
 comments: true
-tags: [CSharp, Tool]
+tags: [Programming, Tool]
 keywords: CS-Script, Notepad++, Visual Studio
 description: 用CS-Script把Notepad++变身支持智能提示和运行代码的C#集成开发环境。
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "C#中如何正确的实现IDisposable接口"
 date: 2012-12-23
 comments: true
-tags: CSharp
+tags: Programming
 ---
 <p>Stackoverflow上的这个<a href="http://stackoverflow.com/a/538238/304115">回答</a>是我见过的讲的最清楚的怎么正确实现<span style="color: #000000;">IDisposable</span>接口，我简单挑重点翻译翻译吧。：）</p>
 <h3>&nbsp;</h3>

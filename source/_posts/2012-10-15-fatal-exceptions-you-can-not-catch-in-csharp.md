@@ -3,7 +3,7 @@ layout: post
 title: "C#中不能catch Fatal的exception"
 date: 2012-10-15
 comments: true
-tags: CSharp
+tags: Programming
 ---
 <p><a href="http://vasters.com/clemensv/2012/09/06/Are+You+Catching+Falling+Knives.aspx">Clemens Vasters - Are you catching falling knives?</a>里给了一个判断C#的exception是不是fatal的代码，可以参考参考。</p>  
 

@@ -1,7 +1,7 @@
 title: Moq4在.NET3.5和.NET4版本之间的差异
 date: 2015-06-12 11:14:21
 categories:
-tags: [CSharp, Tool]
+tags: [Programming, Tool]
 description: Moq4为了实现返回值基于参数的功能支持超过4个参数的方法，导致Moq做了2个dll，分别是基于.NET3.5和.NET4。就是我们下载Moq时看到的Moq35和Moq40两个文件夹。这两个dll在大部分情况下可以混用，但是如果测试方法中包含要Mock超过4个参数的方法，并且需要根据参数值来决定返回值时，混用Moq35和Moq40会导致测试失败。
 ---
 [Moq](https://github.com/Moq/moq4)是应用最广泛的一个C#的Mock框架。它有一个功能是在Mock一个方法时能根据这个方法的输入参数来设置返回值。如下所示：

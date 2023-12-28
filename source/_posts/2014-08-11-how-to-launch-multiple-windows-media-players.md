@@ -3,7 +3,7 @@ layout: post
 title: "如何在Windows中打开多个Windows Media Player"
 date: 2014-08-11 11:54
 comments: true
-tags: [CPP,Debug]
+tags: [Programming,Debug]
 keywords: Mutex,Semaphore,Event,Critical Section
 description: 如何在Windows中打开多个Windows Media Player，本文介绍了Windows中的Mutex、Semaphore、Event和Critical Section的区别。
 ---

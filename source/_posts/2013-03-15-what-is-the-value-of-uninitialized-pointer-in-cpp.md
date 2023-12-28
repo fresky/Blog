@@ -3,7 +3,7 @@ layout: post
 title: "没有初始化的指针会是个什么值呢？"
 date: 2013-03-15
 comments: true
-tags: CPP
+tags: Programming
 ---
 <p>在C++的构造函数中我们应该把所有成员变量都初始化，如果我们忘记了初始化一个成员指针，会发生什么呢？</p>  <p>假设有如下代码：</p>  
 

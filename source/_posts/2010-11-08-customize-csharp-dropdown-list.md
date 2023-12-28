@@ -3,7 +3,7 @@ layout: post
 title: "定制C# combobox的下拉框"
 date: 2010-11-08
 comments: true
-tags: CSharp
+tags: Programming
 ---
 <p>今天做了个小东西，需要定制combobox的下拉框，打开下拉框时如下图。</p>
 

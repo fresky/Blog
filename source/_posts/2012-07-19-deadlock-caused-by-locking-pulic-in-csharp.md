@@ -3,7 +3,7 @@ layout: post
 title: "c# lock 使用不当引起的死锁"
 date: 2012-07-19
 comments: true
-tags: CSharp
+tags: Programming
 ---
 [Thread Synchronization (C# and Visual Basic)](http://msdn.microsoft.com/en-us/library/ms173179%28v=vs.110%29.aspx)中提到最好不要lock public的东西，比如：
 

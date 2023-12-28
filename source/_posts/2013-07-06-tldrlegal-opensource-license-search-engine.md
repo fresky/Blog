@@ -3,7 +3,7 @@ layout: post
 title: "tl;drLegal ——开源软件license的搜索引擎"
 date: 2013-07-06
 comments: true
-tags: [Resource, Opensource]
+tags: [Tool, Opensource]
 ---
 <p><a href="http://www.tldrlegal.com/">TLDRLegal - Open Source Licenses Explained in Plain English</a>可以很方便查询各个开源license的总结（能做什么，不能做什么），还能比较不同的license，非常方便。</p>
 <p>对于经常需要检查开源软件能不能用在自己的项目中的人来说，必须放到收藏夹啊：）</p>

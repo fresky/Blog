@@ -1,7 +1,7 @@
 title: 用Natvis定制C++对象在Visual Studio调试时如何显示
 date: 2015-06-17 22:31:12
 categories:
-tags: [CPP, Debug]
+tags: [Programming, Debug]
 description: 本文介绍如何使用Visual Studio的Natvis来定制如何在调试时显示C++对象。如果是C#对象，可以直接使用Debugger Display Attributes。
 ---
 我在之前的博客[定制自己的Visual Studio的Debugger Visualizer](/2012/07/16/customize-your-own-debugger-visualizer-in-csharp/)和[如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方](/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/)中介绍过如何用[Debugger Display Attributes](https://msdn.microsoft.com/en-us/library/ms228992%28v=vs.110%29.aspx)来定制C#的对象在Visual Studio调试时如何显示，今天介绍一下如何通过[Natvis](https://msdn.microsoft.com/en-us/library/jj620914.aspx)对C++的对象做类似的事情。

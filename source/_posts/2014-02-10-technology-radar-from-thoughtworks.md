@@ -3,7 +3,7 @@ layout: post
 title: "Thoughtworks的技术雷达"
 date: 2014-02-10 15:47
 comments: true
-tags: Resource
+tags: Tool
 keywords: technology radar, thoghtworks
 description: Thoughtworks的技术雷达
 ---

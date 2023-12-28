@@ -3,7 +3,7 @@ layout: post
 title: "遇到Class not registered的COM异常怎么办"
 date: 2014-06-23 17:13
 comments: true
-tags: [CPP,Debug]
+tags: [Programming,Debug]
 keywords: class not registered, com, gflags
 description: 本文总结了3种可能导致COM的Class not registered的异常的情况，并且分别给出了解决办法。
 ---

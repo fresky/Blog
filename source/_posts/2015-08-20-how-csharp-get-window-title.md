@@ -1,7 +1,7 @@
 title: C#是怎么获取窗口标题的
 date: 2015-08-20 09:29:52
 categories:
-tags: CSharp
+tags: Programming
 description:
 ---
 之前的博客[C++如何拿到一个窗口的标题](/2015/08/19/how-to-get-the-window-title/)介绍了如何用Windows的GetWindowText函数来获取窗口的标题，Windows是如何实现这个方法的，同时介绍了在使用GetWindowText时可能遇到的一些问题。下面我们来看看在C#中是怎么拿窗口标题的。

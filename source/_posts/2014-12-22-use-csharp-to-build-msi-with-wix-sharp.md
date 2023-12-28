@@ -1,7 +1,7 @@
 title: 用Wix#可以直接写C#代码来生成Wix的MSI安装文件
 date: 2014-12-22 17:33:28
 categories:
-tags: CSharp
+tags: Programming
 description: 如果不想写Wix的XML文件并且熟悉C#，那么现在有了一个新选择-Wix#。有了它，可以直接写C#代码来生成Wix的MSI安装文件。
 ---
 

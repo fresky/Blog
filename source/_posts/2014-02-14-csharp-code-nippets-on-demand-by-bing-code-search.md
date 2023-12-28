@@ -3,7 +3,7 @@ layout: post
 title: "在IDE中用Bing Code Search直接查找代码片段并且插入"
 date: 2014-02-14 09:46
 comments: true
-tags: CSharp
+tags: Programming
 keywords: csharp, bing, snippet
 description: 在IDE中用Bing Code Search直接查找代码片段并且插入
 ---

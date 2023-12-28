@@ -1,7 +1,7 @@
 title: C#编译器怎么检查代码是否会执行
 date: 2015-03-31 22:48:33
 categories:
-tags: CSharp
+tags: Programming
 description: 本文介绍了C#编译器是怎么检查代码是否可达的，C# Reachability。
 ---
 今天翻了一篇Eric Lippert的旧文章[C# Reachability](http://blog.coverity.com/2013/11/06/c-reachability/)，里面详细解释了C#编译器是怎么判断代码是否可达（Unreachable code）的。

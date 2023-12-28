@@ -3,7 +3,7 @@ layout: post
 title: "定义Enum的开始和结束，这样就能循环Enum了"
 date: 2012-07-17
 comments: true
-tags: CSharp
+tags: Programming
 ---
 
 示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。

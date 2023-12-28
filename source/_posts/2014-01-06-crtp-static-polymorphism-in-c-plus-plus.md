@@ -3,7 +3,7 @@ layout: post
 title: "用CRTP在C++中实现静态函数的多态"
 date: 2014-01-06 10:50
 comments: true
-tags: CPP
+tags: Programming
 ---
 
 我上一篇博客[C++的静态分发(CRTP)和动态分发(虚函数多态)的比较](/2014/01/03/cpp-static-dispatch-crtp-vs-dynamic-dispatch-virtual-method/)介绍了如何用CRTP(Curiously Recurring Template Pattern)实现静态分发，今天再讲另外一个CRTP的例子。在C++中静态函数是不能设成virtual的，但是用CRTP可以实现静态函数的多态。

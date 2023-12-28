@@ -1,7 +1,7 @@
 title: 针对C#程序做性能测试的一些基本准则
 date: 2015-03-24 23:20:20
 categories:
-tags: [CSharp, Testing]
+tags: [Programming, Testing]
 description: 
 ---
 

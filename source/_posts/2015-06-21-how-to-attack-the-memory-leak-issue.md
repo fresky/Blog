@@ -1,7 +1,7 @@
 title: 调试内存泄漏问题的一些经验
 date: 2015-06-21 14:03:45
 categories:
-tags: [Debug, CPP, CSharp]
+tags: [Debug, Programming]
 description: 内存泄漏（memory leak）是软件中经常遇到的一类问题，这类问题又是比较难以检测的，通常我们在程序遇到Out Of Memory的异常时才会注意到。拿到Out Of Memory的dump文件后，如何分析dump文件找到内存泄漏的线索又是一个难点。这篇文章分享了一些在Windows平台如何调试，检测C++和C#的内存泄漏的一些经验。Windbg，VLD，gflags，UMDH，Visual Studio。
 ---
 内存泄漏（memory leak）是软件中经常遇到的一类问题，这类问题又是比较难以检测的，通常我们在程序遇到`Out Of Memory`的异常时才会注意到。拿到`Out Of Memory`的dump文件后，如何分析dump文件找到内存泄漏的线索又是一个难点。这篇文章分享了一些在Windows平台如何调试，检测C++和C#的内存泄漏的一些经验。

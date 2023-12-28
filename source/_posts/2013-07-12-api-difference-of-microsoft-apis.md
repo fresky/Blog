@@ -3,6 +3,6 @@ layout: post
 title: "微软提供的API的各个版本之间的区别"
 date: 2013-07-12
 comments: true
-tags: Resource
+tags: Tool
 ---
 <p><a href="http://firstfloorsoftware.com/labs/difflists">First Floor Software</a>这个diff lists非常方便的给出了微软提供的API的各个版本之间的区别，比如下表是.NET 4和.NET 4.5的API变化总结。我们可以看到.NET 4.5多了12个assembly，834个类，88个结构，51个接口。</p><h1 class="page-header">.NET 4             vs             .NET 4.5</h1><table class="table table-hover table-condensed"><thead> <tr><th></th> <th>build</th> <th><div class="text-right">assemblies</div></th> <th><div class="text-right">classes</div></th> <th><div class="text-right">structs</div></th> <th><div class="text-right">interfaces</div></th></tr></thead> <tbody><tr><td><strong>.NET 4</strong></td><td>4.0.30319.1</td><td><div class="text-right">103</div></td><td><div class="text-right">9813</div></td><td><div class="text-right">2011</div></td><td><div class="text-right">853</div></td></tr><tr><td><strong>.NET 4.5</strong></td><td>4.0.30319.17929</td><td><div class="text-right">115</div></td><td><div class="text-right">10647</div></td><td><div class="text-right">2099</div></td><td><div class="text-right">904</div></td></tr><tr><td></td><td></td><td><div class="text-right"><strong>+12</strong></div></td><td><div class="text-right"><strong>+834</strong></div></td><td><div class="text-right"><strong>+88</strong></div></td><td><div class="text-right"><strong>+51</strong></div></td></tr></tbody></table>

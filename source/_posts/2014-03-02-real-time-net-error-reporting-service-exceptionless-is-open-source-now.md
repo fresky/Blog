@@ -3,7 +3,7 @@ layout: post
 title: "实时的.NET程序错误监控产品Exceptionless开源了"
 date: 2014-03-02 15:47
 comments: true
-tags: [CSharp, Tool]
+tags: [Programming, Tool]
 keywords: exceptionless,open source, .net error reporting
 description: 实时的.NET程序错误监控产品Exceptionless开源了。Exceptionless可以对ASP.NET, Web API, WebForms, WPF, Console, 和 MVC 应用提供错误监控，上传，报表服务。
 ---

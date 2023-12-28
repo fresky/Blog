@@ -1,7 +1,7 @@
 title: 避免在C#中使用析构函数Finalizer
 date: 2015-05-22 21:14:04
 categories:
-tags: CSharp
+tags: Programming
 description: C#的析构函数Finalizer坑太多，就不要用了。
 ---
 Eric Lippert在When everything you know is wrong [part one](http://ericlippert.com/2015/05/18/when-everything-you-know-is-wrong-part-one/)和[part two](http://ericlippert.com/2015/05/21/when-everything-you-know-is-wrong-part-two/)中列举了一堆关于Finalizer的**错误**认识。

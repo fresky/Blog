@@ -3,7 +3,7 @@ layout: post
 title: "JetBrains发布了一款免费的.NET反编译器dotPeek"
 date: 2013-08-16
 comments: true
-tags: [CSharp, Tool]
+tags: [Programming, Tool]
 ---
 <p><a href="http://www.jetbrains.com/decompiler/">Free .NET decompiler :: JetBrains dotPeek</a></p>
 <p>主要的功能：</p>

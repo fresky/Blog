@@ -3,7 +3,7 @@ layout: post
 title: "C#中反射接受的字符串需要满足的Backus-Naur Form语法"
 date: 2013-06-30
 comments: true
-tags: CSharp
+tags: Programming
 ---
 <p>MSDN的<a href="http://msdn.microsoft.com/en-us/library/yfsftwz6%28v=vs.110%29.aspx">Specifying Fully Qualified Type Names</a>指明了C#中反射接受的字符串需要满足如下的Backus-Naur Form语法。</p>
 <table>

@@ -3,7 +3,7 @@ layout: post
 title: "C++的几个晦涩特性"
 date: 2013-05-06
 comments: true
-tags: CPP
+tags: Programming
 ---
 [Obscure C++ Features - Made by Evan](http://madebyevan.com/obscure-cpp-features/)列举了几个C++的晦涩特性，挺有意思的，下面简单列几个：
 

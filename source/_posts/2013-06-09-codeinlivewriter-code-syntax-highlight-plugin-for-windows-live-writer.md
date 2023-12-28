@@ -3,7 +3,7 @@ layout: post
 title: "Windows Live Writer的一个代码语法高亮的插件——CodeInLiveWriter"
 date: 2013-06-09
 comments: true
-tags: CSharp
+tags: Programming
 ---
 <p>&nbsp;</p>
 <p>我平时经常用<a href="http://windows.microsoft.com/en-us/windows-live/essentials-other#essentials=overviewother">Windows Live Writer</a>来写博客，但是插入代码很麻烦，用了一些插件也都有些不满意的地方，我就自己写了一个，可以从<a href="http://msdn.microsoft.com/en-us/library/aa702851.aspx">这里</a>找到如何给Windows Live Writer写plugin。</p>

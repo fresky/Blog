@@ -1,7 +1,7 @@
 title: 聊聊LAA（LARGE ADDRESS AWARE）
 date: 2015-06-25 00:46:30
 categories:
-tags: [CSharp, Debug, Tool]
+tags: [Programming, Debug, Tool]
 description: 本文介绍了什么是LAA（LARGE ADDRESS AWARE），怎么设置LAA，怎么检查LAA。并且介绍了Windows PE格式。
 ---
 # 什么是LAA（LARGE ADDRESS AWARE）

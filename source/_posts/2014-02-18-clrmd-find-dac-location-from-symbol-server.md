@@ -3,7 +3,7 @@ layout: post
 title: "使用CLRMD时通过Symbol Server找Dac的位置来初始化ClrRuntime"
 date: 2014-02-18 14:38
 comments: true
-tags: [CSharp, Debug]
+tags: [Programming, Debug]
 keywords: CLRMD, debugger, csharp, symbol server
 description: 使用CLRMD时通过Symbol Server找Dac的位置来初始化ClrRuntime
 ---

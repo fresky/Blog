@@ -1,7 +1,7 @@
 title: 在C#中我们能调用一个类的私有方法吗
 date: 2015-04-03 01:03:09
 categories:
-tags: CSharp
+tags: Programming
 description:
 ---
 在C#中我们能调用一个类的私有方法吗？当然我们要排除掉用反射的方式：）直觉应该是不能。那我们来看一段代码吧。下面的代码修改自Eric Lippert的[Interface implementation in C# and VB](http://blog.coverity.com/2013/10/09/interface-implementation/)。

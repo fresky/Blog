@@ -3,7 +3,7 @@ layout: post
 title: "用LINQPad加上Tx驱动来分析log"
 date: 2014-01-09 12:09
 comments: true
-tags: [CSharp, Resource]
+tags: [Programming, Tool]
 ---
 
 [Tx (LINQ to Logs and Traces)](http://tx.codeplex.com/)是[微软发布的开源工具](http://blogs.msdn.com/b/interoperability/archive/2014/01/06/new-release-tx-linq-to-logs-and-traces.aspx)。可以用这个工具来使用LINQ分析日志，包括

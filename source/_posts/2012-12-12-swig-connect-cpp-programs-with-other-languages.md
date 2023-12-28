@@ -3,7 +3,7 @@ layout: post
 title: "SWIG——帮助使用C或者C++编写的软件能与其它各种高级编程语言进行嵌入联接的开发工具"
 date: 2012-12-12
 comments: true
-tags: CPP
+tags: Programming
 ---
 <a href="http://www.swig.org/">Simplified Wrapper and Interface Generator</a>，SWIG是个帮助使用C或者C++编写的软件能与其它各种高级编程语言进行嵌入联接的开发工具。支持的语言有：<br /><ul><li>Tcl 8.0 and newer versions.</li><li>Python 1.5 and newer.
  </li><li> Perl 5.003 or newer.

@@ -1,7 +1,7 @@
 title: 用C#来查看电脑硬件和系统信息
 date: 2015-07-08 22:53:13
 categories:
-tags: CSharp
+tags: Programming
 description: 本文介绍了如何用C#通过Environment和ManagementClass来查看操作系统，环境变量，CPU情况，硬盘情况等。
 ---
 C#中有几个API可以很方便的查看电脑硬件和系统信息。

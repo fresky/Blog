@@ -1,7 +1,7 @@
 title: 如何调试什么时候SaveFileDialog会被Dispose
 date: 2015-03-25 19:37:30
 categories:
-tags: [CSharp, Debug]
+tags: [Programming, Debug]
 description: 本文介绍了如何通过加函数断点的方式调试什么时候SaveFileDialog会被Dispose，然后通过调试结果说明我们在使用完SaveFileDialog后应该显示的Dispose。
 ---
 

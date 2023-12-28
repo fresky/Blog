@@ -3,7 +3,7 @@ layout: post
 title: "怎么看C++对象的内存结构 和 怎么解密C++的name mangling"
 date: 2012-12-23
 comments: true
-tags: CPP
+tags: Programming
 ---
 <p><a href="http://eli.thegreenplace.net/2012/12/17/dumping-a-c-objects-memory-layout-with-clang/">Dumping a C++ object’s memory layout with Clang</a>这篇文章讲述了怎么用Clang来看C++对象的结构，回复中Marek提到了怎么在Visual Studio中看。具体方法如下：</p>  <p>C++项目右键属性，C/C++下的Command Line，加上这个选项</p>  
 ```

@@ -1,7 +1,7 @@
 title: 你知道Form.Show()和Form.ShowDialog()的区别吗？
 date: 2015-01-12 20:21:16
 categories:
-tags: CSharp
+tags: Programming
 description: 本文解析了Form.Show()和Form.ShowDialog()的区别，简单的说，就是调用Form.Show()不需要显示的Dispose，但是调用Form.ShowDialog()需要显示的Dispose。
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "C++中子类的数组不能用父类指针来表示"
 date: 2012-12-03
 comments: true
-tags: CPP
+tags: Programming
 ---
 <p>假设我们有一个父类A，一个子类B，如果我们创建一个B的数组，我们能这样用吗？</p>
 

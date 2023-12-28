@@ -3,7 +3,7 @@ layout: post
 title: "在C#中如何确定一个文件是不是文本文件，以及如何确定一个文件的类型"
 date: 2014-04-21 18:43
 comments: true
-tags: CSharp
+tags: Programming
 keywords: file type, csharp
 description: 本文介绍如何在C#中通过检查文件中有没有\0来判断是不是文本文件，并且通过文件的前两个字节来判断文件类型。需要注意的是这两个方法都不是很准确。
 ---

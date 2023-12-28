@@ -1,7 +1,7 @@
 title: C#中如何操作2个list
 date: 2015-03-30 17:24:36
 categories:
-tags: CSharp
+tags: Programming
 description: 本文介绍了在C#中如何用Enumerable.Select和Enumerable.Zip来简化操作2个list。
 ---
 

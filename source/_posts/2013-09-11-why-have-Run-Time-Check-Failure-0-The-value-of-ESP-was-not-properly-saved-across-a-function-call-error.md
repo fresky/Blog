@@ -3,7 +3,7 @@ layout: post
 title: "C++程序在debug模式下遇到Run-Time Check Failure #0 - The value of ESP was not properly saved across a function call问题"
 date: 2013-09-11
 comments: true
-tags: CPP
+tags: Programming
 ---
 <p>今天遇到一个Access Violation的crash，只看crash call stack没有找到更多的线索，于是在debug模式下又跑了一遍，遇到了如下的一个debug的错误提示框：</p>  <p><a href="http://images.cnitblog.com/blog/163228/201309/11150255-8d44d6fb8f3942dc925c47a4f4291b2b.png"><img title="runtimecheckfailureESP" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="runtimecheckfailureESP" src="http://images.cnitblog.com/blog/163228/201309/11150257-27be9445885646ac853bf1e6c3ea0861.png" width="411" height="308" /></a></p>  <p>这个是什么原因呢？我们来看一个简单的例子来重现这个错误。</p>  <p>假设我们有2个父类，分别是BaseA和BaseB。有一个子类Child，继承自BaseA和BaseB。</p>
 

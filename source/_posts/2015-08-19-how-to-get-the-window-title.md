@@ -1,7 +1,7 @@
 title: C++如何拿到一个窗口的标题
 date: 2015-08-19 18:38:17
 categories:
-tags: [CPP, Debug]
+tags: [Programming, Debug]
 description: 本文介绍了如何用Windows的GetWindowText函数来获取窗口的标题。介绍了Windows是如何实现这个方法的。同时介绍了在使用GetWindowText时可能遇到的一些问题，比如调用方被挂起hang了，原因是什么，如何避免。另外还说明了使用GetWindow函数可能遇到的问题，应该尽量使用EnumWindows来替代。
 ---
 如果想拿到一个窗口的标题，那么使用Windows的函数[GetWindowText](https://msdn.microsoft.com/en-us/library/windows/desktop/ms633520%28v=vs.85%29.aspx)，但是使用这个函数时有一些坑需要注意一下。先看看MSDN上的说明：

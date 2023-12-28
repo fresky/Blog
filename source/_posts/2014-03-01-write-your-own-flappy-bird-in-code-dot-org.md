@@ -3,7 +3,7 @@ layout: post
 title: "在code.org上自己写一个flappy bird游戏"
 date: 2014-03-01 17:44
 comments: true
-tags: Resource
+tags: Tool
 keywords: code.org,flappy bird,game
 description: 在code.org上自己写一个flappy bird游戏
 ---

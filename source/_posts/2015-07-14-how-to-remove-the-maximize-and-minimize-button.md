@@ -1,7 +1,7 @@
 title: 如何去掉WinForm或者WPF的最大化和最小化按钮
 date: 2015-07-14 23:13:18
 categories:
-tags: CSharp
+tags: Programming
 description: 本文介绍了如何通过SetWindowLongPtr和GetWindowLongPtr、SetWindowPos来去掉WinForm或者WPF的最大化和最小化按钮。
 ---
 有时候我们希望对我们的WinForm或者WPF控件做一些定制，比如去掉最大化和最小化按钮，怎么做呢？

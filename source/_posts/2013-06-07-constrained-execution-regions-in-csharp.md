@@ -3,7 +3,7 @@ layout: post
 title: "C#的强迫执行域Constrained Execution Regions(CERs)"
 date: 2013-06-07
 comments: true
-tags: [CSharp, Debug]
+tags: [Programming, Debug]
 ---
 <p>强迫执行域（CERs）通常用于遇到未预见的异常时，保证系统被多个AppDomain或者进程共享的状态的正确性。</p>
 <p>这种异常我们通常称之为Asynchronous Exception。比如当调用一个函数时，CLR需要去加载assembly，在AppDomain的堆上创建类型，调用类型的类构造函数，JIT把IL转换成native代码等等。当这些过程出错时，CLR会抛异常。如果这个异常是在代码的catch或者finally抛出的话，catch和finally中的错误恢复代码就不能被执行了，这样系统的状态就有可能会出错。</p>

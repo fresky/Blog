@@ -3,7 +3,7 @@ layout: post
 title: "C#中只使用Invokerequired来判断是不是UI线程可靠吗？"
 date: 2014-05-14 19:16
 comments: true
-tags: CSharp
+tags: Programming
 keywords:
 description:
 ---

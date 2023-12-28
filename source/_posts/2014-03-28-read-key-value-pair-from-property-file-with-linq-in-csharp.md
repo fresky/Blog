@@ -3,7 +3,7 @@ layout: post
 title: "在C#中用Linq从属性文件中读取键值对Key-Value Pair"
 date: 2014-03-28 08:41
 comments: true
-tags: CSharp
+tags: Programming
 keywords: Linq, Key-Value Pari, Select, Where, GroupBy, ToDictionary
 description: 在C#中用Linq从属性文件中读取键值对Key-Value Pair。使用Select, Where, GroupBy, ToDictionary。
 ---

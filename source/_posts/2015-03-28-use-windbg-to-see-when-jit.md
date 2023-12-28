@@ -1,7 +1,7 @@
 title: 用Windbg来看看CLR的JIT是什么时候发生的
 date: 2015-03-28 19:09:23
 categories:
-tags: [CSharp, Debug]
+tags: [Programming, Debug]
 description: 本文用Windbg来调试看C#的程序在运行时JIT发生在什么时候。
 ---
 C#的程序一个可能遇到的性能问题就是启动时间可能会太长，这是因为C#编译后会成为IL，在第一次运行时会由JIT即时编译编译为机器代码，然后运行。[.NET Just in Time Compilation and Warming up Your System](http://blogs.msdn.com/b/abhinaba/archive/2014/09/29/net-just-in-time-compilation-and-warming-up-your-system.aspx)介绍了作者对于JIT的一些经验，其中谈到了如何通过Windbg来看JIT究竟是什么时候发生的，很有意思。下面我们也就拿段小程序用Windbg看看。

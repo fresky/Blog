@@ -3,7 +3,7 @@ layout: post
 title: "在线C++编译器"
 date: 2013-02-05
 comments: true
-tags: [Tool, CPP]
+tags: [Tool, Programming]
 ---
 <p><a href="http://isocpp.org/blog/2013/01/online-c-compilers" target="_blank">在线C++编译器</a>列举了如下网站：</p>
 <ul>

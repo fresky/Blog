@@ -3,7 +3,7 @@ layout: post
 title: "C#中5种timer的比较"
 date: 2013-07-09
 comments: true
-tags: CSharp
+tags: Programming
 ---
 <p>C#中有5个timer，它们的主要区别如下：</p>
 <ol>

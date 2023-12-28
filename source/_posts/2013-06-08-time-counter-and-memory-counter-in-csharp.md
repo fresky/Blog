@@ -3,7 +3,7 @@ layout: post
 title: "C#的一个小函数来计算一个运算使用的时间和内存"
 date: 2013-06-08
 comments: true
-tags: CSharp
+tags: Programming
 ---
 <p>&#160;</p>  <p>如下，分别计算时间和内存。</p>  
 

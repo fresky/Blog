@@ -3,7 +3,7 @@ layout: post
 title: "来看看Github上流行的编码规范"
 date: 2013-09-18 11:08
 comments: true
-tags: [Resource]
+tags: [Tool]
 ---
 
 

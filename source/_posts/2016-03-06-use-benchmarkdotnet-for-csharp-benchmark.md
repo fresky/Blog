@@ -1,7 +1,7 @@
 title: 用BenchmarkDotNet给C#程序做性能测试
 date: 2016-03-06 10:22:53
 categories:
-tags: [Tool, CSharp]
+tags: [Tool, Programming]
 description:
 ---
 

@@ -1,7 +1,7 @@
 title: C#和C++中的float类型
 date: 2015-05-24 23:43:11
 categories:
-tags: [CSharp, CPP]
+tags: Programming
 description: 
 ---
 # 浮点数介绍

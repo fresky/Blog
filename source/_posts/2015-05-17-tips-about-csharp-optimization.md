@@ -1,7 +1,7 @@
 title: C#性能优化的一些技巧
 date: 2015-05-17 23:22:22
 categories:
-tags: CSharp
+tags: Programming
 description: 
 ---
 [.NET Perls: Optimization](http://www.dotnetperls.com/optimization)列举了一些关于C#如何做性能优化的技巧和示例，我挑了几个列在下面，关于范例请参看原文。要注意的是这里提到的一些做法会导致程序可读性和可维护性变差，所以一定要在必要的时候再使用，对大部分非hot path的程序来说，可读性和可维护性通常比性能更重要。

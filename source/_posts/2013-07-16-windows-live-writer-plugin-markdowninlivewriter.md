@@ -3,7 +3,7 @@ layout: post
 title: "Windows Live Writer的Markdown插件"
 date: 2013-07-16
 comments: true
-tags: CSharp
+tags: Programming
 ---
 <p>我新写了一个Windows Live Writer的Markdown插件，代码放在了<a href="https://github.com/fresky/MarkdownInLiveWriter">github</a>上。</p>
 <h3>介绍</h3>

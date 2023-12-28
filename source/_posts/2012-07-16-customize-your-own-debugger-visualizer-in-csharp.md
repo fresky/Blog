@@ -3,7 +3,7 @@ layout: post
 title: "定制自己的Visual Studio的Debugger Visualizer"
 date: 2012-07-16
 comments: true
-tags: [CSharp, Debug]
+tags: [Programming, Debug]
 ---
 又加了一个debugger visualizer的例子。
 

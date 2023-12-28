@@ -3,7 +3,7 @@ layout: post
 title: "值得记录的工具和网站"
 date: 2014-03-15
 comments: true
-tags: [Tool, Resource]
+tags: Tool
 ---
 打算用这篇博客记录一下平时遇到的好的工具和网站，会随时更新。
 

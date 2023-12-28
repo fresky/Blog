@@ -3,7 +3,7 @@ layout: post
 title: "TPL中的task并不是thread"
 date: 2013-07-08
 comments: true
-tags: CSharp
+tags: Programming
 ---
 <p><a href="http://blogs.msdn.com/b/benwilli/archive/2013/04/24/tasks-are-not-threads.aspx">Tasks are not Threads - The Brain Dump</a>用了一个非常简单直观的例子说明了task和thread并不是一回事（尽管你调用Task.Run一般会在线程池上启一个线程帮你做些事情）。</p>  <p>假设有个UI，我们有2个按钮，开始和结束。代码如下：</p>  
 

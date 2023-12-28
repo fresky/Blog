@@ -1,7 +1,7 @@
 title: Visual C++中的编译器优化
 date: 2015-07-13 12:48:00
 categories:
-tags: CPP
+tags: Programming
 description:
 ---
 [Compilers - What Every Programmer Should Know About Compiler Optimizations](https://msdn.microsoft.com/en-us/magazine/dn904673.aspx)和[Part 2](https://msdn.microsoft.com/en-us/magazine/dn973015.aspx)介绍了Visual C++中的编译器优化。摘录几个定义如下：

@@ -3,7 +3,7 @@ layout: post
 title: "Windows操作系统的历史"
 date: 2013-11-19 09:23
 comments: true
-tags: [Other, Resource]
+tags: Other
 ---
 
 [30 years ago Windows was first released, see how much it has changed](http://winsource.com/2013/11/12/windows-through-the-years/)回顾了Windows操作系统的历史。

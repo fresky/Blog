@@ -3,7 +3,7 @@ layout: post
 title: "如何解决因为找不到Notepad++的安装路径而导致的不能更新CS-Script的问题"
 date: 2014-04-21 17:05
 comments: true
-tags: [Tool,CSharp]
+tags: [Tool,Programming]
 keywords: csscript,notepad++,installation,update
 description: 如何通过添加注册表键值（HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\notepad++.exe），解决因为找不到Notepad++的安装路径（cannot find notepad++ installation）而导致的不能更新CS-Script的问题。
 ---

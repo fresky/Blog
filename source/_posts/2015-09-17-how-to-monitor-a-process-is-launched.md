@@ -1,7 +1,7 @@
 title: 如何在一个进程开始运行时得到通知
 date: 2015-09-17 19:49:24
 categories:
-tags: CSharp
+tags: Programming
 description:
 ---
 如果我们想在某个进程被执行时做一些事情，该怎么做呢？最简单粗暴的办法是来个死循环，不停地检查这个进程存不存在。代码如下所示：

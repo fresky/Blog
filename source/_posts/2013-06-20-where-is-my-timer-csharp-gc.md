@@ -3,7 +3,7 @@ layout: post
 title: "谁动了我的timer？C#的垃圾回收和调试"
 date: 2013-06-20
 comments: true
-tags: CSharp
+tags: Programming
 ---
 <p>先来看如下的一段代码：</p>  
 

@@ -1,7 +1,7 @@
 title: 为什么Form.Timer的event handler在Form被Dispose之后还是被调到了？
 date: 2015-01-14 19:26:23
 categories:
-tags: CSharp
+tags: Programming
 description: Form的Timer在Form Dispose时一定要Dispose，而且不能假设Timer的event handler在Timer Dispose后就一定不会调到了。
 ---
 

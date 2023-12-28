@@ -1,7 +1,7 @@
 title: 如何用C#检查硬盘是否是固态硬盘SSD
 date: 2015-07-09 22:00:48
 categories:
-tags: CSharp
+tags: Programming
 description: 本文介绍了如何用C#来查看硬盘是不是“no seek penalty”，或者nominal media rotation rate是1，从而判断硬盘是不是固态硬盘SSD。
 ---
 在我的上一篇文章[用C#来查看电脑硬件和系统信息](/2015/07/08/know-your-computer-from-csharp/)中介绍了`Environment`和`ManagementClass`两个类。那我们能不能通过这两个类得到硬盘是不是固态硬盘SSD呢？答案是否定的。

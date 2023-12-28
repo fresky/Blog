@@ -1,7 +1,7 @@
 title: 搭架私有Git服务器Gogs
 date: 2015-11-07 00:50:35
 categories:
-tags: [Tool, Github]
+tags: Tool
 description:
 ---
 我之前的博客[GitLab: 开源免费的git管理工具](/2013/06/08/gitlab-opensource-github-clone/)和[在Windows上安装私有GitHub的开源替代-GitLab](/2013/07/16/how-to-install-gitlab-in-windows-github-open-source-alternative/)介绍过如何自己搭建一个Git服务器来管理自己的私有仓库。今天再介绍一个Git服务器[Gogs (Go Git Service)](https://github.com/gogits/gogs)。

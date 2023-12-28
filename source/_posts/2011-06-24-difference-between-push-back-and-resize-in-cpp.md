@@ -3,7 +3,7 @@ layout: post
 title: "C++的vector::push_back()和vector::resize()比较"
 date: 2011-06-24
 comments: true
-tags: CPP
+tags: Programming
 ---
 今天看别的code写着下面几行来往vector里面添加一个元素。<br />
 

@@ -3,7 +3,7 @@ layout: post
 title: "WPF的进度条progressbar，运行时间elapse time和等待spinner的实现"
 date: 2013-07-31
 comments: true
-tags: CSharp
+tags: Programming
 ---
 <p>今天用.NET 4.5中的TPL的特性做了个小例子，实现了WPF的进度条progressbar，运行时间elapse time和等待spinner。</p>  <p>先上图吧。</p>  <p><img src="https://raw.github.com/fresky/WPFWaiterExample/master/screenshot.png" /></p>  <p>&#160;</p>  <p>这个例子包含4个实现，分别是同步版本（Sync），异步版本（Async），并发版本（Parallel）和通过数据绑定实现的并发版本（Parallel with Data Binding）。代码放在了<a href="https://github.com/fresky/WPFWaiterExample">Github</a>上。其中Spinner的实现来源于stackoverflow上Drew Noakes提供的<a href="http://stackoverflow.com/a/1492141/304115">代码</a>。</p>  <h3>1. 同步版本（Sync）</h3>  <p>这个版本中进度条、运行时间都不能更新，而且用户不能取消，因为所有的工作都是在UI线程中做的，整个UI被阻塞了。示例代码如下：</p>  
 

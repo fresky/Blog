@@ -1,7 +1,7 @@
 title: 用Swashbuckle给ASP.NET Core的项目自动生成Swagger的API帮助文档
 date: 2016-06-08 21:16:41
 categories:
-tags: [Web, Tool, CSharp]
+tags: [Web, Tool, Programming]
 description:
 ---
 [Swagger](http://swagger.io/)是一个描述RESTful的Web API的规范和框架。如果使用ASP.NET的话，可以用[Swashbuckle](https://github.com/domaindrivendev/Swashbuckle)来自动生成Swagger。下面详细的介绍一下如何给ASP.NET Core的项目自动生成Swagger的API帮助文档。

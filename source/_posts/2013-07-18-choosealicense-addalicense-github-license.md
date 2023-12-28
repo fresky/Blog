@@ -3,7 +3,7 @@ layout: post
 title: "用ChooseALicense帮自己选一个开源license，然后用AddALicense给自己的github自动加上license文件"
 date: 2013-07-18
 comments: true
-tags: [Resource, Github]
+tags: Tool
 ---
 在我之前的一篇博客里面介绍过[tl;drLegal——开源软件license的搜索引擎](/2013/07/06/tldrlegal-opensource-license-search-engine/)，可以很方便的查询各种license，并且给出了很简洁的解释。
 

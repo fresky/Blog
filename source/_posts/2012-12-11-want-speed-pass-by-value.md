@@ -3,7 +3,7 @@ layout: post
 title: "C++，想要提高性能，那就值传递（pass by value）吧。"
 date: 2012-12-11
 comments: true
-tags: CPP
+tags: Programming
 ---
 <p>通常我们在学习写C++程序的时候都听过这样的说法，作为函数的参数，应该引用传递pass by const refercence，这样不会有值传递引起拷贝问题，可以提高性能，但是<a href="http://cpp-next.com/archive/2009/08/want-speed-pass-by-value/">Want Speed? Pass by Value</a>这篇文章的标题就是想要提高性能吗？那就值传递吧。</p>
 <p>这篇文章讲了右值rvalue和返回值优化RVO，然后得出了原则：</p>

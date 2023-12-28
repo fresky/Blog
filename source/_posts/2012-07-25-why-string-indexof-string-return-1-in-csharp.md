@@ -3,7 +3,7 @@ layout: post
 title: "C# string.indexof（string)返回1！！！"
 date: 2012-07-25
 comments: true
-tags: CSharp
+tags: Programming
 ---
 下面的代码第一次indexof返回0，第二次indexof返回1。
 

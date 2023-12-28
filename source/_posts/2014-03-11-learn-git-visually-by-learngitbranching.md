@@ -3,7 +3,7 @@ layout: post
 title: "推荐一个可视化的学习Git的好网站：LearnGitBranching"
 date: 2014-03-11 09:29
 comments: true
-tags: [Resource]
+tags: [Tool]
 keywords: git,LearnGitBranching
 description: 推荐一个可视化的学习Git的好网站：LearnGitBranching
 ---

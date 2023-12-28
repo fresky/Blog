@@ -3,7 +3,7 @@ layout: post
 title: "如何在google test中指定只运行一部分测试"
 date: 2014-02-28 08:47
 comments: true
-tags: [CPP, Testing]
+tags: [Programming, Testing]
 keywords: google test,gtest
 description: 如何在google test中用::testing::FLAGS_gtest_filter指定只运行一部分测试
 ---

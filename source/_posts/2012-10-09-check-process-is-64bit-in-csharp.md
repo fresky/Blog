@@ -3,7 +3,7 @@ layout: post
 title: "c#中判断一个process是32bit还是64bit"
 date: 2012-10-09
 comments: true
-tags: CSharp
+tags: Programming
 ---
 
 下面的代码能判断一个process是32bit还是64bit.

@@ -3,7 +3,7 @@ layout: post
 title: "带checkbox的C# TreeView处理父子节点选择"
 date: 2010-11-02
 comments: true
-tags: CSharp
+tags: Programming
 ---
 今天写了一个C#的TreeView，需要带checkbox，msdn上<a href="http://msdn.microsoft.com/en-us/library/system.windows.forms.treeview.aftercheck.aspx">TreeView.AfterCheck Event (System.Windows.Forms)</a>之处理了子节点的递归选择问题，贴一下我写的父子节点递归选择。<br /><br /><br />
 

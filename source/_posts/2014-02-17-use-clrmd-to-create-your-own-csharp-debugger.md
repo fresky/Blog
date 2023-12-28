@@ -3,7 +3,7 @@ layout: post
 title: "使用CLRMD编写一个自己的C#调试器"
 date: 2014-02-17 19:33
 comments: true
-tags: [CSharp, Debug]
+tags: [Programming, Debug]
 keywords: CLRMD, debugger, csharp
 description: 使用CLRMD编写一个自己的C#调试器
 ---

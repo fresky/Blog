@@ -1,7 +1,7 @@
 title: 如何通过进程名获取进程ID
 date: 2015-08-20 18:45:02
 categories:
-tags: [CPP, CSharp]
+tags: Programming
 description: 本文通过查看C#的GetProcessesByName的源代码来看如何在C++中获取所有系统进程信息。
 ---
 之前的博客[C++如何拿到一个窗口的标题](/2015/08/19/how-to-get-the-window-title/)在最后总结如何获取窗口标题时的一个建议是只查询属于自己感兴趣的进程的窗口。Windows的函数[GetWindowThreadProcessId](https://msdn.microsoft.com/en-us/library/windows/desktop/ms633522%28v=vs.85%29.aspx)可以拿到一个窗口属于的进程ID，通常我们是知道我们感兴趣的进程名字，那么怎么根据进程名字来找到进程ID呢？

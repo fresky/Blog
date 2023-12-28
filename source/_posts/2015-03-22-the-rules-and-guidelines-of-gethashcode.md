@@ -1,7 +1,7 @@
 title: 实现GetHashCode时要遵循的规则
 date: 2015-03-22 23:45:17
 categories:
-tags: CSharp
+tags: Programming
 description: 本文介绍了Eric Lippert给出的实现GetHashCode时需要遵循的规则。
 ---
 

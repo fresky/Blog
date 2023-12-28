@@ -1,7 +1,7 @@
 title: 如何用Windbg找到被catch住的C++的异常
 date: 2015-07-04 17:39:11
 categories:
-tags: [Debug, CPP]
+tags: [Debug, Programming]
 description: 本文介绍了如果用windbg的搜索内存的命令s [-[[Flags]Type]] Range Pattern在栈上寻找上下文CONTEXT，然后通过windbg的切换上下文的命令.cxr来找到C++的异常的调用栈（call stack）信息。
 ---
 在调试dump时经常会遇到我们找到的异常并不是第一个异常，而是catch别的异常之后又抛出来的。在这种情况下，我们需要找到第一个异常来确定问题究竟出在那里。

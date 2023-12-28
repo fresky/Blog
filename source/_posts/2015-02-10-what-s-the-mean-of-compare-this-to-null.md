@@ -1,7 +1,7 @@
 title: "判断this指针是不是null有什么意义呢"
 date: 2015-02-10 18:32:02
 categories:
-tags: CPP
+tags: Programming
 description: 不要在非静态函数中判断this指针是不是null，如果想支持空指针也能调用这个函数，就把这个函数定义为静态的。
 ---
 

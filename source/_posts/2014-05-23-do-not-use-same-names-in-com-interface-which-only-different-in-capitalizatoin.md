@@ -3,7 +3,7 @@ layout: post
 title: "在COM接口中不要使用同时出现只是大小写不同的名字作为属性名、函数名或者参数名"
 date: 2014-05-23 08:49
 comments: true
-tags: CPP
+tags: Programming
 keywords: 
 description: 
 ---

@@ -1,7 +1,7 @@
 title: 如何在一个进程中注入崩溃
 date: 2018-03-23 23:21:22
 categories:
-tags: [CSharp, Debug]
+tags: [Programming, Debug]
 description:
 ---
 我们在设计一个系统时经常需要考虑如果某个进程崩溃之后系统应该作何反应。可以用[force any running process to crash](https://stackoverflow.com/questions/10686231/force-any-running-process-to-crash)中介绍的方法在一个进程中注入一个异常导致它崩溃。

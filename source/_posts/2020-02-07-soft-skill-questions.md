@@ -1,7 +1,7 @@
 title: 技术面试中关于软能力的问题
 date: 2020-02-07 14:55:26
 categories:
-tags: Other
+tags: SoftSkill
 description:
 ---
 [My Favourite Soft Skills Interview Questions](https://deanhume.com/my-favourite-soft-skills-interview-questions)中列举了几个作者常用的古纳元软能力Soft Skill的面试问题，可以参考参考：

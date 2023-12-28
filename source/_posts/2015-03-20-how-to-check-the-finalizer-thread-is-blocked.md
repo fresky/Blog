@@ -1,7 +1,7 @@
 title: 如何判断C#的Finalizer线程有没有被阻塞
 date: 2015-03-20 20:33:58
 categories:
-tags: [CSharp, Debug]
+tags: [Programming, Debug]
 description: 本文介绍了如果判断C#的Finalizer线程有没有被阻塞。给出了一个由于Finalizer线程阻塞导致的句柄（Handle）数目超出Windows限制导致的崩溃问题，还附上了一小段代码用来查看当前进程Handle数目。
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "C++编译器什么时候为我们自动生成拷贝构造函数？"
 date: 2012-11-25
 comments: true
-tags: CPP
+tags: Programming
 ---
 <p>StackOverflow上有个一个有趣的问题，<a href="http://stackoverflow.com/questions/13374984/c-copy-by-value-to-function-params-produce-two-objects-in-vs2012/13551240#13551240">copy by value to function params produce two objects in vs2012</a></p>  <p>给出程序：</p> 
  

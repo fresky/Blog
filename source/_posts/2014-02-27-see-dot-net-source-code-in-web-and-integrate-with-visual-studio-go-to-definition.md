@@ -3,7 +3,7 @@ layout: post
 title: "在网上浏览.NET的所有代码，并且让你的Visual Studio的go to definition(F12)指向在线代码"
 date: 2014-02-27 12:47
 comments: true
-tags: [CSharp,Tool]
+tags: [Programming,Tool]
 keywords: visual studio, .net source code, go to definition
 description: 在网上浏览.NET的所有代码，并且用Visual Studio的扩展Ref12让你的Visual Studio的go to definition(F12)指向在线代码
 ---

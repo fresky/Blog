@@ -1,7 +1,7 @@
 title: 为什么只有在用Visual Studio启动程序时会抛出InvalidOperationException异常
 date: 2015-09-14 18:22:24
 categories:
-tags: [CSharp]
+tags: [Programming]
 description:
 ---
 在我之前的博文[C#中只使用Invokerequired来判断是不是UI线程可靠吗？](/2014/05/14/is-invokerequired-reliable/)提到过除了检查`InvokeRequired`，还需要检查`IsHandleCreated`。今天再分享一段关于`InvokeRequired`的代码。

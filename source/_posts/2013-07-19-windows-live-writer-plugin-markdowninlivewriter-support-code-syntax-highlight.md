@@ -3,7 +3,7 @@ layout: post
 title: "Windows Live Writer的Markdown插件MarkdownInLiveWriter支持语法高亮了"
 date: 2013-07-19
 comments: true
-tags: CSharp
+tags: Programming
 ---
 我前几天开发的Windows Live Writer的Markdown的插件[MarkdownInLiveWriter](/2013/07/16/windows-live-writer-plugin-markdowninlivewriter/)支持语法高亮了。参见下图： 
 

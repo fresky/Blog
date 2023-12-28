@@ -3,7 +3,7 @@ layout: post
 title: "google API的.NET库"
 date: 2013-07-04
 comments: true
-tags: [CSharp, Tool]
+tags: [Programming, Tool]
 ---
 <p>Goolge发布了一个新的google API .NET库，是一个Portable Class Library，所以无论是.NET，WinTRy，Windows Phone或者Silverlight都能用。</p>
 <p><a href="http://www.infoq.com/news/2013/07/Google-API-PCL">Portable Class Libraries for Google APIs</a></p>

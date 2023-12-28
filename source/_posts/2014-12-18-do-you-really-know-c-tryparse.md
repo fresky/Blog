@@ -1,7 +1,7 @@
 title: "你真的知道C#的TryParse吗？"
 date: 2014-12-18 19:00:03
 categories:
-tags: CSharp
+tags: Programming
 description: 本文从解决一个C#Double.TryParse的bug谈起，介绍了TryParse的缺省参数NumberStyles和IFormatProvider。
 ---
 前段时间遇到一个问题，在一个UI上需要显示两个值的差值，所以在代码中使用了`Convert.ToDouble`，这个相当于`Double.Parse(String)`。一直工作的很好，直到有一天发现有应用给的这两个输入值是“1, 2”之类的字符串，并不是一个double数值了，于是程序就Crash了。

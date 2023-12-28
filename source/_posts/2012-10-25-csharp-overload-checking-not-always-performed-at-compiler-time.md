@@ -3,7 +3,7 @@ layout: post
 title: "C#的overload检查总是发生在编译时吗？"
 date: 2012-10-25
 comments: true
-tags: CSharp
+tags: Programming
 ---
 <p><a href="http://stackoverflow.com/questions/12842712/why-does-the-c-sharp-compiler-not-fault-code-where-a-static-method-calls-an-inst?newsletter=1&amp;nlcode=55866|c739">stackoverflow</a>上有人问为什么下面的代码可以编译成功，但是运行时报错：</p>  
 

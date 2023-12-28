@@ -3,7 +3,7 @@ layout: post
 title: ".NET中使用Unity和StructureMap来实现依赖注入Dependency Injection"
 date: 2012-12-22
 comments: true
-tags: CSharp
+tags: Programming
 ---
 <p>本文用一个非常简单的示例来演示一下如何使用<a href="http://unity.codeplex.com/">Unity</a>和<a href="http://docs.structuremap.net/index.html">StructureMap</a>在C#中实现Dependency Injection。</p>  
 

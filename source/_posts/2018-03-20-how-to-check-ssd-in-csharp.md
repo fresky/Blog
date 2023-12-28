@@ -1,7 +1,7 @@
 title: 如何用C#来检查硬盘是不是SSD固态硬盘
 date: 2018-03-20 08:34:07
 categories:
-tags: CSharp
+tags: Programming
 description:
 ---
 [Tell whether SSD or not in C#](https://emoacht.wordpress.com/2012/11/06/csharp-ssd/)介绍了怎么用C#来判断一个磁盘是不是SSD固态硬盘。文中使用的方法来源于微软一篇介绍Windows7磁盘碎片整理的文章[Windows 7 Disk Defragmenter User Interface Overview](https://blogs.technet.microsoft.com/filecab/2009/11/25/windows-7-disk-defragmenter-user-interface-overview/)，在这篇文章中指出Windows7在做磁盘碎片整理的时候会把SSD的磁盘排除在外，它用了3种检测方法（如果前面一种方法失败了会尝试下面一种方法）：  

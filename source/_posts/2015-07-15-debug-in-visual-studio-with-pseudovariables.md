@@ -1,7 +1,7 @@
 title: 在Visual Studio中使用Pseudovariables来帮助调试
 date: 2015-07-15 07:23:23
 categories:
-tags: [Debug, CSharp, CPP]
+tags: [Debug, Programming]
 description:
 ---
 在我之前的博文[C#的强迫执行域Constrained Execution Regions(CERs)](/2013/06/07/constrained-execution-regions-in-csharp/)中提到过一点可以通过在Visual Studio的Watch窗口输入`@err,hr`来显示`GetLastError`。今天把Visual Studio中能使用的[Pseudovariables](https://msdn.microsoft.com/en-us/library/ms164891.aspx)都列一下，灵活运用这些Pseudovariables，可以大大的提高调试的效率。

@@ -3,7 +3,7 @@ layout: post
 title: "使用C++的开源序列化(Serialization)库cereal"
 date: 2014-04-04 10:26
 comments: true
-tags: [CPP, Tool]
+tags: [Programming, Tool]
 keywords: c++, cereal, serialization, open source
 description: cereal是一个开源的（BSD License），轻量级的C++序列化库。它只有头文件，支持序列化成binary，xml，JSON。
 ---

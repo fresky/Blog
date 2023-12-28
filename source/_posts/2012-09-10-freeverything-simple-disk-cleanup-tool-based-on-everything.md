@@ -3,7 +3,7 @@ layout: post
 title: "FreeEverything-基于everything的一个简易磁盘清理工具"
 date: 2012-09-10
 comments: true
-tags: [CSharp, Tool]
+tags: [Programming, Tool]
 ---
 <p>用Visual Studiode attach to process调试时，无论你有没有设置symbol path，Visual Studio都会把下载的symbol乱放，特别是会放到solution下面，导致文件夹很乱，所以写了一个小工具来删除这些symbol文件夹。同时也能删除resharper和mstest的临时文件。</p>
 <p><a href="http://www.voidtools.com/">Everything</a>是一个非常快的磁盘搜索，正好基于他的<a href="http://support.voidtools.com/everything/SDK">SDK</a>来做这个小工具。</p>

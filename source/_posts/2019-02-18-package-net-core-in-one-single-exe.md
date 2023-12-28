@@ -1,7 +1,7 @@
 title: 打包.NET Core的程序到一个单独的可执行文件
 date: 2019-02-18 16:13:57
 categories:
-tags: CSharp
+tags: Programming
 description:
 ---
 .NET Core的程序在发布时会是一个目录，里面放着exe和它的所有依赖。在一些情况下一个单独的EXE会更方便一些。[Warp](https://github.com/dgiagio/warp)是一个开源（MIT）的软件可以把`Node.js`，`.NET Core`和`Java`的程序打包成一个可执行文件，支持Linux,MacOS和Windows。使用也很方便，下面是Windows下打包.NET Core的命令（假设下载下来的Warp叫做warp-packer.exe）：

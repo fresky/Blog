@@ -3,7 +3,7 @@ layout: post
 title: "C++怎么寻找重载函数"
 date: 2012-12-10
 comments: true
-tags: CPP
+tags: Programming
 ---
 <p><a href="http://accu.org/index.php/journals/268">ACCU :: Overload Resolution - Selecting the Function</a>这篇文章详细介绍了C++中寻找重载函数的方法。下面给个小例子吧，C++的重载有时候会违背你的直觉。</p>  <p>考虑如下代码：</p>  
   

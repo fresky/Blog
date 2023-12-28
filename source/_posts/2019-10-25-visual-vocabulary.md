@@ -1,7 +1,7 @@
 title: 来自金融时报的可视化辞典
 date: 2019-10-25 18:20:51
 categories:
-tags: [Other, Resource]
+tags: Tool
 description:
 ---
 

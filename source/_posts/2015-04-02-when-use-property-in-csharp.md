@@ -1,7 +1,7 @@
 title: 什么时候应该使用C#的属性
 date: 2015-04-02 17:44:29
 categories:
-tags: CSharp
+tags: Programming
 description:
 ---
 看看Eric Lippert关于什么时候应该使用C#的属性的建议[When should I write a property?](http://ericlippert.com/2014/05/19/when-should-i-write-a-property/)。

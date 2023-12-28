@@ -1,7 +1,7 @@
 title: 从bug中学习怎么写代码
 date: 2015-05-17 20:22:25
 categories:
-tags: [CPP,Resource]
+tags: [Programming,Tool]
 description: 从PVS Studio的一个通过静态检查开源项目发现的bug数据库中学习怎么写代码。
 ---
 我在之前的[来试试这个来自静态代码分析工具PVS Studio提供C++的小测验吧](/2014/12/22/cpp-quiz-from-pvs-studio/)中介绍过一个PVS Studio提供的关于C++的小测试，今天再介绍一个PVS Studio提供的bug数据库[Errors detected in Open Source projects by the PVS-Studio developers through static analysis ](http://www.viva64.com/en/examples/)。

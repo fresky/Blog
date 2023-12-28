@@ -3,8 +3,8 @@ layout: post
 title: "微软的.NET示例代码放在Github上了"
 date: 2014-09-24 17:28
 comments: true
-tags: 
-keywords: Resource
+tags: Tool
+keywords: 
 description: 
 ---
 
