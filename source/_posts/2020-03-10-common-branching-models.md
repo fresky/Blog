@@ -37,7 +37,7 @@ Git Flow的分支模型非常清晰，可以很容易的支持各种产品发布
 
 # GitHub Flow
 
-从上面的分析我们可以看到，如果一个产品是持续发布的，其实就没有**hotfix**和**release**分支存在的意义了，同时，因为是持续发布，所以**develop**分支和**master**分支差别不大，那么也就没有必要维护这连哥哥主分支了，这其实就是我们下面要说的**GitHub Flow**。
+从上面的分析我们可以看到，如果一个产品是持续发布的，其实就没有**hotfix**和**release**分支存在的意义了，同时，因为是持续发布，所以**develop**分支和**master**分支差别不大，那么也就没有必要维护这两个主分支了，这其实就是我们下面要说的**GitHub Flow**。
 
 **GitHub Flow**最早是在2011年的这篇文章[GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html)中提出来的，如下图所示。
 
