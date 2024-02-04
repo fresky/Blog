@@ -6,7 +6,7 @@ description:
 ---
 我们在设计一个系统时经常需要考虑如果某个进程崩溃之后系统应该作何反应。可以用[force any running process to crash](https://stackoverflow.com/questions/10686231/force-any-running-process-to-crash)中介绍的方法在一个进程中注入一个异常导致它崩溃。
 
-这个方法使用了[`CreateRemoteThread`](https://msdn.microsoft.com/en-us/library/windows/desktop/ms682437(v=vs.85).aspx)API。`CreateRemoteThread`可以在目标进程内创建一个线程来执行一段代码，只要这段代码能够crash，我们就能做到在目标进程中注入一个崩溃了。下面是根据这个方法实现的C#的代码。
+这个方法使用了[`CreateRemoteThread`](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createremotethread)API。`CreateRemoteThread`可以在目标进程内创建一个线程来执行一段代码，只要这段代码能够crash，我们就能做到在目标进程中注入一个崩溃了。下面是根据这个方法实现的C#的代码。
 
 ```csharp
 class CrashInjecter
