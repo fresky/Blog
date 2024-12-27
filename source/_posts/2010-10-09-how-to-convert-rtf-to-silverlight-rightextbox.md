@@ -5,7 +5,9 @@ date: 2010-10-09
 comments: true
 tags: Programming
 ---
-<p>silvergliht 4.0中有了richtextbox控件，但是它只接受xaml格式的输入，下面这个函数实现了rtf和xaml的转换，用到了flowdocument。<br /><br />需要注意的是直接从rtf转换过来的话有些attribute silverlight不认。我也不知道找全了没有，目前发现的是 section 里面的一堆attribute，然后就是margin和textindent。另外中文字体也会出错。<br /><br /></p>
+silvergliht 4.0中有了richtextbox控件，但是它只接受xaml格式的输入，下面这个函数实现了rtf和xaml的转换，用到了flowdocument。
+
+需要注意的是直接从rtf转换过来的话有些attribute silverlight不认。我也不知道找全了没有，目前发现的是 section 里面的一堆attribute，然后就是margin和textindent。另外中文字体也会出错。
 
 ```csharp
 /// <summary>

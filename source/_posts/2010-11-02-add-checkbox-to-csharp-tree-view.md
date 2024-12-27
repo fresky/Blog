@@ -5,7 +5,9 @@ date: 2010-11-02
 comments: true
 tags: Programming
 ---
-今天写了一个C#的TreeView，需要带checkbox，msdn上<a href="http://msdn.microsoft.com/en-us/library/system.windows.forms.treeview.aftercheck.aspx">TreeView.AfterCheck Event (System.Windows.Forms)</a>之处理了子节点的递归选择问题，贴一下我写的父子节点递归选择。<br /><br /><br />
+今天写了一个C#的TreeView，需要带checkbox，msdn上<a href="http://msdn.microsoft.com/en-us/library/system.windows.forms.treeview.aftercheck.aspx">TreeView.AfterCheck Event (System.Windows.Forms)</a>之处理了子节点的递归选择问题，贴一下我写的父子节点递归选择。
+
+
 
 ```csharp
 void tree_AfterCheck(object sender, TreeViewEventArgs e)
